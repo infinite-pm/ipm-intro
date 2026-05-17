@@ -4,9 +4,21 @@
 
 ## Where it lives
 
-`ipm-drawio/cmd/ipm-render/` — same Go module as the other rendering binaries, so it imports `pkg/ipmsvg`, `pkg/drawio/gen`, and the (new) shared block-extraction package directly instead of shelling out.
+Implementation: [`ipm-drawio/cmd/ipm-render/`](../../../ipm-drawio/cmd/ipm-render/) ([github](https://github.com/infinite-pm/ipm-drawio/tree/main/cmd/ipm-render)) — same Go module as the other rendering binaries, so it imports `pkg/ipmsvg` and the shared block-extraction package directly instead of shelling out.
 
-This stub doc stays in `ipm-intro/tools/ipm-render/` as the user-facing entry point that points at the implementation.
+This doc stays in `ipm-intro/tools/ipm-render/` as the user-facing entry point that points at the implementation.
+
+## Quick start
+
+```bash
+cd ../../ipm-drawio  # or wherever ipm-drawio lives
+go run ./cmd/ipm-render \
+  --source ../ipm-intro \
+  --rendered ../ipm-intro-rendered \
+  --source-github-base https://github.com/infinite-pm/ipm-intro
+```
+
+Add `--commit` to auto-commit the rendered repo. Run `go run ./cmd/ipm-render --help` for the full flag list.
 
 ## How it works
 
@@ -53,16 +65,12 @@ Injected at the top of every `.impr.md`:
 - [ipm-drawio](../../../ipm-drawio/) — `ipmsvg-gen` (native SVG, pure-Go, accepts `.ipmt` directly); `ipmt-parse`, `drawio-gen`, `ipmt-inline-md` (draw.io SVG, needs Podman + renderer container).
 - Sibling checkout of `ipm-intro-rendered` (path configurable, default `../../ipm-intro-rendered` relative to `ipm-intro`).
 
-## Upstream changes needed in ipm-drawio
+## Status
 
-**Refactor — extract shared block-extraction package.** Both `cmd-dev/ipmt-inline-md` (draw.io output) and `cmd-dev/debug-layout-md` (layout debug output) independently scan `.md` files for ` ```ipmt ` blocks. Pulling the shared logic into something like `pkg/mdblocks/` lets `ipm-render` import it directly with no duplication. Suggested implementation order:
-
-1. Extract block extraction (`scanIpmtBlocks`, name reservation, image-ref insertion) from `ipmt-inline-md` into `pkg/mdblocks/`.
-2. Switch `ipmt-inline-md` to use the package (behavior unchanged; pure refactor).
-3. Add `cmd/ipm-render/` that uses `pkg/mdblocks/` + `pkg/ipmsvg/` directly for the native path, and shells out to `ipmt-inline-md` (or calls `pkg/drawio/gen` directly) for the draw.io path.
-4. Optional cleanup: migrate `debug-layout-md` to the shared package too.
-
-No new flags on `ipmt-inline-md` are required — the refactor obsoletes the earlier "add `--mode native|drawio`" suggestion.
+- ✅ Shared block extraction (`pkg/markdown.ScanIPMTBlocks`) — `ipmt-inline-md` migrated.
+- ✅ `cmd/ipm-render` (native SVG path, pre-flight clean-tree check, wipe, header injection, optional `--commit`).
+- ⏳ `--drawio` flag (Podman + draw.io container path) — stubbed; errors out if requested.
+- ⏳ Migrate `cmd-dev/debug-layout-md` onto the shared package (housekeeping).
 
 ## Out of scope (for now)
 
