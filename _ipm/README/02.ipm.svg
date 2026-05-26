@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="540" viewBox="0 0 380 540">
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260523154121-0c3273975421+dirty hash=440d7925 source-file=README.md source-id=02 -->
+
+  <defs>
+  </defs>
+  <g id="container-shells">
+  </g>
+  <g id="node-shadows">
+    <rect x="40" y="120" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="240" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="360" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="220" y="120" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="80" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="80" y="460" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+  </g>
+  <g id="edges">
+    <line x1="100.00" y1="184.00" x2="100.00" y2="229.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 236.00 L 95.50 227.00 L 100.00 229.25 L 104.50 227.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="100.00" y1="304.00" x2="100.00" y2="349.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 356.00 L 95.50 347.00 L 100.00 349.25 L 104.50 347.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="100.00" y1="424.00" x2="100.00" y2="449.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 456.00 L 95.50 447.00 L 100.00 449.25 L 104.50 447.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="216.00" y1="150.00" x2="170.75" y2="150.00" stroke="#82b366" stroke-width="3" />
+    <path d="M 164.00 150.00 L 173.00 145.50 L 170.75 150.00 L 173.00 154.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="247.17" y1="182.83" x2="167.60" y2="262.40" stroke="#82b366" stroke-width="3" />
+    <path d="M 162.83 267.17 L 166.01 257.63 L 167.60 262.40 L 172.37 263.99 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="263.21" y1="183.58" x2="164.81" y2="380.38" stroke="#82b366" stroke-width="3" />
+    <path d="M 161.79 386.42 L 161.79 376.36 L 164.81 380.38 L 169.84 380.38 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="100.00" y1="84.00" x2="100.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 116.00 L 95.50 107.00 L 100.00 109.25 L 104.50 107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+  </g>
+  <g id="nodes">
+    <rect x="40" y="120" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="131" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="100" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears black</text>
+    <text x="100" y="169" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="40" y="240" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="251" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="100" y="270" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">swaps</text>
+    <text x="100" y="289" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="40" y="360" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="371" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="100" y="390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears white</text>
+    <text x="100" y="409" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="220" y="120" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="280" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">Patrick</text>
+    <rect x="80" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="80" y="460" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="480" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
+  </g>
+</svg>
