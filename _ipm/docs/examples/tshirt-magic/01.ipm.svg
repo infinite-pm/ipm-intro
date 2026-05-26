@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="880" viewBox="0 0 1280 880">
-  <!-- ipm-svg meta: generated-by=ipm-md-embed@dev hash=69d7007d source-file=docs/examples/tshirt-magic.md source-id=01 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260526053612-5f36075cad04+dirty hash=69d7007d source-file=docs/examples/tshirt-magic.md source-id=01 -->
 
   <defs>
   </defs>
@@ -34,16 +34,16 @@
     <path d="M 936.15 182.26 L 926.27 184.19 L 929.64 180.46 L 928.68 175.52 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="756.00" y1="150.00" x2="710.75" y2="150.00" stroke="#82b366" stroke-width="3" />
     <path d="M 704.00 150.00 L 713.00 145.50 L 710.75 150.00 L 713.00 154.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="831.92" y1="183.77" x2="876.42" y2="309.86" stroke="#82b366" stroke-width="3" />
-    <path d="M 878.67 316.23 L 871.43 309.24 L 876.42 309.86 L 879.92 306.24 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="820.00" y1="184.00" x2="820.00" y2="279.25" stroke="#82b366" stroke-width="3" />
+    <path d="M 820.00 286.00 L 815.50 277.00 L 820.00 279.25 L 824.50 277.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="837.75" y1="646.46" x2="979.09" y2="379.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 982.25 373.54 L 982.01 383.59 L 979.09 379.50 L 974.06 379.38 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="883.85" y1="697.74" x2="929.64" y2="710.46" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 936.15 712.26 L 926.27 714.19 L 929.64 710.46 L 928.68 705.52 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="756.00" y1="680.00" x2="710.75" y2="680.00" stroke="#82b366" stroke-width="3" />
     <path d="M 704.00 680.00 L 713.00 675.50 L 710.75 680.00 L 713.00 684.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="836.79" y1="646.42" x2="875.19" y2="569.62" stroke="#82b366" stroke-width="3" />
-    <path d="M 878.21 563.58 L 878.21 573.64 L 875.19 569.62 L 870.16 569.62 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="820.00" y1="646.00" x2="820.00" y2="600.75" stroke="#82b366" stroke-width="3" />
+    <path d="M 820.00 594.00 L 824.50 603.00 L 820.00 600.75 L 815.50 603.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="1024.90" y1="233.20" x2="1151.05" y2="401.40" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1155.10 406.80 L 1146.10 402.30 L 1151.05 401.40 L 1153.30 396.90 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="1020.73" y1="696.60" x2="1155.71" y2="479.13" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
