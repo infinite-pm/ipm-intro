@@ -1,154 +1,203 @@
 # T-shirt magic
 
-ipmt example illustrating the ETC vocabulary defined in the [loops-ipm glossary](https://github.com/infinite-pm/loops-ipm/blob/main/docs/glossary.md).
+This is the worked-example companion to the [main README](../../README.md). It picks up where the README's Step 4 leaves off and adds two things the intro skipped:
 
-## Patrick changes t-shirt color
+- a **second observer's account** of the same scene — a *layered* variant where the observer saw Patrick wearing black over white, with no take-on of the white t-shirt at all;
+- **open-world probe events** — single sightings that decide which observer's account is the one that actually happened.
 
-A minimal ipmt story: Patrick wears one t-shirt, then swaps it for another of a different color. Illustrates all three ETC node kinds and the LEADS-TO, CONTAINS, and EXPRESSES relations.
+Note: every ipm graph is an **observer's** account — somebody else watching Patrick, not Patrick's own account. The first model below is told from one chosen viewpoint; further down, we'll see a different observer's account of the same `wearBW` event.
 
-Note: this is an **observer's** account — somebody else watching Patrick, not Patrick's own account. Every ipm model is told from a chosen viewpoint; the observer is implicit but shapes which events and things appear in the graph.
+## Recap — the full graph from the README
 
-### Overview — just the top event
+So the file stands on its own, here is the complete three-level model the README's Step 4 ends with. The top-level `wearBW` event names only the **observable** outcome — Patrick wore black, then he wore white — and stays silent on *how* the change happened. That mechanism is hidden inside the wrapper event; the sub-events reveal it. This observer saw a take-off and take-on (an exchange), so call this **scenario 1: the exchange**. Its discriminating shape is that the two t-shirts are *never simultaneously on Patrick*.
 
-The coarse-grained view: a single event with the participating things, no sub-events yet.
-
-```ipmt
-# Top event
-Patrick t-shirts magic ::e tshirtsMagic::a
-
-# Things contained in the event
-Patrick --> tshirtsMagic
-Patrick --> human ::c
-
-t-shirt B --> tshirtsMagic
-t-shirt B --> t-shirt ::c, black ::c
-
-t-shirt W --> tshirtsMagic
-t-shirt W --> t-shirt ::c, white ::c
-```
-
-### Detail — sub-events
-
-Same scene, expanded into a LEADS-TO chain of sub-events that are part-of the top event.
+<details><summary>ipmt</summary>
 
 ```ipmt
-# Parent event
-Patrick t-shirts magic ::e tshirtsMagic::a
+# Top-level event
+Patrick wears black then wears white ::e wearBW::a
 
-# Sub-events (LEADS-TO chain)
-Patrick wears t-shirt B ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapTshirt::a
-  --> Patrick wears t-shirt W ::e wearW::a
+# Mid-level sub-events — leads-to chain, each part-of the top
+Patrick wears black t-shirt ::e wearB::a
+  --> Patrick swaps t-shirt ::e swapT::a
+  --> Patrick wears white t-shirt ::e wearW::a
 
-# Each sub-event is part of tshirtsMagic (event part-of event)
-wearB --::P--> tshirtsMagic
-swapTshirt --::P--> tshirtsMagic
-wearW --::P--> tshirtsMagic
+wearB --::P--> wearBW
+swapT --::P--> wearBW
+wearW --::P--> wearBW
 
-# Actor: Patrick (a thing) is contained in the parent event and classified as Human
-# (transitively contained in each sub-event via CONTAINS)
-Patrick --> tshirtsMagic
+# Inner sub-events — the swap itself decomposes into a finer chain
+Take off black ::e takeOff::a       --::P--> swapT
+Patrick half-naked ::e halfNaked::a --::P--> swapT
+Take on white ::e takeOn::a         --::P--> swapT
+
+takeOff --> halfNaked --> takeOn
+
+# Patrick is present for the whole swap — attach at the top.
+# Part-of transitivity carries him into every sub-event automatically.
+Patrick --> wearBW
 Patrick --> human ::c
 
-# Two t-shirts (things), each classified as T-shirt and expressing its color
-t-shirt B --> wearB, swapTshirt
+# T-shirts attach at the finest level where they actually appear:
+# the black one is worn (wearB) and then removed (takeOff); the white one is
+# put on (takeOn) and then worn (wearW).
+t-shirt B --> wearB, takeOff
+t-shirt W --> takeOn, wearW
 t-shirt B --> t-shirt ::c, black ::c
-
-t-shirt W --> swapTshirt, wearW
 t-shirt W --> t-shirt ::c, white ::c
 
-# Both wearing events express the "Wearing t-shirt" concept;
-# the swap event expresses the "Swap t-shirt" concept
-wearB --> wearing t-shirt ::c
-wearW --> wearing t-shirt ::c
-swapTshirt --> swap t-shirt ::c
+# Color taxonomy
+black ::c --> color ::c
+white ::c --> color ::c
 ```
+</details>
+<!-- ipm-svg id=01 hash=69d7007d -->
+![](../../_ipm/docs/examples/tshirt-magic/01.ipm.svg)
 
-## Zooming into the swap event
+## Step 1 — event chain with evidence and hypothesis
 
-A swap is made of taking off one t-shirt and taking on the other. This shows event-as-container via part-of (`--::P-->`):
+The README's Step 1 keeps only the two states the observer directly *saw*: Patrick wore a black t-shirt at one moment, then later Patrick wore a white t-shirt. Those two wears are the **evidence**. There is an obvious gap between them — the observer didn't actually witness the moment of change.
+
+A modeler can fill that gap with a **hypothesis**: an event drawn from a shared library of common stories and processes. *"When someone goes from wearing X to wearing Y, something like a swap usually happened in between."* The hypothesized event isn't observed; it's an inference shaped by familiarity with similar past scenes. A future observation can confirm it, contradict it, or replace it with something entirely different (a layered wearing, a costume change, a sleight-of-hand). Patrick himself might tell us what happened, providing direct testimony rather than the observer's inference.
 
 ```ipmt
-Patrick --> Patrick swaps t-shirt swapTshirt::a ::e --> swap t-shirt ::c
-Patrick --> human ::c
+# Parent event — the whole observable story matches a library pattern
+Patrick wears black then wears white ::e wearBW::a
+wearBW --> common t-shirt swap pattern ::c
 
-Patrick wears t-shirt B wearB::a ::e --::P--> swapTshirt
-Take off t-shirt B takeOffB::a ::e --::P--> swapTshirt
-Patrick half-naked halfNaked::a ::e --::P--> swapTshirt
-Take on t-shirt W takeOnW::a ::e --::P--> swapTshirt
-Patrick wears t-shirt W wearW::a ::e --::P--> swapTshirt
-wearB --> takeOffB --> halfNaked --> takeOnW --> wearW
+# Sub-events: two observed wears + one hypothesized swap, each part-of the parent
+Patrick wears black t-shirt ::e wearB::a
+  --> Patrick swaps t-shirt ::e swapT::a
+  --> Patrick wears white t-shirt ::e wearW::a
 
-# What each sub-event expresses
-wearB --> wearing t-shirt ::c
-takeOffB --> taking off ::c
-halfNaked --> half naked ::c
-takeOnW --> taking on  ::c
-wearW --> wearing t-shirt ::c
+wearB --::P--> wearBW
+swapT --::P--> wearBW
+wearW --::P--> wearBW
 
-# Things contained in the sub-events
-t-shirt B --> wearB, takeOffB, t-shirt ::c
-t-shirt W --> takeOnW, wearW, t-shirt ::c
+# Evidence — directly observed wears
+wearB --> evidence ::c
+wearW --> evidence ::c
+
+# Hypothesis — the swap is inferred from the library pattern on the parent
+swapT --> hypothesis ::c
 ```
+<!-- ipm-svg id=02 hash=68eae702 -->
+![](../../_ipm/docs/examples/tshirt-magic/02.ipm.svg)
 
-## Alternative observation — black worn over white
 
-Same top-level event (`tshirtsMagic`) — what differs is **which sub-events the observer saw**. Here the observer noticed Patrick was already wearing both t-shirts (black over white), and saw only the black one being taken off — no take-on. The white t-shirt persists throughout.
+This is the same three-event chain the README uses from Step 2 onward, but each event now carries the observer's epistemic stance: the `wears` are facts; the `swap` is a guess that fits a familiar process template. From here on, the rest of this file builds on the swap hypothesis the way the README's Step 2+ does — treating it as the model the observer has settled on — while remembering it could be wrong.
+
+## Observation is open-world — positive evidence
+
+Before we draw the alternative scenario, a methodological note. An ipmt observation records what was **seen**, not what was absent — two honest observers can differ without contradicting each other. To decide which scenario actually happened, the observer needs **positive evidence** for one of the discriminating shapes. A single sighting is enough.
+
+Here are two such probe events. The first confirms the **exchange** scenario (the recap above) by catching the white t-shirt being put on — a positive transition that only the exchange contains:
 
 ```ipmt
-# Top event (same name as the first observation)
-Patrick t-shirts magic ::e tshirtsMagic::a
+# Confirms scenario 1 (exchange): t-shirt W observed being taken on
+W taken on seen ::e probeTakeOnW::a
+Patrick    --> probeTakeOnW
+t-shirt W  --> probeTakeOnW
 
-# Sub-events (LEADS-TO chain): wear black over white -> takes off black -> wear white
-Patrick wears t-shirt B (over t-shirt A) ::e wearLayered::a
-  --> Take off t-shirt B ::e takeOffB::a
-  --> Patrick wears t-shirt W ::e wearW::a
-
-# Sub-events are part of the top event
-wearLayered --::P--> tshirtsMagic
-takeOffB --::P--> tshirtsMagic
-wearW --::P--> tshirtsMagic
-
-# Actor
-Patrick --> tshirtsMagic
-Patrick --> human ::c
-
-# White t-shirt is worn throughout
-t-shirt W --> wearLayered, wearW
-t-shirt W --> t-shirt ::c, white ::c
-
-# Black t-shirt is on during the layered wearing and is being removed in takeOffB
-t-shirt B --> wearLayered, takeOffB
-t-shirt B --> t-shirt ::c, black ::c
-
-# What each event expresses
-wearing two t-shirts ::c --> wering layered ::c
-wearLayered --> wearing two t-shirts ::c --> wearing t-shirt ::c
-takeOffB --> taking off ::c
-wearW --> wearing t-shirt ::c
-```
-
-## Observation is open-world
-
-An ipmt observation records what was *seen*, not what was absent — two observations can differ without contradicting each other. To decide which scenario above actually happened, the observer needs **positive evidence** for one of the discriminating shapes. A single sighting is enough.
-
-```ipmt
-# Confirms scenario 2 (layered): both t-shirts co-present on Patrick at the same moment
-Both t-shirts seen on Patrick ::e probeBoth::a
-Patrick --> probeBoth
-t-shirt B --> probeBoth
-t-shirt W --> probeBoth
-```
-
-```ipmt
-# Confirms scenario 1 (exchange): t-shirt W observed being taken on (a positive transition)
-Take-on of t-shirt W observed ::e probeTakeOnW::a
-Patrick --> probeTakeOnW
-t-shirt W --> probeTakeOnW
+# What this observation expresses
 probeTakeOnW --> taking on ::c
+probeTakeOnW --> positive evidence ::c
 ```
+<!-- ipm-svg id=03 hash=22c262b7 -->
+![](../../_ipm/docs/examples/tshirt-magic/03.ipm.svg)
 
-Without either probe succeeding, the scenario stays undecided — the honest open-world answer.
+
+The second confirms the **layered** scenario by catching both t-shirts on Patrick at the same instant — a configuration that only the layered observation contains:
+
+```ipmt
+# Confirms scenario 2 (layered): black observed on top of white
+B over W seen on Patrick ::e probeBOverW::a
+Patrick    --> probeBOverW
+t-shirt B  --> probeBOverW
+t-shirt W  --> probeBOverW
+
+# What this observation expresses
+probeBOverW --> wearing two t-shirts ::c
+probeBOverW --> positive evidence ::c
+```
+<!-- ipm-svg id=04 hash=f88c7d16 -->
+![](../../_ipm/docs/examples/tshirt-magic/04.ipm.svg)
+
+
+Without either probe succeeding, the scenario stays undecided — the honest open-world answer. Note also what we did *not* record: the absence of a take-on does not by itself confirm the layered scenario; we still need the positive `B over W seen` sighting.
+
+## Alternative scenario — layered, in detail
+
+This second observer captured a different sub-event structure under the same top-level `wearBW`. At some moment during it, Patrick was wearing **both** t-shirts at once — black layered over white. The observer never saw a take-on of white; they saw only a take-off of black at the end.
+
+First, the event structure alone — no participants attached yet, so the difference from scenario 1 is plain:
+
+```ipmt
+Patrick wears black then wears white ::e wearBW::a
+
+# Mid-level sub-events — wear-layered -> take off black -> wear white
+Patrick wears black over white ::e wearLayered::a
+  --> Take off black ::e takeOffB::a
+  --> Patrick wears white t-shirt ::e wearW::a
+
+wearLayered --::P--> wearBW
+takeOffB --::P--> wearBW
+wearW --::P--> wearBW
+```
+<!-- ipm-svg id=05 hash=a4c0b0a7 -->
+![](../../_ipm/docs/examples/tshirt-magic/05.ipm.svg)
+
+
+Same parent `wearBW` as scenario 1; what differs is the mid-level sub-event the observer recorded — `wearLayered` instead of `wearB`, and no `swapT`/`takeOn` pair.
+
+## Alternative scenario — layered, full
+
+Now layer everything in: participants and concepts.
+
+```ipmt
+# Top event (same name and alias as scenario 1)
+Patrick wears black then wears white ::e wearBW::a
+
+# Mid-level sub-events
+Patrick wears black over white ::e wearLayered::a
+  --> Take off black ::e takeOffB::a
+  --> Patrick wears white t-shirt ::e wearW::a
+
+wearLayered --::P--> wearBW
+takeOffB --::P--> wearBW
+wearW --::P--> wearBW
+
+# Patrick is present throughout
+Patrick --> wearBW
+Patrick --> human ::c
+
+# White t-shirt is worn throughout — even underneath the black one in wearLayered
+t-shirt W --> wearLayered, wearW
+
+# Black t-shirt is on during the layered wearing and removed in takeOffB
+t-shirt B --> wearLayered, takeOffB
+
+# Concepts each event expresses
+wearLayered --> wearing two t-shirts ::c
+takeOffB    --> taking off ::c
+wearW       --> wearing t-shirt ::c
+
+# T-shirt color (thing --> concept)
+t-shirt B --> t-shirt ::c, black ::c
+t-shirt W --> t-shirt ::c, white ::c
+
+# "Wearing two t-shirts" is a kind of "wearing t-shirt" (concept --> concept)
+wearing two t-shirts ::c --> wearing t-shirt ::c
+
+# Color taxonomy
+black ::c --> color ::c
+white ::c --> color ::c
+```
+<!-- ipm-svg id=06 hash=eff51647 -->
+![](../../_ipm/docs/examples/tshirt-magic/06.ipm.svg)
+
+
+Call this **scenario 2: the layered observation**. Both scenarios share the top-level `wearBW` event; they differ only in which sub-events the observer recorded, and therefore in which concepts the events express.
 
 ## Color taxonomy
 
@@ -158,6 +207,9 @@ White and Black are kinds of Color — a concept-to-concept EXPRESSES relation:
 white ::c --> color ::c
 black ::c --> color ::c
 ```
+<!-- ipm-svg id=07 hash=78e61ea2 -->
+![](../../_ipm/docs/examples/tshirt-magic/07.ipm.svg)
+
 
 ## Thing taxonomies
 
@@ -169,3 +221,6 @@ human thing ::c --- human ::c
 stone S1 --> stone ::c --> natural thing ::c --> thing ::c
 natural thing ::c --- nature ::c
 ```
+<!-- ipm-svg id=08 hash=b0cc5788 -->
+![](../../_ipm/docs/examples/tshirt-magic/08.ipm.svg)
+
