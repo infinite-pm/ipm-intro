@@ -1,3 +1,5 @@
+# --- event tree (from Step 2's last diagram) ---
+
 # Top-level event
 Patrick wears black then wears white ::e wearBW::a
 
@@ -17,19 +19,17 @@ Take on white ::e takeOn::a         --::P--> swapT
 
 takeOff --> halfNaked --> takeOn
 
-# Patrick is present for the whole swap — attach at the top.
-# Part-of transitivity carries him into every sub-event automatically.
+# --- things (from Step 2) ---
+
+# Patrick is present throughout — attach at the top; part-of
+# transitivity carries him into every sub-event.
 Patrick --> wearBW
+
+# T-shirts at the mid-level events where each appears
+t-shirt B --> wearB, swapT
+t-shirt W --> swapT, wearW
+
+# --- concepts (from Step 3) ---
+
 Patrick --> human ::c
-
-# T-shirts attach at the finest level where they actually appear:
-# the black one is worn (wearB) and then removed (takeOff); the white one is
-# put on (takeOn) and then worn (wearW).
-t-shirt B --> wearB, takeOff
-t-shirt W --> takeOn, wearW
-t-shirt B --> t-shirt ::c, black ::c
-t-shirt W --> t-shirt ::c, white ::c
-
-# Color taxonomy
-black ::c --> color ::c
-white ::c --> color ::c
+swapT --> swap of clothing ::c

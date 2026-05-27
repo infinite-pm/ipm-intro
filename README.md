@@ -69,10 +69,9 @@ Patrick wears black t-shirt ::e wearB::a
   --> Patrick swaps t-shirt ::e swapT::a
   --> Patrick wears white t-shirt ::e wearW::a
 
-# Patrick participates in every event in the chain
 Patrick --> wearB, swapT, wearW
 ```
-<!-- ipm-svg id=02 hash=440d7925 -->
+<!-- ipm-svg id=02 hash=036d9600 -->
 ![](_ipm/README/02.ipm.svg)
 
 Two new tricks:
@@ -133,23 +132,19 @@ We can keep going — `swapT` itself decomposes into a finer chain of moments. H
 ```ipmt
 Patrick wears black then wears white ::e wearBW::a
 
-# Mid-level: wear -> swap -> wear, each part-of the top
 Patrick wears black t-shirt ::e wearB::a
   --> Patrick swaps t-shirt ::e swapT::a
   --> Patrick wears white t-shirt ::e wearW::a
 
-wearB --::P--> wearBW
-swapT --::P--> wearBW
-wearW --::P--> wearBW
+wearB, swapT, wearW --::P--> wearBW
 
-# Inner: the swap decomposes further
 Take off black ::e takeOff::a       --::P--> swapT
 Patrick half-naked ::e halfNaked::a --::P--> swapT
 Take on white ::e takeOn::a         --::P--> swapT
 
 takeOff --> halfNaked --> takeOn
 ```
-<!-- ipm-svg id=06 hash=e7b5cdce -->
+<!-- ipm-svg id=06 hash=01228d05 -->
 ![](_ipm/README/06.ipm.svg)
 
 
@@ -161,9 +156,14 @@ What *properties* does Patrick express? What *property* does the swap event expr
 
 ```ipmt
 Patrick --> human ::c
+
 swaps t-shirt ::e --> swap of clothing ::c
+
+t-shirt B --> t-shirt ::c, black ::c
+t-shirt W --> t-shirt ::c, white ::c
+black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=07 hash=34d22075 -->
+<!-- ipm-svg id=07 hash=5ee11b2f -->
 ![](_ipm/README/07.ipm.svg)
 
 
@@ -173,49 +173,33 @@ A concept is what stays the same across all events and things that express it �
 
 ### Step 4 — bring it together, with a parent event
 
-The full story now has *three zoom levels*: the top event (the whole swap), its three mid-level events (wear → swap → wear), and the inner moments of the swap itself (take-off → half-naked → take-on). We attach each participant at the finest level where it actually appears — part-of transitivity automatically carries it upward into every containing event. A small **color taxonomy** (<!--ipmt-->`t-shirt ::c`, <!--ipmt-->`black ::c`, <!--ipmt-->`white ::c`, <!--ipmt-->`color ::c`) joins the concepts from Step 3 (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`).
+The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top `wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts) attached at the same levels they appeared, and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Part-of transitivity carries Patrick into every sub-event automatically, so we attach him only at the top.
 
 ```ipmt
-# Top-level event
 Patrick wears black then wears white ::e wearBW::a
 
-# Mid-level sub-events — leads-to chain, each part-of the top
 Patrick wears black t-shirt ::e wearB::a
   --> Patrick swaps t-shirt ::e swapT::a
   --> Patrick wears white t-shirt ::e wearW::a
 
-wearB --::P--> wearBW
-swapT --::P--> wearBW
-wearW --::P--> wearBW
+wearB, swapT, wearW --::P--> wearBW
 
-# Inner sub-events — the swap itself decomposes into a finer chain
 Take off black ::e takeOff::a       --::P--> swapT
 Patrick half-naked ::e halfNaked::a --::P--> swapT
 Take on white ::e takeOn::a         --::P--> swapT
-
 takeOff --> halfNaked --> takeOn
-
-# Patrick is present for the whole swap — attach at the top.
-# Part-of transitivity carries him into every sub-event automatically.
-Patrick --> wearBW
-Patrick --> human ::c
 swapT --> swap of clothing ::c
 
-# T-shirts come and go — attach at the finest level where they actually appear:
-# the black one is worn (wearB) and then removed (takeOff); the white one is
-# put on (takeOn) and then worn (wearW).
-t-shirt B --> wearB, takeOff
-t-shirt W --> takeOn, wearW
+Patrick --> wearBW, human ::c
+t-shirt B --> takeOff
+t-shirt W --> takeOn
+
 t-shirt B --> t-shirt ::c, black ::c
 t-shirt W --> t-shirt ::c, white ::c
-
-# A color is itself a property — concept expresses concept
-black ::c --> color ::c
-white ::c --> color ::c
+black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=08 hash=9bd40bd3 -->
+<!-- ipm-svg id=08 hash=a62bad6a -->
 ![](_ipm/README/08.ipm.svg)
-
 
 That's a complete ipmt model: events lead to events, things participate in events, things and events express concepts as properties, and concepts can themselves express properties of other concepts.
 

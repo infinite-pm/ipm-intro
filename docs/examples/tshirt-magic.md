@@ -14,7 +14,7 @@ So the file stands on its own, here is the complete three-level model the README
 The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
-<!-- ipm-svg id=01 hash=69d7007d -->
+<!-- ipm-svg id=01 hash=071a9d36 -->
 ![](../../_ipm/docs/examples/tshirt-magic/01.ipm.svg)
 
 ## Step 1 — event chain with evidence and hypothesis

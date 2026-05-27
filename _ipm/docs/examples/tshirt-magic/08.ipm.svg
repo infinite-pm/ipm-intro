@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="620" height="540" viewBox="0 0 620 540">
-  <!-- ipm-svg meta: generated-by=ipm-md-embed@dev hash=b0cc5788 source-file=docs/examples/tshirt-magic.md source-id=08 -->
+  <!-- ipm-svg meta: generated-by=md-embed@dev hash=b0cc5788 source-file=docs/examples/tshirt-magic.md source-id=08 -->
 
   <defs>
   </defs>
@@ -27,12 +27,12 @@
     <path d="M 100.00 336.00 L 95.50 327.00 L 100.00 329.25 L 104.50 327.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="129.68" y1="402.97" x2="155.81" y2="432.01" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 160.32 437.03 L 150.96 433.35 L 155.81 432.01 L 157.65 427.33 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="164.00" y1="370.00" x2="276.00" y2="370.00" stroke="#999999" stroke-width="3" stroke-dasharray="1 1" />
+    <line x1="164.00" y1="370.00" x2="276.00" y2="370.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
     <line x1="280.00" y1="104.00" x2="280.00" y2="129.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 280.00 136.00 L 275.50 127.00 L 280.00 129.25 L 284.50 127.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="280.00" y1="204.00" x2="280.00" y2="229.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 280.00 236.00 L 275.50 227.00 L 280.00 229.25 L 284.50 227.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="344.00" y1="270.00" x2="456.00" y2="270.00" stroke="#999999" stroke-width="3" stroke-dasharray="1 1" />
+    <line x1="344.00" y1="270.00" x2="456.00" y2="270.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
     <line x1="264.86" y1="303.65" x2="207.91" y2="430.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.14 436.35 L 204.73 426.30 L 207.91 430.20 L 212.94 429.99 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
   </g>
