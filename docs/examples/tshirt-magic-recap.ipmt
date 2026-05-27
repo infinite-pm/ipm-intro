@@ -1,0 +1,35 @@
+# Top-level event
+Patrick wears black then wears white ::e wearBW::a
+
+# Mid-level sub-events — leads-to chain, each part-of the top
+Patrick wears black t-shirt ::e wearB::a
+  --> Patrick swaps t-shirt ::e swapT::a
+  --> Patrick wears white t-shirt ::e wearW::a
+
+wearB --::P--> wearBW
+swapT --::P--> wearBW
+wearW --::P--> wearBW
+
+# Inner sub-events — the swap itself decomposes into a finer chain
+Take off black ::e takeOff::a       --::P--> swapT
+Patrick half-naked ::e halfNaked::a --::P--> swapT
+Take on white ::e takeOn::a         --::P--> swapT
+
+takeOff --> halfNaked --> takeOn
+
+# Patrick is present for the whole swap — attach at the top.
+# Part-of transitivity carries him into every sub-event automatically.
+Patrick --> wearBW
+Patrick --> human ::c
+
+# T-shirts attach at the finest level where they actually appear:
+# the black one is worn (wearB) and then removed (takeOff); the white one is
+# put on (takeOn) and then worn (wearW).
+t-shirt B --> wearB, takeOff
+t-shirt W --> takeOn, wearW
+t-shirt B --> t-shirt ::c, black ::c
+t-shirt W --> t-shirt ::c, white ::c
+
+# Color taxonomy
+black ::c --> color ::c
+white ::c --> color ::c

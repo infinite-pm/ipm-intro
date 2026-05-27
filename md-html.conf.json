@@ -1,0 +1,16 @@
+{
+  "out_dir": "../infinite-pm-web/docs/intro",
+  "header": {
+    "intro_url": "https://infinite.pm/intro",
+    "intro_label": "infinite.pm / intro",
+    "repo": "https://github.com/infinite-pm/ipm-intro",
+    "branch": "main",
+    "source_label": "View source on GitHub"
+  },
+  "file": [
+    { "src": "README.md", "out": "index.html" }
+  ],
+  "glob": [
+    { "src": "docs/**/*.md" }
+  ]
+}
