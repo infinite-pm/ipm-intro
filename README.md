@@ -18,9 +18,9 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
-| **Event** | `e` (orange) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
-| **Thing** | `t` (green) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
-| **Concept** | `c` (blue) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
+| **Event** | `::e` (orange) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
+| **Thing** | `::t` (green) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
+| **Concept** | `::c` (blue) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
 
 Rule of thumb, in order:
 
@@ -40,7 +40,7 @@ Before you start creating an infinite.pm graph, decide what **question** or **pu
 
 ### Every model is an observer's account
 
-There is no view-from-nowhere. An ipm graph is always **someone's** account of a slice of the world — what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that `swap t-shirt ::e` expresses `swap of clothing ::c` rather than `magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
+There is no view-from-nowhere. An ipm graph is always **someone's** account of a slice of the world — what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that <!--ipmt-->`swap t-shirt ::e` expresses <!--ipmt-->`swap of clothing ::c` rather than <!--ipmt-->`magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
 
 ## Build it up — by example
 
@@ -167,13 +167,13 @@ swaps t-shirt ::e --> swap of clothing ::c
 ![](_ipm/README/07.ipm.svg)
 
 
-`::c` marks the node as a concept. The arrow `thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and `event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express `human ::c`, `tall ::c`, and `colleague ::c` simultaneously without any of those being his "type".
+`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
 
-A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([article 13](https://mark-burgess-oslo-mb.medium.com/avoiding-the-ontology-trap-2f1c3f3ed8e2)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing `swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
+A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([article 13](https://mark-burgess-oslo-mb.medium.com/avoiding-the-ontology-trap-2f1c3f3ed8e2)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing <!--ipmt-->`swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
 
 ### Step 4 — bring it together, with a parent event
 
-The full story now has *three zoom levels*: the top event (the whole swap), its three mid-level events (wear → swap → wear), and the inner moments of the swap itself (take-off → half-naked → take-on). We attach each participant at the finest level where it actually appears — part-of transitivity automatically carries it upward into every containing event. A small **color taxonomy** (`t-shirt ::c`, `black ::c`, `white ::c`, `color ::c`) joins the concepts from Step 3 (`human ::c`, `swap of clothing ::c`).
+The full story now has *three zoom levels*: the top event (the whole swap), its three mid-level events (wear → swap → wear), and the inner moments of the swap itself (take-off → half-naked → take-on). We attach each participant at the finest level where it actually appears — part-of transitivity automatically carries it upward into every containing event. A small **color taxonomy** (<!--ipmt-->`t-shirt ::c`, <!--ipmt-->`black ::c`, <!--ipmt-->`white ::c`, <!--ipmt-->`color ::c`) joins the concepts from Step 3 (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`).
 
 ```ipmt
 # Top-level event
@@ -219,7 +219,7 @@ white ::c --> color ::c
 
 That's a complete ipmt model: events lead to events, things participate in events, things and events express concepts as properties, and concepts can themselves express properties of other concepts.
 
-**Spacetime, made explicit.** The leads-to chain is *time*; the part-of containment is *space*. Mark Burgess puts it directly: an event is *"any region of space and time"* — a slice of the world where **things and ideas come together for a while** (his phrase is "occurrences of things and ideas together in time"). The parent event `wearBW` is one such region — it holds Patrick (the slow worldline) for its whole duration; each sub-event is a smaller spacetime region nested inside it, where faster things (specific t-shirts being worn or swapped) come and go. Concepts (`human ::c`, `color ::c`) sit *outside* spacetime entirely — they are invariant patterns the events and things express, the same in every frame.
+**Spacetime, made explicit.** The leads-to chain is *time*; the part-of containment is *space*. Mark Burgess puts it directly: an event is *"any region of space and time"* — a slice of the world where **things and ideas come together for a while** (his phrase is "occurrences of things and ideas together in time"). The parent event `wearBW` is one such region — it holds Patrick (the slow worldline) for its whole duration; each sub-event is a smaller spacetime region nested inside it, where faster things (specific t-shirts being worn or swapped) come and go. Concepts (<!--ipmt-->`human ::c`, <!--ipmt-->`color ::c`) sit *outside* spacetime entirely — they are invariant patterns the events and things express, the same in every frame.
 
 **Zoom out far enough, and "things" become events too.** At the timescale of the swap, each t-shirt is a stable thing. Zoom out to the t-shirt's whole life — manufactured, bought, worn through hundreds of days, washed many times, eventually torn, thrown away (or perhaps given a second life as a rag) — and that *thing* is itself an event chain on its own worldline. Patrick, zoomed out to his whole life, is the same: born, grows up, swaps many t-shirts, and eventually dies. The thing/event split is **not** a property of the world; it is a property of the **scale you chose** to model at. Every "thing" is a slow process; every "event" is a process you decided to look at closely.
 
@@ -246,21 +246,21 @@ Every legal source → target combination, matching the diagram above. The "ipmt
 
 | # | Source → Target | Edge | ipmt syntax | Reads as |
 |:-:|:--|:-:|:--|:--|
-| 1 | event → event | L | `e1 ::e --> e2 ::e` | e1 leads to e2 |
-| 2 | event → event | P | `inner ::e --::P--> outer ::e` | inner event is part of outer event |
-| 3 | event → event | X | `e1 ::e --::X--> e2 ::e` | e1 expresses e2 |
-| 4 | event — event | N | `e1 ::e --- e2 ::e` | e1 is similar to e2 (and vice versa) |
-| 5 | thing → event | P | `tA --> e1 ::e` | tA participates in (is part of) e1 |
-| 6 | thing → thing | P | `subpart --> whole` | subpart is part of the whole (physical composition) |
-| 7 | thing — thing | N | `tA --- tB` | tA is near / similar to tB (and vice versa) |
-| 8 | event → concept | X | `e1 ::e --> cX ::c` | e1 expresses property cX |
-| 9 | thing → concept | X | `tA --> cX ::c` | tA expresses property cX |
-| 10 | concept → concept | X | `cX ::c --> cY ::c` | cX expresses property cY |
-| 11 | concept — concept | N | `cX ::c --- cY ::c` | cX is similar to cY (and vice versa) |
+| 1 | event → event | L | <!--ipmt-->`e1 ::e --> e2 ::e` | e1 leads to e2 |
+| 2 | event → event | P | <!--ipmt-->`inner ::e --::P--> outer ::e` | inner event is part of outer event |
+| 3 | event → event | X | <!--ipmt-->`e1 ::e --::X--> e2 ::e` | e1 expresses e2 |
+| 4 | event — event | N | <!--ipmt-->`e1 ::e --- e2 ::e` | e1 is similar to e2 (and vice versa) |
+| 5 | thing → event | P | <!--ipmt-->`tA --> e1 ::e` | tA participates in (is part of) e1 |
+| 6 | thing → thing | P | <!--ipmt-->`subpart --> whole` | subpart is part of the whole (physical composition) |
+| 7 | thing — thing | N | <!--ipmt-->`tA --- tB` | tA is near / similar to tB (and vice versa) |
+| 8 | event → concept | X | <!--ipmt-->`e1 ::e --> cX ::c` | e1 expresses property cX |
+| 9 | thing → concept | X | <!--ipmt-->`tA --> cX ::c` | tA expresses property cX |
+| 10 | concept → concept | X | <!--ipmt-->`cX ::c --> cY ::c` | cX expresses property cY |
+| 11 | concept — concept | N | <!--ipmt-->`cX ::c --- cY ::c` | cX is similar to cY (and vice versa) |
 
 Two important rules baked into this table:
 
-- **No `thing --> thing` arrow except part-of.** To say "Alice owns the car" or "Mike uses his phone," create an **event** — a region of spacetime that co-locates both participants for some duration — and let it express the relation as a concept-property (`Ownership ::c`, `Uses ::c`). This is SST's general handling of arbitrary binary relations: the event is the *temporal* container that brings the two things together; the concept on the event names what that co-location *means*. There is no direct `thing --uses--> thing` edge.
+- **No <!--ipmt-->`thing --> thing` arrow except part-of.** To say "Alice owns the car" or "Mike uses his phone," create an **event** — a region of spacetime that co-locates both participants for some duration — and let it express the relation as a concept-property (<!--ipmt-->`Ownership ::c`, <!--ipmt-->`Uses ::c`). This is SST's general handling of arbitrary binary relations: the event is the *temporal* container that brings the two things together; the concept on the event names what that co-location *means*. There is no direct `thing --uses--> thing` edge.
 - **The bare `-->` arrow defaults to the relation that fits the two node kinds** — leads-to for event-to-event, part-of for thing-to-event, expresses for thing-to-concept. The explicit `--::L-->`, `--::P-->`, `--::X-->`, `--::N--` forms are documented in the ipmt syntax spec.
 
 ## Where to look next
@@ -270,7 +270,7 @@ Two important rules baked into this table:
 - [`docs/examples/murder-full.md`](docs/examples/murder-full.md) — a Clue-style murder narrative
 - [`docs/examples/meta-ipm.md`](docs/examples/meta-ipm.md) — IPM modeling itself
 
-**ipmt syntax spec:** the formal grammar of the text format — type markers, aliases, arrow forms, edge tooltips, escaping, fence behaviour — lives in a separate document that will be published alongside the open-source `ipm-drawio` release. Until then, the build-up section above plus the worked examples in `docs/examples/` show the vocabulary that covers nearly every model in the wild.
+**ipmt syntax spec:** the formal grammar of the text format — type markers, aliases, arrow forms, edge tooltips, escaping, fence behaviour — lives in a separate document that will be published alongside the open-source `ipm-tools` release. Until then, the build-up section above plus the worked examples in `docs/examples/` show the vocabulary that covers nearly every model in the wild.
 
 External reading — Mark Burgess ([ResearchGate profile](https://www.researchgate.net/profile/Mark-Burgess-9)) on Semantic Spacetime γ(3,4):
 
