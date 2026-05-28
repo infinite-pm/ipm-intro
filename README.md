@@ -18,9 +18,9 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
-| **Event** | `::e` (orange) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
-| **Thing** | `::t` (green) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
-| **Concept** | `::c` (blue) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
+| **Event** | <!--ipmt-->`::e` (orange) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
+| **Thing** | <!--ipmt-->`::t` (green) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
+| **Concept** | <!--ipmt-->`::c` (blue) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
 
 Rule of thumb, in order:
 
@@ -58,7 +58,7 @@ Patrick wears black t-shirt ::e
 ![](_ipm/README/01.ipm.svg)
 
 
-`-->` between two events means **leads-to** (rendered as an **orange arrow**) — temporal/causal flow. `::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a `swap` event between them — a *hypothesized* middle step the observer didn't witness.
+`-->` between two events means **leads-to** (rendered as an **orange arrow**) — temporal/causal flow. <!--ipmt-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt cut="swap ::e"-->`swap` event between them — a *hypothesized* middle step the observer didn't witness.
 
 ### Step 2 — add a participant (thing → event)
 
@@ -81,7 +81,7 @@ Two new tricks:
 
 Unmarked nodes default to **things**. The arrow goes *from the thing to the event* — the thing is part of the event, never the other way around (a modeling rule, not a syntactic accident).
 
-**Add the t-shirts as participants too.** The black t-shirt is worn in `wearB` and is still on Patrick (briefly) during `swapT`; the white one enters at `swapT` and stays on through `wearW`. Each thing attaches to the events where it actually appears.
+**Add the t-shirts as participants too.** The black t-shirt is worn in <!--ipmt cut="wearB ::e"-->`wearB` and is still on Patrick (briefly) during <!--ipmt cut="swapT ::e"-->`swapT`; the white one enters at <!--ipmt cut="swapT ::e"-->`swapT` and stays on through <!--ipmt cut="wearW ::e"-->`wearW`. Each thing attaches to the events where it actually appears.
 
 ```ipmt
 Patrick wears black t-shirt ::e wearB::a
@@ -110,7 +110,7 @@ t-shirt W  --> wearBW
 
 Same story, different zoom level. The right level depends on the **purpose** of your model — and you don't have to pick just one.
 
-Going the other direction, **zoom in**: replace a coarse event with its sub-events. The next two diagrams show pure *event structure* — no participants, no concepts — so the zoom move stands on its own. First, drill into `wearBW` and show its three mid-level sub-events as a leads-to chain, each part-of the parent:
+Going the other direction, **zoom in**: replace a coarse event with its sub-events. The next two diagrams show pure *event structure* — no participants, no concepts — so the zoom move stands on its own. First, drill into <!--ipmt cut="wearBW ::e"-->`wearBW` and show its three mid-level sub-events as a leads-to chain, each part-of the parent:
 
 ```ipmt
 Patrick wears black then wears white ::e wearBW::a
@@ -127,7 +127,7 @@ wearW --::P--> wearBW
 ![](_ipm/README/05.ipm.svg)
 
 
-We can keep going — `swapT` itself decomposes into a finer chain of moments. Here are both zoom levels at once, three levels of pure event nesting:
+We can keep going — <!--ipmt cut="swapT ::e"-->`swapT` itself decomposes into a finer chain of moments. Here are both zoom levels at once, three levels of pure event nesting:
 
 ```ipmt
 Patrick wears black then wears white ::e wearBW::a
@@ -167,13 +167,13 @@ black ::c, white ::c --> color ::c
 ![](_ipm/README/07.ipm.svg)
 
 
-`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
+Writing <!--ipmt-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
 
 A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([article 13](https://mark-burgess-oslo-mb.medium.com/avoiding-the-ontology-trap-2f1c3f3ed8e2)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing <!--ipmt-->`swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
 
 ### Step 4 — bring it together, with a parent event
 
-The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top `wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts) attached at the same levels they appeared, and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Part-of transitivity carries Patrick into every sub-event automatically, so we attach him only at the top.
+The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top <!--ipmt cut="wearBW ::e"-->`wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts) attached at the same levels they appeared, and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Part-of transitivity carries Patrick into every sub-event automatically, so we attach him only at the top.
 
 ```ipmt
 Patrick wears black then wears white ::e wearBW::a
@@ -203,7 +203,7 @@ black ::c, white ::c --> color ::c
 
 That's a complete ipmt model: events lead to events, things participate in events, things and events express concepts as properties, and concepts can themselves express properties of other concepts.
 
-**Spacetime, made explicit.** The leads-to chain is *time*; the part-of containment is *space*. Mark Burgess puts it directly: an event is *"any region of space and time"* — a slice of the world where **things and ideas come together for a while** (his phrase is "occurrences of things and ideas together in time"). The parent event `wearBW` is one such region — it holds Patrick (the slow worldline) for its whole duration; each sub-event is a smaller spacetime region nested inside it, where faster things (specific t-shirts being worn or swapped) come and go. Concepts (<!--ipmt-->`human ::c`, <!--ipmt-->`color ::c`) sit *outside* spacetime entirely — they are invariant patterns the events and things express, the same in every frame.
+**Spacetime, made explicit.** The leads-to chain is *time*; the part-of containment is *space*. Mark Burgess puts it directly: an event is *"any region of space and time"* — a slice of the world where **things and ideas come together for a while** (his phrase is "occurrences of things and ideas together in time"). The parent event <!--ipmt cut="wearBW ::e"-->`wearBW` is one such region — it holds Patrick (the slow worldline) for its whole duration; each sub-event is a smaller spacetime region nested inside it, where faster things (specific t-shirts being worn or swapped) come and go. Concepts (<!--ipmt-->`human ::c`, <!--ipmt-->`color ::c`) sit *outside* spacetime entirely — they are invariant patterns the events and things express, the same in every frame.
 
 **Zoom out far enough, and "things" become events too.** At the timescale of the swap, each t-shirt is a stable thing. Zoom out to the t-shirt's whole life — manufactured, bought, worn through hundreds of days, washed many times, eventually torn, thrown away (or perhaps given a second life as a rag) — and that *thing* is itself an event chain on its own worldline. Patrick, zoomed out to his whole life, is the same: born, grows up, swaps many t-shirts, and eventually dies. The thing/event split is **not** a property of the world; it is a property of the **scale you chose** to model at. Every "thing" is a slow process; every "event" is a process you decided to look at closely.
 
