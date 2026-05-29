@@ -18,9 +18,9 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
-| **Event** | <!--ipmt-->`::e` (orange) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
-| **Thing** | <!--ipmt-->`::t` (green) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
-| **Concept** | <!--ipmt-->`::c` (blue) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
+| **Event** | <!--ipmt-->`::e` (<!--ipmt as="::e"-->`orange`) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
+| **Thing** | <!--ipmt-->`::t` (<!--ipmt as="::t"-->`green`) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
+| **Concept** | <!--ipmt-->`::c` (<!--ipmt as="::c"-->`blue`) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
 
 Rule of thumb, in order:
 
