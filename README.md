@@ -219,10 +219,10 @@ The triangle is **e** (event), **t** (thing), and **c** (concept). The arrows an
 
 | Symbol | Color | Name | Meaning | When to use |
 | :---: | --- | --- | --- | --- |
-| **L** | orange | LEADS-TO | Temporal / causal flow | One event causes or precedes another |
-| **P** | green | PART-OF | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
-| **X** | blue dashed | EXPRESSES | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a — a node can express many independent properties |
-| **N** | gray dotted | NEAR-TO | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
+| <!--ipmt:as-token:L-->`L` | <!--ipmt:as-token:L-->`orange` | LEADS-TO | Temporal / causal flow | One event causes or precedes another |
+| <!--ipmt:as-token:P-->`P` | <!--ipmt:as-token:P-->`green` | PART-OF | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
+| <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue` dashed | EXPRESSES | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a — a node can express many independent properties |
+| <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray` dotted | NEAR-TO | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
 
 ## All allowed edges
 
