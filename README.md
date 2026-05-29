@@ -18,9 +18,9 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
-| **Event** | <!--ipmt-->`::e` (<!--ipmt:as-token:e-marker-->`orange`) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
-| **Thing** | <!--ipmt-->`::t` (<!--ipmt:as-token:t-marker-->`green`) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
-| **Concept** | <!--ipmt-->`::c` (<!--ipmt:as-token:c-marker-->`blue`) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
+| **Event** | <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-marker-->`orange`) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
+| **Thing** | <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-marker-->`green`) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
+| **Concept** | <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-marker-->`blue`) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
 
 Rule of thumb, in order:
 
@@ -58,7 +58,7 @@ Patrick wears black t-shirt ::e
 ![](_ipm/README/01.ipm.svg)
 
 
-`-->` between two events means **leads-to** (rendered as an **orange arrow**) — temporal/causal flow. <!--ipmt-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them — a *hypothesized* middle step the observer didn't witness.
+`-->` between two events means **leads-to** (rendered as an **orange arrow**) — temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them — a *hypothesized* middle step the observer didn't witness.
 
 ### Step 2 — add a participant (thing → event)
 
@@ -167,7 +167,7 @@ black ::c, white ::c --> color ::c
 ![](_ipm/README/07.ipm.svg)
 
 
-Writing <!--ipmt-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
+Writing <!--ipmt:as-token:c-marker-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
 
 A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([article 13](https://mark-burgess-oslo-mb.medium.com/avoiding-the-ontology-trap-2f1c3f3ed8e2)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing <!--ipmt-->`swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
 
