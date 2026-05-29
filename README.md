@@ -18,17 +18,17 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
-| **Event** | <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-marker-->`orange`) | A transient happening — fast at the model's timescale | "User clicks button", "Build runs", "K8s service deploying", "Plum murders Scarlet" |
-| **Thing** | <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-marker-->`green`) | A persistent participant — slow at the model's timescale | "Alice", "my laptop", "service A container", "knife K1", "Mrs. Scarlet", "Prof. Plum" |
-| **Concept** | <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-marker-->`blue`) | A quasi-invariant pattern; a property that events or things can express | "human", "microservice", "production environment", "murder" |
+| <!--ipmt:as-token:e-title-->`Event` | <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`orange`) | A transient happening — fast at the model's timescale | <!--ipmt:as-token:e-title-->`"User clicks button"`, <!--ipmt:as-token:e-title-->`"Build runs"`, <!--ipmt:as-token:e-title-->`"K8s service deploying"`, <!--ipmt:as-token:e-title-->`"Plum murders Scarlet"` |
+| <!--ipmt:as-token:t-title-->`Thing` | <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`green`) | A persistent participant — slow at the model's timescale | <!--ipmt:as-token:t-title-->`"Alice"`, <!--ipmt:as-token:t-title-->`"my laptop"`, <!--ipmt:as-token:t-title-->`"service A container"`, <!--ipmt:as-token:t-title-->`"knife K1"`, <!--ipmt:as-token:t-title-->`"Mrs. Scarlet"`, <!--ipmt:as-token:t-title-->`"Prof. Plum"` |
+| <!--ipmt:as-token:c-title-->`Concept` | <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`blue`) | A quasi-invariant pattern; a property that events or things can express | <!--ipmt:as-token:c-title-->`"human"`, <!--ipmt:as-token:c-title-->`"microservice"`, <!--ipmt:as-token:c-title-->`"production environment"`, <!--ipmt:as-token:c-title-->`"murder"` |
 
 Rule of thumb, in order:
 
-1. *Is something happening here, at the timescale I care about?* → **event**
-2. *Does it persist with stable identity while its state changes?* → **thing**
-3. *Does it stay the same across all events and things that express it?* → **concept**
+1. *Is something happening here, at the timescale I care about?* → <!--ipmt:as-token:e-marker-->`event`
+2. *Does it persist with stable identity while its state changes?* → <!--ipmt:as-token:t-marker-->`thing`
+3. *Does it stay the same across all events and things that express it?* → <!--ipmt:as-token:c-marker-->`concept`
 
-A thing isn't literally static — it's *slow enough* at the chosen timescale that you can treat it as unimportant for the model's purpose. A laptop is a thing inside a "type a doc" event; the laptop *is* an event chain if you zoom out to its whole lifetime, from purchase to retirement. Pick the scale first, then split fast/dynamic and slow/static.
+<!--ipmt:as-token:t-title-->`A thing` isn't literally static — it's *slow enough* at the chosen timescale that you can treat it as unimportant for the model's purpose. A laptop is <!--ipmt:as-token:t-title-->`a thing` inside a "type a doc" <!--ipmt:as-token:e-title-->`event`; the laptop *is* <!--ipmt:as-token:e-title-->`an event chain` if you zoom out to its whole lifetime, from purchase to retirement. Pick the scale first, then split <!--ipmt:as-token:e-title-->`fast/dynamic` and <!--ipmt:as-token:t-title-->`slow/static`.
 
 ### Every model has a purpose
 
@@ -58,11 +58,11 @@ Patrick wears black t-shirt ::e
 ![](_ipm/README/01.ipm.svg)
 
 
-`-->` between two events means **leads-to** (rendered as an **orange arrow**) — temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them — a *hypothesized* middle step the observer didn't witness.
+The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token:L-->`leads-to` (rendered as an <!--ipmt:as-token:L-->`orange arrow`) — temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them — a *hypothesized* middle step the observer didn't witness.
 
 ### Step 2 — add a participant (thing → event)
 
-Patrick is *in* every event. A thing participates in an event by being **part of** it — a **spatial** containment relation (the thing sits inside the event's region of space and time), rendered as a **green arrow**.
+Thing <!--ipmt:as-token:t-title-->`Patrick` is *in* every event. A thing participates in an event by being <!--ipmt:as-token:P-->`part of` it — a **spatial** containment relation (the thing sits inside the event's region of space and time), rendered as a <!--ipmt:as-token:P-->`green arrow`.
 
 ```ipmt
 Patrick wears black t-shirt ::e wearB::a
@@ -79,9 +79,9 @@ Two new tricks:
 - Here, <!--ipmt:as-token:e-alias-->`wearB`<!--ipmt:as-token:type-marker-->`::a` is an **alias** — a short stable name for the long event title.
 - The <!--ipmt-->`Patrick --> wearB, swapT, wearW` line fans out: one source, three targets.
 
-Unmarked nodes default to **things**. The arrow goes *from the thing to the event* — the thing is part of the event, never the other way around (a modeling rule, not a syntactic accident).
+Unmarked nodes default to **things**. The arrow goes <!--ipmt:as-token:P-->`from the thing to the event` — <!--ipmt:as-token:t-title-->`the thing` is <!--ipmt:as-token:P-->`part of` <!--ipmt:as-token:e-title-->`the event`, never the other way around (a modeling rule, not a syntactic accident).
 
-**Add the t-shirts as participants too.** The black t-shirt is worn in <!--ipmt:as-token:e-title-->`wearB` and is still on Patrick (briefly) during <!--ipmt:as-token:e-title-->`swapT`; the white one enters at <!--ipmt:as-token:e-title-->`swapT` and stays on through <!--ipmt:as-token:e-title-->`wearW`. Each thing attaches to the events where it actually appears.
+**Add the t-shirts as participants too.** <!--ipmt:as-token:t-title-->`The black t-shirt` is worn in <!--ipmt:as-token:e-title-->`wearB` and is still on Patrick (briefly) during <!--ipmt:as-token:e-title-->`swapT`; <!--ipmt:as-token:t-title-->`the white t-shirt` enters at <!--ipmt:as-token:e-title-->`swapT` and stays on through <!--ipmt:as-token:e-title-->`wearW`. Each thing attaches to the events where it actually appears.
 
 ```ipmt
 Patrick wears black t-shirt ::e wearB::a
@@ -90,10 +90,10 @@ Patrick wears black t-shirt ::e wearB::a
 
 Patrick --> wearB, swapT, wearW
 
-t-shirt B --> wearB, swapT
-t-shirt W --> swapT, wearW
+black t-shirt --> wearB, swapT
+white t-shirt --> swapT, wearW
 ```
-<!-- ipm-svg id=03 hash=44bba970 -->
+<!-- ipm-svg id=03 hash=ba3e167d -->
 ![](_ipm/README/03.ipm.svg)
 
 **You can also zoom *out*.** The same scene can be told at a coarser level: one single event that names only the *observable* change (Patrick wore black, then white), with every participant attached at that one level. The mechanism — *how* he changed t-shirts — is hidden inside the wrapper event and revealed only when you zoom in.
@@ -102,10 +102,10 @@ t-shirt W --> swapT, wearW
 Patrick wears black then wears white ::e wearBW::a
 
 Patrick    --> wearBW
-t-shirt B  --> wearBW
-t-shirt W  --> wearBW
+black t-shirt  --> wearBW
+white t-shirt  --> wearBW
 ```
-<!-- ipm-svg id=04 hash=65822860 -->
+<!-- ipm-svg id=04 hash=2e16c454 -->
 ![](_ipm/README/04.ipm.svg)
 
 Same story, different zoom level. The right level depends on the **purpose** of your model — and you don't have to pick just one.
@@ -159,17 +159,17 @@ Patrick --> human ::c
 
 swaps t-shirt ::e --> swap of clothing ::c
 
-t-shirt B --> t-shirt ::c, black ::c
-t-shirt W --> t-shirt ::c, white ::c
+black t-shirt --> t-shirt ::c, black ::c
+white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=07 hash=5ee11b2f -->
+<!-- ipm-svg id=07 hash=559e2d8f -->
 ![](_ipm/README/07.ipm.svg)
 
 
-Writing <!--ipmt:as-token:c-marker-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing --> concept ::c` (an **expresses** arrow, rendered **blue dashed**) reads as "the thing expresses property cX" — and <!--ipmt-->`event ::e --> concept ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
+Writing <!--ipmt:as-token:c-marker-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing A --> cX ::c` (<!--ipmt:as-token:E-->`an expresses arrow`, rendered <!--ipmt:as-token:E-->`blue dashed`) reads as "the thing <!--ipmt:as-token:E-->`expresses property` <!--ipmt:as-token:c-title-->`cX`" — and <!--ipmt-->`event e1 ::e --> cY ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification — each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
 
-A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([article 13](https://mark-burgess-oslo-mb.medium.com/avoiding-the-ontology-trap-2f1c3f3ed8e2)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing <!--ipmt-->`swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
+A concept is what stays the same across all events and things that express it — what Mark Burgess calls a **quasi-invariant pattern**. The patterns are out there in the scene, but **which patterns the observer names** is a choice, not a fact about the world: Mark writes that "there is no universal set of concepts to subdivide knowledge … these are merely ad hoc ways of spanning a collection of connected ideas, chosen by convention or happenstance" ([Avoiding the Ontology Trap](https://medium.com/@mark-burgess-oslo-mb/avoiding-the-ontology-trap-how-biotech-shows-us-how-to-link-knowledge-spaces-654bcbb9122a)). Two honest observers can carve the same scene into different — and equally valid — concept vocabularies; writing <!--ipmt-->`swap of clothing ::c` is the modeler saying *this is the pattern I noticed and chose to name*.
 
 ### Step 4 — bring it together, with a parent event
 
@@ -191,17 +191,17 @@ takeOff --> halfNaked --> takeOn
 swapT --> swap of clothing ::c
 
 Patrick --> wearBW, human ::c
-t-shirt B --> takeOff
-t-shirt W --> takeOn
+black t-shirt --> takeOff
+white t-shirt --> takeOn
 
-t-shirt B --> t-shirt ::c, black ::c
-t-shirt W --> t-shirt ::c, white ::c
+black t-shirt --> t-shirt ::c, black ::c
+white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=08 hash=a62bad6a -->
+<!-- ipm-svg id=08 hash=9fab3bdb -->
 ![](_ipm/README/08.ipm.svg)
 
-That's a complete ipmt model: events lead to events, things participate in events, things and events express concepts as properties, and concepts can themselves express properties of other concepts.
+That's a complete ipmt model: <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:L-->`lead to`  <!--ipmt:as-token:e-title-->`events`,  <!--ipmt:as-token:t-title-->`things`  <!--ipmt:as-token:P-->`participate in`  <!--ipmt:as-token:e-title-->`events`,  <!--ipmt:as-token:t-title-->`things` and  <!--ipmt:as-token:e-title-->`events`  <!--ipmt:as-token:X-->`express`  <!--ipmt:as-token:c-title-->`concepts` as properties, and  <!--ipmt:as-token:c-title-->`concepts` can themselves  <!--ipmt:as-token:X-->`express properties` of other  <!--ipmt:as-token:c-title-->`concepts`.
 
 **Spacetime, made explicit.** The leads-to chain is *time*; the part-of containment is *space*. Mark Burgess puts it directly: an event is *"any region of space and time"* — a slice of the world where **things and ideas come together for a while** (his phrase is "occurrences of things and ideas together in time"). The parent event <!--ipmt:as-token:e-title-->`wearBW` is one such region — it holds Patrick (the slow worldline) for its whole duration; each sub-event is a smaller spacetime region nested inside it, where faster things (specific t-shirts being worn or swapped) come and go. Concepts (<!--ipmt-->`human ::c`, <!--ipmt-->`color ::c`) sit *outside* spacetime entirely — they are invariant patterns the events and things express, the same in every frame.
 
@@ -213,16 +213,16 @@ That's a complete ipmt model: events lead to events, things participate in event
 
 <img src="docs/etc-LPXN.png" alt="Semantic Spacetime gamma(3,4) edges" width="500"/>
 
-The triangle is **e** (event), **t** (thing), and **c** (concept). The arrows and self-loops show every legal edge. The dotted circles (Nₑ, Nₜ, N𞁞) are **NEAR** — similarity between two nodes of the same kind, undirected.
+The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`event`), <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`thing`), and <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`concept`). The arrows and self-loops show every legal edge. The dotted circles (<!--ipmt:as-token:N-->`N`ₑ, <!--ipmt:as-token:N-->`N`ₜ, <!--ipmt:as-token:N-->`N`𞁞) are <!--ipmt:as-token:N-->`NEAR` — similarity between two nodes of the same kind, undirected.
 
-> The edge symbols **L / P / X / N** are IPM's mnemonic; Burgess's original SST uses **L / C / E / N**. For why IPM renames C → P (and reverses its direction) and E → X, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
+The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are IPM's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why IPM renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
 
 | Symbol | Color | Name | Meaning | When to use |
 | :---: | --- | --- | --- | --- |
-| <!--ipmt:as-token:L-->`L` | <!--ipmt:as-token:L-->`orange` | LEADS-TO | Temporal / causal flow | One event causes or precedes another |
-| <!--ipmt:as-token:P-->`P` | <!--ipmt:as-token:P-->`green` | PART-OF | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
-| <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue` dashed | EXPRESSES | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a — a node can express many independent properties |
-| <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray` dotted | NEAR-TO | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
+| <!--ipmt:as-token:L-->`L` | <!--ipmt:as-token:L-->`orange` | <!--ipmt:as-token:L-->`LEADS-TO` | Temporal / causal flow | One event causes or precedes another |
+| <!--ipmt:as-token:P-->`P` | <!--ipmt:as-token:P-->`green` | <!--ipmt:as-token:P-->`PART-OF` | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
+| <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue dashed` | <!--ipmt:as-token:X-->`EXPRESSES` | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a — a node can express many independent properties |
+| <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray dotted` | <!--ipmt:as-token:N-->`NEAR-TO` | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
 
 ## All allowed edges
 
@@ -244,8 +244,8 @@ Every legal source → target combination, matching the diagram above. The "ipmt
 
 Two important rules baked into this table:
 
-- **No <!--ipmt-->`thing --> thing` arrow except part-of.** To say "Alice owns the car" or "Mike uses his phone," create an **event** — a region of spacetime that co-locates both participants for some duration — and let it express the relation as a concept-property (<!--ipmt-->`Ownership ::c`, <!--ipmt-->`Uses ::c`). This is SST's general handling of arbitrary binary relations: the event is the *temporal* container that brings the two things together; the concept on the event names what that co-location *means*. There is no direct `thing --uses--> thing` edge.
-- **The bare `-->` arrow defaults to the relation that fits the two node kinds** — leads-to for event-to-event, part-of for thing-to-event, expresses for thing-to-concept. The explicit `--::L-->`, `--::P-->`, `--::X-->`, `--::N--` forms are documented in the ipmt syntax spec.
+- **No `thing --> thing` arrow except part-of.** To say "Alice owns the car" or "Mike uses his phone," create an **event** — a region of spacetime that co-locates both participants for some duration — and let it express the relation as a concept-property (<!--ipmt-->`Ownership ::c`, <!--ipmt-->`Uses ::c`). This is SST's general handling of arbitrary binary relations: the event is the *temporal* container that brings the two things together; the concept on the event names what that co-location *means*. There is no direct `thing --uses--> thing` edge.
+- **The bare `-->` arrow defaults to the relation that fits the two node kinds** <!--ipmt:as-token:L-->`leads-to` for <!--ipmt:as-token:e-title-->`event`-to-<!--ipmt:as-token:e-title-->`event`, <!--ipmt:as-token:P-->`part-of` for <!--ipmt:as-token:t-title-->`thing`-to-<!--ipmt:as-token:e-title-->`event` and <!--ipmt:as-token:t-title-->`thing`-to-<!--ipmt:as-token:t-title-->`thing`, <!--ipmt:as-token:X-->`expresses` for <!--ipmt:as-token:e-title-->`event`-to-<!--ipmt:as-token:c-title-->`concept`, <!--ipmt:as-token:t-title-->`thing`-to-<!--ipmt:as-token:c-title-->`concept` and <!--ipmt:as-token:c-title-->`concept`-to-<!--ipmt:as-token:c-title-->`concept`. The explicit <!--ipmt:as-token:L-->`--::L-->`, <!--ipmt:as-token:P-->`--::P-->`, <!--ipmt:as-token:X-->`--::X-->`, <!--ipmt:as-token:N-->`--::N--` forms are documented in the ipmt syntax spec.
 
 ## Where to look next
 
