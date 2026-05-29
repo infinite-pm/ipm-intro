@@ -23,20 +23,20 @@
     <path d="M 280.00 356.00 L 275.50 347.00 L 280.00 349.25 L 284.50 347.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="280.00" y1="424.00" x2="280.00" y2="449.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 456.00 L 275.50 447.00 L 280.00 449.25 L 284.50 447.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="164.00" y1="150.00" x2="209.25" y2="150.00" stroke="#82b366" stroke-width="3" />
-    <path d="M 216.00 150.00 L 207.00 154.50 L 209.25 150.00 L 207.00 145.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="132.83" y1="182.83" x2="212.40" y2="262.40" stroke="#82b366" stroke-width="3" />
-    <path d="M 217.17 267.17 L 207.63 263.99 L 212.40 262.40 L 213.99 257.63 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="116.79" y1="183.58" x2="215.19" y2="380.38" stroke="#82b366" stroke-width="3" />
-    <path d="M 218.21 386.42 L 210.16 380.38 L 215.19 380.38 L 218.21 376.36 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="396.00" y1="150.00" x2="350.75" y2="150.00" stroke="#82b366" stroke-width="3" />
-    <path d="M 344.00 150.00 L 353.00 145.50 L 350.75 150.00 L 353.00 154.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="423.69" y1="182.68" x2="347.99" y2="250.81" stroke="#82b366" stroke-width="3" />
-    <path d="M 342.97 255.32 L 346.65 245.96 L 347.99 250.81 L 352.67 252.65 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="396.02" y1="276.40" x2="350.70" y2="280.93" stroke="#82b366" stroke-width="3" />
-    <path d="M 343.98 281.60 L 352.49 276.23 L 350.70 280.93 L 353.38 285.18 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="427.17" y1="302.83" x2="347.60" y2="382.40" stroke="#82b366" stroke-width="3" />
-    <path d="M 342.83 387.17 L 346.01 377.63 L 347.60 382.40 L 352.37 383.99 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="163.83" y1="133.15" x2="209.70" y2="146.91" stroke="#82b366" stroke-width="3" />
+    <path d="M 216.17 148.85 L 206.26 150.57 L 209.70 146.91 L 208.84 141.95 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="161.79" y1="153.58" x2="215.19" y2="260.38" stroke="#82b366" stroke-width="3" />
+    <path d="M 218.21 266.42 L 210.16 260.38 L 215.19 260.38 L 218.21 256.36 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="161.04" y1="171.86" x2="217.20" y2="379.62" stroke="#82b366" stroke-width="3" />
+    <path d="M 218.96 386.14 L 212.26 378.62 L 217.20 379.62 L 220.95 376.28 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="396.08" y1="138.78" x2="350.54" y2="147.89" stroke="#82b366" stroke-width="3" />
+    <path d="M 343.92 149.22 L 351.87 143.04 L 350.54 147.89 L 353.63 151.86 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="397.88" y1="165.39" x2="345.70" y2="248.88" stroke="#82b366" stroke-width="3" />
+    <path d="M 342.12 254.61 L 343.07 244.59 L 345.70 248.88 L 350.71 249.36 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="396.29" y1="259.49" x2="349.98" y2="278.01" stroke="#82b366" stroke-width="3" />
+    <path d="M 343.71 280.51 L 350.40 272.99 L 349.98 278.01 L 353.74 281.35 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="398.06" y1="285.50" x2="345.22" y2="380.60" stroke="#82b366" stroke-width="3" />
+    <path d="M 341.94 386.50 L 342.38 376.45 L 345.22 380.60 L 350.25 380.82 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="280.00" y1="84.00" x2="280.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 116.00 L 275.50 107.00 L 280.00 109.25 L 284.50 107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
   </g>

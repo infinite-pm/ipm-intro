@@ -17,16 +17,16 @@
   <g id="edges">
     <line x1="100.00" y1="314.00" x2="100.00" y2="449.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 100.00 456.00 L 95.50 447.00 L 100.00 449.25 L 104.50 447.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="231.67" y1="182.22" x2="168.94" y2="224.04" stroke="#82b366" stroke-width="3" />
-    <path d="M 163.33 227.78 L 168.32 219.04 L 168.94 224.04 L 173.31 226.53 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="239.38" y1="182.50" x2="168.39" y2="239.28" stroke="#82b366" stroke-width="3" />
+    <path d="M 163.12 243.50 L 167.34 234.37 L 168.39 239.28 L 172.96 241.39 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="280.00" y1="184.00" x2="280.00" y2="229.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 236.00 L 275.50 227.00 L 280.00 229.25 L 284.50 227.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="216.00" y1="270.00" x2="170.75" y2="270.00" stroke="#82b366" stroke-width="3" />
     <path d="M 164.00 270.00 L 173.00 265.50 L 170.75 270.00 L 173.00 274.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="280.00" y1="304.00" x2="280.00" y2="349.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 356.00 L 275.50 347.00 L 280.00 349.25 L 284.50 347.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="231.67" y1="357.78" x2="168.94" y2="315.96" stroke="#82b366" stroke-width="3" />
-    <path d="M 163.33 312.22 L 173.31 313.47 L 168.94 315.96 L 168.32 320.96 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="239.38" y1="357.50" x2="168.39" y2="300.72" stroke="#82b366" stroke-width="3" />
+    <path d="M 163.12 296.50 L 172.96 298.61 L 168.39 300.72 L 167.34 305.63 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="100.00" y1="84.00" x2="100.00" y2="219.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 100.00 226.00 L 95.50 217.00 L 100.00 219.25 L 104.50 217.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
   </g>

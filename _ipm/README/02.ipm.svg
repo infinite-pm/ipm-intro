@@ -21,12 +21,12 @@
     <path d="M 100.00 356.00 L 95.50 347.00 L 100.00 349.25 L 104.50 347.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="100.00" y1="424.00" x2="100.00" y2="449.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 100.00 456.00 L 95.50 447.00 L 100.00 449.25 L 104.50 447.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="216.00" y1="150.00" x2="170.75" y2="150.00" stroke="#82b366" stroke-width="3" />
-    <path d="M 164.00 150.00 L 173.00 145.50 L 170.75 150.00 L 173.00 154.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="247.17" y1="182.83" x2="167.60" y2="262.40" stroke="#82b366" stroke-width="3" />
-    <path d="M 162.83 267.17 L 166.01 257.63 L 167.60 262.40 L 172.37 263.99 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="263.21" y1="183.58" x2="164.81" y2="380.38" stroke="#82b366" stroke-width="3" />
-    <path d="M 161.79 386.42 L 161.79 376.36 L 164.81 380.38 L 169.84 380.38 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="216.17" y1="133.15" x2="170.30" y2="146.91" stroke="#82b366" stroke-width="3" />
+    <path d="M 163.83 148.85 L 171.16 141.95 L 170.30 146.91 L 173.74 150.57 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="218.21" y1="153.58" x2="164.81" y2="260.38" stroke="#82b366" stroke-width="3" />
+    <path d="M 161.79 266.42 L 161.79 256.36 L 164.81 260.38 L 169.84 260.38 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="218.96" y1="171.86" x2="162.80" y2="379.62" stroke="#82b366" stroke-width="3" />
+    <path d="M 161.04 386.14 L 159.05 376.28 L 162.80 379.62 L 167.74 378.62 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     <line x1="100.00" y1="84.00" x2="100.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 100.00 116.00 L 95.50 107.00 L 100.00 109.25 L 104.50 107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
   </g>
