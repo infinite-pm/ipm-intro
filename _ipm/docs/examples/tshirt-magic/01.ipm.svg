@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="700" viewBox="0 0 920 700">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="890" viewBox="0 0 920 890">
   <!-- ipm-svg meta: generated-by=md-embed@dev hash=071a9d36 source-file=docs/examples/tshirt-magic.md source-id=01 -->
 
   <defs>
@@ -7,101 +7,101 @@
   <g id="container-shells">
   </g>
   <g id="node-shadows">
-    <rect x="400" y="330" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="350" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="40" y="370" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="510" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="440" y="80" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="440" y="620" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="580" y="160" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="580" y="400" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="580" y="520" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="760" y="280" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="760" y="400" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="760" y="520" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="370" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="760" y="160" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="400" y="410" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="320" y="490" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="500" y="590" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="440" y="50" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="440" y="810" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="580" y="130" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="580" y="370" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="580" y="710" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="250" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="370" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="490" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="130" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
-    <line x1="460.00" y1="414.00" x2="460.00" y2="609.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 460.00 616.00 L 455.50 607.00 L 460.00 609.25 L 464.50 607.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="343.87" y1="369.00" x2="569.59" y2="427.31" stroke="#82b366" stroke-width="3" />
-    <path d="M 576.13 429.00 L 566.29 431.11 L 569.59 427.31 L 568.54 422.39 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="343.26" y1="394.31" x2="571.23" y2="555.79" stroke="#82b366" stroke-width="3" />
-    <path d="M 576.74 559.69 L 566.79 558.16 L 571.23 555.79 L 571.99 550.81 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="460.00" y1="124.00" x2="460.00" y2="319.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 460.00 326.00 L 455.50 317.00 L 460.00 319.25 L 464.50 317.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="614.48" y1="223.17" x2="526.55" y2="337.48" stroke="#82b366" stroke-width="3" />
-    <path d="M 522.44 342.83 L 524.36 332.95 L 526.55 337.48 L 531.49 338.44 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="640.00" y1="224.00" x2="640.00" y2="389.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 640.00 396.00 L 635.50 387.00 L 640.00 389.25 L 644.50 387.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="576.72" y1="409.71" x2="528.81" y2="376.16" stroke="#82b366" stroke-width="3" />
-    <path d="M 523.28 372.29 L 533.23 373.77 L 528.81 376.16 L 528.07 381.14 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="576.18" y1="449.17" x2="350.28" y2="518.45" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 343.82 520.43 L 351.11 513.49 L 350.28 518.45 L 353.75 522.09 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="640.00" y1="464.00" x2="640.00" y2="509.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 640.00 516.00 L 635.50 507.00 L 640.00 509.25 L 644.50 507.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="578.46" y1="534.31" x2="524.13" y2="403.92" stroke="#82b366" stroke-width="3" />
-    <path d="M 521.54 397.69 L 529.15 404.27 L 524.13 403.92 L 520.85 407.73 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="785.52" y1="342.75" x2="707.79" y2="416.60" stroke="#82b366" stroke-width="3" />
-    <path d="M 702.90 421.25 L 706.33 411.78 L 707.79 416.60 L 712.52 418.31 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="820.00" y1="344.00" x2="820.00" y2="389.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 820.00 396.00 L 815.50 387.00 L 820.00 389.25 L 824.50 387.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="756.00" y1="433.20" x2="710.74" y2="435.46" stroke="#82b366" stroke-width="3" />
-    <path d="M 704.00 435.80 L 712.76 430.86 L 710.74 435.46 L 713.21 439.85 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="820.00" y1="464.00" x2="820.00" y2="509.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 820.00 516.00 L 815.50 507.00 L 820.00 509.25 L 824.50 507.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="781.66" y1="517.41" x2="708.19" y2="454.96" stroke="#82b366" stroke-width="3" />
-    <path d="M 703.05 450.59 L 712.82 452.99 L 708.19 454.96 L 706.99 459.85 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="343.99" y1="394.67" x2="389.29" y2="390.89" stroke="#82b366" stroke-width="3" />
-    <path d="M 396.01 390.33 L 387.42 395.56 L 389.29 390.89 L 386.67 386.60 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="216.00" y1="400.00" x2="170.75" y2="400.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 164.00 400.00 L 173.00 395.50 L 170.75 400.00 L 173.00 404.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="756.08" y1="178.78" x2="710.54" y2="187.89" stroke="#82b366" stroke-width="3" />
-    <path d="M 703.92 189.22 L 711.87 183.04 L 710.54 187.89 L 713.63 191.86 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="758.90" y1="205.85" x2="702.95" y2="401.66" stroke="#82b366" stroke-width="3" />
-    <path d="M 701.10 408.15 L 699.24 398.26 L 702.95 401.66 L 707.90 400.74 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="460.00" y1="494.00" x2="460.00" y2="799.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 460.00 806.00 L 455.50 797.00 L 460.00 799.25 L 464.50 797.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="443.17" y1="505.56" x2="571.49" y2="406.57" stroke="#82b366" stroke-width="3" />
+    <path d="M 576.83 402.44 L 572.46 411.50 L 571.49 406.57 L 566.96 404.38 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="442.15" y1="535.37" x2="574.23" y2="742.93" stroke="#82b366" stroke-width="3" />
+    <path d="M 577.85 748.63 L 569.22 743.45 L 574.23 742.93 L 576.82 738.62 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="460.00" y1="94.00" x2="460.00" y2="399.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 460.00 406.00 L 455.50 397.00 L 460.00 399.25 L 464.50 397.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="624.82" y1="193.65" x2="524.42" y2="416.20" stroke="#82b366" stroke-width="3" />
+    <path d="M 521.64 422.35 L 521.24 412.30 L 524.42 416.20 L 529.45 416.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="640.00" y1="194.00" x2="640.00" y2="359.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 640.00 366.00 L 635.50 357.00 L 640.00 359.25 L 644.50 357.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="577.35" y1="385.00" x2="527.11" y2="441.94" stroke="#82b366" stroke-width="3" />
+    <path d="M 522.65 447.00 L 525.23 437.27 L 527.11 441.94 L 531.98 443.23 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="579.61" y1="421.98" x2="564.03" y2="579.30" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 563.36 586.02 L 559.77 576.62 L 564.03 579.30 L 568.73 577.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="640.00" y1="434.00" x2="640.00" y2="699.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 640.00 706.00 L 635.50 697.00 L 640.00 699.25 L 644.50 697.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="579.08" y1="724.11" x2="522.47" y2="484.46" stroke="#82b366" stroke-width="3" />
+    <path d="M 520.92 477.89 L 527.37 485.62 L 522.47 484.46 L 518.61 487.69 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="785.52" y1="312.75" x2="707.79" y2="386.60" stroke="#82b366" stroke-width="3" />
+    <path d="M 702.90 391.25 L 706.33 381.78 L 707.79 386.60 L 712.52 388.31 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="820.00" y1="314.00" x2="820.00" y2="359.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 820.00 366.00 L 815.50 357.00 L 820.00 359.25 L 824.50 357.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="756.00" y1="403.20" x2="710.74" y2="405.46" stroke="#82b366" stroke-width="3" />
+    <path d="M 704.00 405.80 L 712.76 400.86 L 710.74 405.46 L 713.21 409.85 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="820.00" y1="434.00" x2="820.00" y2="479.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 820.00 486.00 L 815.50 477.00 L 820.00 479.25 L 824.50 477.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="781.66" y1="487.41" x2="708.19" y2="424.96" stroke="#82b366" stroke-width="3" />
+    <path d="M 703.05 420.59 L 712.82 422.99 L 708.19 424.96 L 706.99 429.85 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="344.00" y1="450.00" x2="389.25" y2="450.00" stroke="#82b366" stroke-width="3" />
+    <path d="M 396.00 450.00 L 387.00 454.50 L 389.25 450.00 L 387.00 445.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="216.00" y1="450.00" x2="170.75" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 164.00 450.00 L 173.00 445.50 L 170.75 450.00 L 173.00 454.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="756.08" y1="148.78" x2="710.54" y2="157.89" stroke="#82b366" stroke-width="3" />
+    <path d="M 703.92 159.22 L 711.87 153.04 L 710.54 157.89 L 713.63 161.86 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="758.90" y1="175.85" x2="702.95" y2="371.66" stroke="#82b366" stroke-width="3" />
+    <path d="M 701.10 378.15 L 699.24 368.26 L 702.95 371.66 L 707.90 370.74 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
   </g>
   <g id="nodes">
-    <rect x="400" y="330" width="120" height="80" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="460" y="353" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Patrick wears</text>
-    <text x="460" y="370" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">black then</text>
-    <text x="460" y="387" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">wears white</text>
-    <rect x="220" y="350" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="280" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">t-shirt W</text>
-    <rect x="40" y="370" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="100" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">human</text>
-    <rect x="220" y="510" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">swap of</text>
-    <text x="280" y="550" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">clothing</text>
-    <rect x="440" y="80" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="460" y="100" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
-    <rect x="440" y="620" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="460" y="640" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
-    <rect x="580" y="160" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="171" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
-    <text x="640" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears black</text>
-    <text x="640" y="209" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
-    <rect x="580" y="400" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="411" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
-    <text x="640" y="430" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">swaps</text>
-    <text x="640" y="449" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
-    <rect x="580" y="520" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="531" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
-    <text x="640" y="550" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears white</text>
-    <text x="640" y="569" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
-    <rect x="760" y="280" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="820" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Take off</text>
-    <text x="820" y="320" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">black</text>
-    <rect x="760" y="400" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="820" y="420" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
-    <text x="820" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">half-naked</text>
-    <rect x="760" y="520" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="820" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Take on</text>
-    <text x="820" y="560" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">white</text>
-    <rect x="220" y="370" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="280" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">Patrick</text>
-    <rect x="760" y="160" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="820" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">t-shirt B</text>
+    <rect x="400" y="410" width="120" height="80" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="460" y="433" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Patrick wears</text>
+    <text x="460" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">black then</text>
+    <text x="460" y="467" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">wears white</text>
+    <rect x="320" y="490" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="380" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">t-shirt W</text>
+    <rect x="40" y="420" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="100" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">human</text>
+    <rect x="500" y="590" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="560" y="610" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">swap of</text>
+    <text x="560" y="630" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">clothing</text>
+    <rect x="440" y="50" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="460" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="440" y="810" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="460" y="830" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
+    <rect x="580" y="130" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="640" y="141" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="640" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears black</text>
+    <text x="640" y="179" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="580" y="370" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="640" y="381" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="640" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">swaps</text>
+    <text x="640" y="419" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="580" y="710" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="640" y="721" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="640" y="740" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">wears white</text>
+    <text x="640" y="759" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">t-shirt</text>
+    <rect x="760" y="250" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="820" y="270" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Take off</text>
+    <text x="820" y="290" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">black</text>
+    <rect x="760" y="370" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="820" y="390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Patrick</text>
+    <text x="820" y="410" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">half-naked</text>
+    <rect x="760" y="490" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="820" y="510" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Take on</text>
+    <text x="820" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">white</text>
+    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="280" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">Patrick</text>
+    <rect x="760" y="130" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="820" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">t-shirt B</text>
   </g>
 </svg>
