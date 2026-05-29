@@ -76,8 +76,8 @@ Patrick --> wearB, swapT, wearW
 
 Two new tricks:
 
-- `wearB::a` is an **alias** — a short stable name for the long event title.
-- `Patrick --> wearB, swapT, wearW` fans out: one source, three targets.
+- Here, <!--ipmt cut="Patrick wears black t-shirt ::e wearB::a"-->`wearB::a` is an **alias** — a short stable name for the long event title.
+- The <!--ipmt-->`Patrick --> wearB, swapT, wearW` line fans out: one source, three targets.
 
 Unmarked nodes default to **things**. The arrow goes *from the thing to the event* — the thing is part of the event, never the other way around (a modeling rule, not a syntactic accident).
 
