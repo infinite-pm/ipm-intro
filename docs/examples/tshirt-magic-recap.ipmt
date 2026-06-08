@@ -3,7 +3,7 @@
 # Top-level event
 Patrick wears black then wears white ::e wearBW::a
 
-# Mid-level sub-events — leads-to chain, each part-of the top
+# Mid-level sub-events - leads-to chain, each part-of the top
 Patrick wears black t-shirt ::e wearB::a
   --> Patrick swaps t-shirt ::e swapT::a
   --> Patrick wears white t-shirt ::e wearW::a
@@ -12,7 +12,7 @@ wearB --::P--> wearBW
 swapT --::P--> wearBW
 wearW --::P--> wearBW
 
-# Inner sub-events — the swap itself decomposes into a finer chain
+# Inner sub-events - the swap itself decomposes into a finer chain
 Take off black ::e takeOff::a       --::P--> swapT
 Patrick half-naked ::e halfNaked::a --::P--> swapT
 Take on white ::e takeOn::a         --::P--> swapT
@@ -21,7 +21,7 @@ takeOff --> halfNaked --> takeOn
 
 # --- things (from Step 2) ---
 
-# Patrick is present throughout — attach at the top; part-of
+# Patrick is present throughout - attach at the top; part-of
 # transitivity carries him into every sub-event.
 Patrick --> wearBW
 

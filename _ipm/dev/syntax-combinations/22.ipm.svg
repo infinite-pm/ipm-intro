@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="140" viewBox="0 0 440 140">
-  <!-- ipm-svg meta: generated-by=md-embed@dev hash=e50789c1 source-file=dev/syntax-combinations.md source-id=22 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260607124246-60612769a5a9+dirty hash=e50789c1 source-file=dev/syntax-combinations.md source-id=22 -->
 
   <defs>
   </defs>
@@ -11,7 +11,9 @@
     <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
+    <g class="edge" data-edge-idx="0" data-edge-base="nearto" data-edge-from="1" data-edge-to="2">
     <line x1="164.00" y1="70.00" x2="276.00" y2="70.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+    </g>
   </g>
   <g id="nodes">
     <g>

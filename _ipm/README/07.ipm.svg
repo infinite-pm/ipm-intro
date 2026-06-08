@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1310" height="340" viewBox="0 0 1310 340">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260529200142-abc01546818e+dirty hash=559e2d8f source-file=README.md source-id=07 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260607124246-60612769a5a9+dirty hash=559e2d8f source-file=README.md source-id=07 -->
 
   <defs>
   </defs>
@@ -21,26 +21,46 @@
     <rect x="1150" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
+    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="1" data-edge-to="2">
     <line x1="100.00" y1="104.00" x2="100.00" y2="129.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 100.00 136.00 L 95.50 127.00 L 100.00 129.25 L 104.50 127.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="11" data-edge-to="3">
     <line x1="340.00" y1="84.00" x2="340.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 340.00 116.00 L 335.50 107.00 L 340.00 109.25 L 344.50 107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="3" data-edge-to="12">
     <line x1="340.00" y1="184.00" x2="340.00" y2="209.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 340.00 216.00 L 335.50 207.00 L 340.00 209.25 L 344.50 207.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="3" data-edge-to="4">
     <line x1="404.00" y1="150.00" x2="449.25" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 456.00 150.00 L 447.00 154.50 L 449.25 150.00 L 447.00 145.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="821.03" y1="61.86" x2="839.18" y2="129.62" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 840.93 136.14 L 834.25 128.61 L 839.18 129.62 L 842.95 126.28 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="823.69" y1="83.55" x2="960.09" y2="140.70" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 966.31 143.31 L 956.27 143.98 L 960.09 140.70 L 959.75 135.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="1059.68" y1="202.97" x2="1085.81" y2="232.01" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1090.32 237.03 L 1080.96 233.35 L 1085.81 232.01 L 1087.65 227.33 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="910.32" y1="102.97" x2="884.19" y2="132.01" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 879.68 137.03 L 882.35 127.33 L 884.19 132.01 L 889.04 133.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="1003.69" y1="96.69" x2="1140.09" y2="153.85" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1146.31 156.45 L 1136.27 157.13 L 1140.09 153.85 L 1139.75 148.83 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <line x1="1148.71" y1="185.79" x2="1133.70" y2="229.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1131.52 236.21 L 1130.16 226.24 L 1133.70 229.83 L 1138.68 229.15 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="5" data-edge-to="6">
+    <line x1="763.50" y1="101.94" x2="822.60" y2="134.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 828.50 138.06 L 818.45 137.62 L 822.60 134.78 L 822.82 129.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="5" data-edge-to="7">
+    <line x1="823.33" y1="72.22" x2="961.06" y2="164.04" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 966.67 167.78 L 956.69 166.53 L 961.06 164.04 L 961.68 159.04 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="7" data-edge-to="10">
+    <line x1="1033.50" y1="201.94" x2="1092.60" y2="234.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1098.50 238.06 L 1088.45 237.62 L 1092.60 234.78 L 1092.82 229.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="8" data-edge-to="6">
+    <line x1="936.50" y1="101.94" x2="877.40" y2="134.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 871.50 138.06 L 877.18 129.75 L 877.40 134.78 L 881.55 137.62 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="8" data-edge-to="9">
+    <line x1="1003.33" y1="72.22" x2="1141.06" y2="164.04" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1146.67 167.78 L 1136.69 166.53 L 1141.06 164.04 L 1141.68 159.04 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="9" data-edge-to="10">
+    <line x1="1206.50" y1="201.94" x2="1147.40" y2="234.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1141.50 238.06 L 1147.18 229.75 L 1147.40 234.78 L 1151.55 237.62 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
   </g>
   <g id="nodes">
     <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>

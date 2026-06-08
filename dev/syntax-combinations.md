@@ -1,6 +1,6 @@
 # ipmt syntax combinations
 
-A combinatorial fixture for visual checks of the VS Code extension —
+A combinatorial fixture for visual checks of the VS Code extension -
 editor pane and markdown preview should color the same tokens the same
 way. Cover the γ(3,4) SST table (3 node kinds × 4 relations) crossed
 with the orthogonal syntax axes: with vs. without alias, with vs.
@@ -9,10 +9,10 @@ implicit vs. explicit type.
 
 ```
 LPXN triangle:
-  Leads-to (L) — orange, directed
-  Part-of  (P) — green, directed
-  eXpress  (X) — blue, directed (dashed)
-  Near-to  (N) — gray, undirected (dotted)
+  Leads-to (L) - orange, directed
+  Part-of  (P) - green, directed
+  eXpress  (X) - blue, directed (dashed)
+  Near-to  (N) - gray, undirected (dotted)
 ```
 
 The γ(3,4) type-pair table:
@@ -22,30 +22,34 @@ The γ(3,4) type-pair table:
 | L        | event → event                                                |
 | P        | event → event, thing → event, thing → thing                  |
 | X        | event → concept, thing → concept, concept → concept          |
-| N        | event — event, thing — thing, concept — concept (undirected) |
+| N        | event - event, thing - thing, concept - concept (undirected) |
 
 Each section below renders to a single SVG so per-pair colors land next
 to each other in the preview.
 
 A few syntax notes against the current parser:
 
-- **Default node type is thing.** `::t` is optional — unmarked nodes
+- **Default node type is thing.** `::t` is optional - unmarked nodes
   are things. Events MUST carry `::e` and concepts MUST carry `::c`.
   So the "implicit type" axis only collapses when the node is a
   thing; LeadsTo (event → event) and any concept-typed node always
   need explicit markers.
-- **Implicit relations via `-->`** — the parser infers the SST relation
+- **Implicit relations via `-->`** - the parser infers the SST relation
   from the type pair. `thing --> event` is PartOf; `event --> concept`
   is Expresses; `concept --> concept` is Expresses. Only `event -->
   event` is LeadsTo. So `piece --> whole` (no markers) is thing →
   thing PartOf, **not** LeadsTo.
-- **Inline `# comment`** on the same line as ipmt content is *not*
-  supported — the `#` is taken as part of the node name. Put comments
-  on their own line.
-- **`--::P--"text"-->`** (explicit relation *with* edge tooltip) parses
-  but folds `--::P` into the source node's name — don't combine the
-  two. For an edge tooltip with PartOf / Expresses, drop the `::R`
-  marker and let the type-pair inference do the work.
+- **Trailing `# comment`** is supported when the `#` is *surrounded by
+  whitespace* - everything from there to end-of-line is ignored. A `#`
+  glued to a non-space character (e.g. `Agent #1`) stays part of the
+  node name. Full-line comments start with `#` (optionally indented).
+- **Explicit relation *with* an edge tooltip** works in the canonical
+  *spaced* form - `--::P "text"-->`, `<--::P involves--`, or unquoted
+  `--::P contains-->`. The *glued* `--::P--"text"-->` variant does
+  **not**: the extra `--` folds `--::P` into the source node's name,
+  so keep the space after `::P`. For thing → thing / concept →
+  concept you can also just drop the marker and let type-pair
+  inference supply PartOf / Expresses.
 - **Near-to with tooltip** uses bare dashes on both sides:
   `--"text"--` (no `::N`).
 - **`---` undirected shorthand** is accepted by the parser as Near-to
@@ -56,9 +60,9 @@ A few syntax notes against the current parser:
   `part-of` container `C`, then `A` must also be `part-of C` (or
   `leads-to C` to enter the container).
 
-## 1. Leads-to (L)  — event → event
+## 1. Leads-to (L)  - event → event
 
-LeadsTo edges always need `::e` on both ends — no fully-implicit form
+LeadsTo edges always need `::e` on both ends - no fully-implicit form
 exists because the default type is thing. Without `::e` markers,
 `e1 --> e2` parses as `thing → thing` and renders as PartOf (green),
 not LeadsTo (orange).
@@ -113,11 +117,11 @@ e1 ::e "first happens" ::tip --> e2 ::e "then this" ::tip
 <!-- ipm-svg id=06 hash=f30eb800 -->
 ![](../_ipm/dev/syntax-combinations/06.ipm.svg)
 
-### 1.7 Everything together — alias + node tooltip + edge tooltip
+### 1.7 Everything together - alias + node tooltip + edge tooltip
 
 The `--::L-->` long form can't carry an edge tooltip cleanly (the
 parser folds `--::L` into the source node name). Use bare `-->` plus
-the edge tooltip — direction + relation are already implicit.
+the edge tooltip - direction + relation are already implicit.
 
 ```ipmt
 shortA::a long event A ::e "node tip A" ::tip --"causes"--> shortB::a long event B ::e "node tip B" ::tip
@@ -131,7 +135,7 @@ PartOf is the only relation where every node can stay implicit:
 `thing → thing` with bare `-->` carries default types and an inferred
 relation.
 
-### 2.1 Implicit thing → thing — no type markers, no `::P`
+### 2.1 Implicit thing → thing - no type markers, no `::P`
 
 Default-typed source and target, default arrow. The parser infers
 PartOf from the `thing → thing` type pair.
@@ -240,7 +244,7 @@ generalC ::c <--::X-- specificT
 <!-- ipm-svg id=18 hash=08c65f6b -->
 ![](../_ipm/dev/syntax-combinations/18.ipm.svg)
 
-### 3.6 With edge tooltip — concept → concept
+### 3.6 With edge tooltip - concept → concept
 
 Bare `--"text"-->` between two concepts infers Expresses. Do not
 combine `--::X--` with an edge tooltip (same node-name folding bug
@@ -252,9 +256,9 @@ red ::c --"is a"--> color ::c
 <!-- ipm-svg id=19 hash=1d0f05db -->
 ![](../_ipm/dev/syntax-combinations/19.ipm.svg)
 
-## 4. Near-to (N)  — undirected
+## 4. Near-to (N)  - undirected
 
-### 4.1 event — event, explicit `::N`
+### 4.1 event - event, explicit `::N`
 
 ```ipmt
 ea ::e --::N-- eb ::e
@@ -262,9 +266,9 @@ ea ::e --::N-- eb ::e
 <!-- ipm-svg id=20 hash=3e6cf7fe -->
 ![](../_ipm/dev/syntax-combinations/20.ipm.svg)
 
-### 4.2 thing — thing, with aliases (implicit `::t`)
+### 4.2 thing - thing, with aliases (implicit `::t`)
 
-Thing default applies — no `::t` marker needed when there's no
+Thing default applies - no `::t` marker needed when there's no
 tooltip to disambiguate.
 
 ```ipmt
@@ -273,7 +277,7 @@ shortA::a long thing A --::N-- shortB::a long thing B
 <!-- ipm-svg id=21 hash=7a27f3ab -->
 ![](../_ipm/dev/syntax-combinations/21.ipm.svg)
 
-### 4.3 concept — concept, with node tooltips
+### 4.3 concept - concept, with node tooltips
 
 ```ipmt
 hot ::c "high temperature" ::tip --::N-- cold ::c "low temperature" ::tip
@@ -281,9 +285,9 @@ hot ::c "high temperature" ::tip --::N-- cold ::c "low temperature" ::tip
 <!-- ipm-svg id=22 hash=e50789c1 -->
 ![](../_ipm/dev/syntax-combinations/22.ipm.svg)
 
-### 4.4 With edge tooltip, event — event
+### 4.4 With edge tooltip, event - event
 
-For Near-to with a tooltip, write the tooltip between bare dashes —
+For Near-to with a tooltip, write the tooltip between bare dashes -
 no `::N` marker. The parser infers Near-to from the undirected
 shape `--…--`.
 
@@ -293,7 +297,7 @@ e1 ::e --"co-located"-- e2 ::e
 <!-- ipm-svg id=23 hash=c6c328b7 -->
 ![](../_ipm/dev/syntax-combinations/23.ipm.svg)
 
-### 4.5 Bare `---` form (no explicit `::N`) — event — event
+### 4.5 Bare `---` form (no explicit `::N`) - event - event
 
 Some renderers accept `---` as Near-to shorthand. Editor + preview
 should still color it as Near-to gray.
@@ -306,6 +310,6 @@ ea ::e --- eb ::e
 
 ## 5. Markdown-only flourishes
 
-Surrounding markdown — links, **bold**, *italic*, `inline code`, and
-prose — should remain untouched by the ipmt-aware extension. Only the
+Surrounding markdown - links, **bold**, *italic*, `inline code`, and
+prose - should remain untouched by the ipmt-aware extension. Only the
 fenced ` ```ipmt ` blocks above should pick up syntax colors.
