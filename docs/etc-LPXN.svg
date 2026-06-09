@@ -7,13 +7,51 @@
     <radialGradient id="glow0" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff8000" stop-opacity="0.16"/><stop offset="1" stop-color="#ff8000" stop-opacity="0"/></radialGradient>
     <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4d8a3a" stop-opacity="0.16"/><stop offset="1" stop-color="#4d8a3a" stop-opacity="0"/></radialGradient>
     <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6c8ebf" stop-opacity="0.16"/><stop offset="1" stop-color="#6c8ebf" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow3" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#aaaaaa" stop-opacity="0.14"/><stop offset="1" stop-color="#aaaaaa" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow4" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6c8ebf" stop-opacity="0.14"/><stop offset="1" stop-color="#6c8ebf" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow5" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4d8a3a" stop-opacity="0.14"/><stop offset="1" stop-color="#4d8a3a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow6" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff8000" stop-opacity="0.14"/><stop offset="1" stop-color="#ff8000" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow7" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#aaaaaa" stop-opacity="0.14"/><stop offset="1" stop-color="#aaaaaa" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow8" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4d8a3a" stop-opacity="0.14"/><stop offset="1" stop-color="#4d8a3a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow9" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#aaaaaa" stop-opacity="0.14"/><stop offset="1" stop-color="#aaaaaa" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow10" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6c8ebf" stop-opacity="0.14"/><stop offset="1" stop-color="#6c8ebf" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow11" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4d8a3a" stop-opacity="0.14"/><stop offset="1" stop-color="#4d8a3a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow12" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6c8ebf" stop-opacity="0.14"/><stop offset="1" stop-color="#6c8ebf" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow13" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6c8ebf" stop-opacity="0.14"/><stop offset="1" stop-color="#6c8ebf" stop-opacity="0"/></radialGradient>
   </defs>
   <g id="glow">
     <circle cx="552.00" cy="480.00" r="225.45" fill="url(#glow0)"/>
     <circle cx="407.37" cy="730.50" r="225.45" fill="url(#glow1)"/>
     <circle cx="696.63" cy="730.50" r="225.45" fill="url(#glow2)"/>
+    <circle cx="552.00" cy="135.98" r="135.27" fill="url(#glow3)"/>
+    <circle cx="552.00" cy="209.46" r="135.27" fill="url(#glow4)"/>
+    <circle cx="552.00" cy="282.94" r="135.27" fill="url(#glow5)"/>
+    <circle cx="552.00" cy="356.42" r="135.27" fill="url(#glow6)"/>
+    <circle cx="260.83" cy="856.02" r="135.27" fill="url(#glow7)"/>
+    <circle cx="292.40" cy="762.63" r="135.27" fill="url(#glow8)"/>
+    <circle cx="843.17" cy="856.02" r="135.27" fill="url(#glow9)"/>
+    <circle cx="811.60" cy="762.63" r="135.27" fill="url(#glow10)"/>
+    <circle cx="479.69" cy="605.25" r="135.27" fill="url(#glow11)"/>
+    <circle cx="552.00" cy="730.50" r="135.27" fill="url(#glow12)"/>
+    <circle cx="624.31" cy="605.25" r="135.27" fill="url(#glow13)"/>
   </g>
-  <g id="edges">
+  <defs>
+    <mask id="linegap" maskUnits="userSpaceOnUse" x="0" y="0" width="1114.00" height="1020.00">
+      <rect x="0" y="0" width="1114.00" height="1020.00" fill="#ffffff"/>
+      <rect x="421.19" y="568.93" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="493.50" y="694.18" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="565.81" y="568.93" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="511.05" y="99.66" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="493.50" y="173.14" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="493.50" y="246.62" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="518.40" y="320.10" width="67.20" height="72.64" rx="26.19" fill="#000000"/>
+      <rect x="219.88" y="819.70" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="233.90" y="726.31" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="802.22" y="819.70" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+      <rect x="753.10" y="726.31" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+    </mask>
+  </defs>
+  <g id="edges" mask="url(#linegap)">
     <line x1="434.06" y1="684.28" x2="516.81" y2="540.95" stroke="#4d8a3a" stroke-width="5.00" opacity="1.00"/>
     <line x1="450.12" y1="730.50" x2="636.88" y2="730.50" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
     <line x1="578.69" y1="526.22" x2="661.44" y2="669.55" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
@@ -27,17 +65,6 @@
     <path d="M 756.30 703.47 A 59.32 59.29 120.00 1 1 695.43 779.46" fill="none" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
   </g>
   <g id="text-bg">
-    <rect x="432.19" y="579.93" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-    <rect x="504.50" y="705.18" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-    <rect x="576.81" y="579.93" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-    <rect x="522.05" y="110.66" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-    <rect x="504.50" y="184.14" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-    <rect x="504.50" y="257.62" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-    <rect x="529.40" y="331.10" width="45.20" height="50.64" rx="15.19" fill="#fff2e6" opacity="1.00"/>
-    <rect x="230.88" y="830.70" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-    <rect x="244.90" y="737.31" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-    <rect x="813.22" y="830.70" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-    <rect x="764.10" y="737.31" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
     <rect x="519.50" y="442.82" width="65.00" height="74.36" rx="22.31" fill="#fff2e6" stroke="#ff8000" stroke-width="2.50" opacity="1.00"/>
     <rect x="374.87" y="693.32" width="65.00" height="74.36" rx="22.31" fill="#edf3eb" stroke="#4d8a3a" stroke-width="2.50" opacity="1.00"/>
     <rect x="664.13" y="693.32" width="65.00" height="74.36" rx="22.31" fill="#f0f4f9" stroke="#6c8ebf" stroke-width="2.50" opacity="1.00"/>

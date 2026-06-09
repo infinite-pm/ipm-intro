@@ -4,7 +4,7 @@ This doc explains the two label changes IPM makes on top of Mark Burgess's origi
 
 IPM is built directly on Mark Burgess's **[Semantic Spacetime γ(3,4)](https://semantic.st/)** ("gamma 3, 4" - three kinds of nodes, four kinds of relations). IPM tweaks two of the original SST labels for readability:
 
-<img src="etc-triangles.png" alt="SST γ(3,4) vs IPM triangles - LCEN on the left, LPXN on the right" height="500"/>
+<img src="etc-triangles.svg" alt="SST γ(3,4) vs IPM triangles - LCEN on the left, LPXN on the right" height="500"/>
 
 - **C → P, with the direction reversed.** SST's *contains* (`car --C--> engine` - the car spatially encloses the engine) becomes IPM's *part-of* (`engine --P--> car`). Containment in SST is a **spatial** property - a ring drawn around a region, not a generic hierarchy. The graph is the same; we prefer "part-of" because it reads naturally for participation ("Patrick is part of the swap event"), and the arrow then points from the small thing toward its larger spatial container.
 - **E → X.** SST's *expresses* relation is shortened to X so that the capital letter for the relation does not collide visually with the lowercase **e** used for an event node. (`E` next to `e` is easy to mis-read; `X` next to `e` is not.)
