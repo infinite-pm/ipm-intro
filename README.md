@@ -215,9 +215,7 @@ That's a complete ipmt model: <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-t
 
 <img src="docs/etc-LPXN.svg" alt="ipm etc-LPXN triangle - the four edge kinds (L, P, X, N) on e/t/c" width="500"/>
 
-The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`event`), <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`thing`), and <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`concept`). The arrows and self-loops show every legal edge. The dotted circles (<!--ipmt:as-token:N-->`Nₑ`, <!--ipmt:as-token:N-->`Nₜ`, <!--ipmt:as-token:N-->`N𞁞`) are <!--ipmt:as-token:N-->`NEAR` - similarity between two nodes of the same kind, undirected.
-
-The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are IPM's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why infintie.pm renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
+The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`event`), <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`thing`), and <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`concept`). The directed edges are <!--ipmt:as-token:L-->`L` ( <!--ipmt:as-token:L-->`leads-to`),  <!--ipmt:as-token:P-->`P` (<!--ipmt:as-token:P-->`part-of`) and  <!--ipmt:as-token:X-->`X` ( <!--ipmt:as-token:X-->`expresses property`) and  undirected edge <!--ipmt:as-token:N-->`N` ( <!--ipmt:as-token:N-->`near-to`) . The arrows and self-loops show every legal edge. The dotted circles (<!--ipmt:as-token:N-->`Nₑ`, <!--ipmt:as-token:N-->`Nₜ`, <!--ipmt:as-token:N-->`N𞁞`) are <!--ipmt:as-token:N-->`NEAR` - similarity between two nodes of the same kind, undirected.
 
 | Symbol | Color | Name | Meaning | When to use |
 | :---: | --- | --- | --- | --- |
@@ -225,6 +223,8 @@ The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipm
 | <!--ipmt:as-token:P-->`P` | <!--ipmt:as-token:P-->`green` | <!--ipmt:as-token:P-->`PART-OF` | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
 | <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue dashed` | <!--ipmt:as-token:X-->`EXPRESSES` | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a - a node can express many independent properties |
 | <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray dotted` | <!--ipmt:as-token:N-->`NEAR-TO` | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
+
+The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are infinite.pm's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why infintie.pm renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
 
 ## All allowed edges
 
