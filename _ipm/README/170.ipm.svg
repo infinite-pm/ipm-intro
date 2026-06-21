@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1220" height="790" viewBox="0 0 1220 790">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20250805100000-feb8cd534086 hash=4c1f0991 source-file=README.md source-id=170 -->
+  <!-- ipm-svg meta: generated-by=md-embed@dev hash=4c1f0991 source-file=README.md source-id=170 -->
 
   <defs>
   </defs>
@@ -92,8 +92,19 @@
     <path d="M 815.00 283.74 L 806.19 278.88 L 811.17 278.18 L 813.60 273.77 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="6" data-edge-to="13">
-    <polyline points="898.49,605.00 950,580 1010,190 946.24,185.48" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 939.51 185.00 L 948.81 181.15 L 946.24 185.48 L 948.17 190.13 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+      <line class="edge-ghost" x1="964.00" y1="619.00" x2="856.00" y2="150.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <g class="edge-full" opacity="0">
+        <line x1="964.00" y1="619.00" x2="856.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="940.00" y1="619.00" x2="964.00" y2="619.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses: white t-shirt → t-shirt</title><rect x="957.00" y="612.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="964.00" y="619.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="856.00" y1="150.00" x2="873.25" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 880.00 150.00 L 871.00 154.50 L 873.25 150.00 L 871.00 145.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses: white t-shirt → t-shirt</title><rect x="849.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="856.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="6" data-edge-to="15">
     <line x1="945.00" y1="640.00" x2="988.25" y2="640.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
