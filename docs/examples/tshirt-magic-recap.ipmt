@@ -26,8 +26,8 @@ takeOff --> halfNaked --> takeOn
 Patrick --> wearBW
 
 # T-shirts at the mid-level events where each appears
-t-shirt B --> wearB, swapT
-t-shirt W --> swapT, wearW
+t-shirt B --> wearB, takeOff
+t-shirt W --> wearW, takeOn
 
 # --- concepts (from Step 3) ---
 
