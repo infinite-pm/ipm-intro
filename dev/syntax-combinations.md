@@ -72,40 +72,40 @@ not LeadsTo (orange).
 ```ipmt
 e1 ::e --> e2 ::e
 ```
-<!-- ipm-svg id=01 hash=633ee46f -->
-![](../_ipm/dev/syntax-combinations/01.ipm.svg)
+<!-- ipm-svg id=100 hash=633ee46f -->
+![](../_ipm/dev/syntax-combinations/100.ipm.svg)
 
 ### 1.2 Long-form arrow `--::L-->`, explicit `::e`
 
 ```ipmt
 e1 ::e --::L--> e2 ::e
 ```
-<!-- ipm-svg id=02 hash=88412a1b -->
-![](../_ipm/dev/syntax-combinations/02.ipm.svg)
+<!-- ipm-svg id=110 hash=88412a1b -->
+![](../_ipm/dev/syntax-combinations/110.ipm.svg)
 
 ### 1.3 Reverse arrow `<--`, explicit `::e`
 
 ```ipmt
 e2 ::e <-- e1 ::e
 ```
-<!-- ipm-svg id=03 hash=36bce46c -->
-![](../_ipm/dev/syntax-combinations/03.ipm.svg)
+<!-- ipm-svg id=120 hash=36bce46c -->
+![](../_ipm/dev/syntax-combinations/120.ipm.svg)
 
 ### 1.4 With alias on both ends
 
 ```ipmt
 shortA::a long event A ::e --> shortB::a long event B ::e
 ```
-<!-- ipm-svg id=04 hash=b7f91f8a -->
-![](../_ipm/dev/syntax-combinations/04.ipm.svg)
+<!-- ipm-svg id=130 hash=b7f91f8a -->
+![](../_ipm/dev/syntax-combinations/130.ipm.svg)
 
 ### 1.5 With edge tooltip `--"text"-->`
 
 ```ipmt
 e1 ::e --"causes"--> e2 ::e
 ```
-<!-- ipm-svg id=05 hash=bb71d4da -->
-![](../_ipm/dev/syntax-combinations/05.ipm.svg)
+<!-- ipm-svg id=140 hash=bb71d4da -->
+![](../_ipm/dev/syntax-combinations/140.ipm.svg)
 
 ### 1.6 With node tooltips `::e "text" ::tip`
 
@@ -114,8 +114,8 @@ Canonical annotation order is `name ::type "tooltip" ::tip`.
 ```ipmt
 e1 ::e "first happens" ::tip --> e2 ::e "then this" ::tip
 ```
-<!-- ipm-svg id=06 hash=f30eb800 -->
-![](../_ipm/dev/syntax-combinations/06.ipm.svg)
+<!-- ipm-svg id=150 hash=f30eb800 -->
+![](../_ipm/dev/syntax-combinations/150.ipm.svg)
 
 ### 1.7 Everything together - alias + node tooltip + edge tooltip
 
@@ -126,8 +126,8 @@ the edge tooltip - direction + relation are already implicit.
 ```ipmt
 shortA::a long event A ::e "node tip A" ::tip --"causes"--> shortB::a long event B ::e "node tip B" ::tip
 ```
-<!-- ipm-svg id=07 hash=13296ccc -->
-![](../_ipm/dev/syntax-combinations/07.ipm.svg)
+<!-- ipm-svg id=160 hash=13296ccc -->
+![](../_ipm/dev/syntax-combinations/160.ipm.svg)
 
 ## 2. Part-of (P)
 
@@ -143,8 +143,8 @@ PartOf from the `thing → thing` type pair.
 ```ipmt
 piece --> whole
 ```
-<!-- ipm-svg id=08 hash=99f55dba -->
-![](../_ipm/dev/syntax-combinations/08.ipm.svg)
+<!-- ipm-svg id=170 hash=99f55dba -->
+![](../_ipm/dev/syntax-combinations/170.ipm.svg)
 
 ### 2.2 event → event, explicit `::P`
 
@@ -154,8 +154,8 @@ otherwise bare `-->` would be inferred as LeadsTo.
 ```ipmt
 inner ::e --::P--> outer ::e
 ```
-<!-- ipm-svg id=09 hash=9ebf5118 -->
-![](../_ipm/dev/syntax-combinations/09.ipm.svg)
+<!-- ipm-svg id=180 hash=9ebf5118 -->
+![](../_ipm/dev/syntax-combinations/180.ipm.svg)
 
 ### 2.3 thing → event, with aliases
 
@@ -165,8 +165,8 @@ type pair.
 ```ipmt
 agentT::a actor agent --> actE::a some action ::e
 ```
-<!-- ipm-svg id=10 hash=66caa707 -->
-![](../_ipm/dev/syntax-combinations/10.ipm.svg)
+<!-- ipm-svg id=190 hash=66caa707 -->
+![](../_ipm/dev/syntax-combinations/190.ipm.svg)
 
 ### 2.4 thing → thing, with edge tooltip
 
@@ -177,16 +177,16 @@ source node's name, so don't combine `::P` with an edge tooltip.
 ```ipmt
 piece --"belongs to"--> whole
 ```
-<!-- ipm-svg id=11 hash=582ecb58 -->
-![](../_ipm/dev/syntax-combinations/11.ipm.svg)
+<!-- ipm-svg id=1a0 hash=582ecb58 -->
+![](../_ipm/dev/syntax-combinations/1a0.ipm.svg)
 
 ### 2.5 Reverse `<--::P--`, event → event (target on the left)
 
 ```ipmt
 outer ::e <--::P-- inner ::e
 ```
-<!-- ipm-svg id=12 hash=4eaff8f0 -->
-![](../_ipm/dev/syntax-combinations/12.ipm.svg)
+<!-- ipm-svg id=1b0 hash=4eaff8f0 -->
+![](../_ipm/dev/syntax-combinations/1b0.ipm.svg)
 
 ### 2.6 With aliases and node tooltips, thing → thing
 
@@ -196,8 +196,8 @@ name ends.
 ```ipmt
 shortP::a long piece ::t "fine-grained" ::tip --::P--> shortW::a long whole ::t "coarse" ::tip
 ```
-<!-- ipm-svg id=13 hash=2baf4944 -->
-![](../_ipm/dev/syntax-combinations/13.ipm.svg)
+<!-- ipm-svg id=1c0 hash=2baf4944 -->
+![](../_ipm/dev/syntax-combinations/1c0.ipm.svg)
 
 ## 3. Expresses (X)
 
@@ -206,8 +206,8 @@ shortP::a long piece ::t "fine-grained" ::tip --::P--> shortW::a long whole ::t 
 ```ipmt
 ev1 ::e --::X--> conceptA ::c
 ```
-<!-- ipm-svg id=14 hash=303f6a8e -->
-![](../_ipm/dev/syntax-combinations/14.ipm.svg)
+<!-- ipm-svg id=1d0 hash=303f6a8e -->
+![](../_ipm/dev/syntax-combinations/1d0.ipm.svg)
 
 ### 3.2 thing → concept, fully implicit source
 
@@ -217,32 +217,32 @@ Bare `-->` infers Expresses from the type pair.
 ```ipmt
 thingT --> conceptC ::c
 ```
-<!-- ipm-svg id=15 hash=adeba837 -->
-![](../_ipm/dev/syntax-combinations/15.ipm.svg)
+<!-- ipm-svg id=1e0 hash=adeba837 -->
+![](../_ipm/dev/syntax-combinations/1e0.ipm.svg)
 
 ### 3.3 concept → concept
 
 ```ipmt
 specificC ::c --::X--> generalC ::c
 ```
-<!-- ipm-svg id=16 hash=8cc14b22 -->
-![](../_ipm/dev/syntax-combinations/16.ipm.svg)
+<!-- ipm-svg id=1f0 hash=8cc14b22 -->
+![](../_ipm/dev/syntax-combinations/1f0.ipm.svg)
 
 ### 3.4 With alias on the source and tooltip on the concept
 
 ```ipmt
 hShort::a long-form thing --::X--> color ::c "a concept" ::tip
 ```
-<!-- ipm-svg id=17 hash=db58c450 -->
-![](../_ipm/dev/syntax-combinations/17.ipm.svg)
+<!-- ipm-svg id=1g0 hash=db58c450 -->
+![](../_ipm/dev/syntax-combinations/1g0.ipm.svg)
 
 ### 3.5 Reverse `<--::X--`, thing → concept
 
 ```ipmt
 generalC ::c <--::X-- specificT
 ```
-<!-- ipm-svg id=18 hash=08c65f6b -->
-![](../_ipm/dev/syntax-combinations/18.ipm.svg)
+<!-- ipm-svg id=1h0 hash=08c65f6b -->
+![](../_ipm/dev/syntax-combinations/1h0.ipm.svg)
 
 ### 3.6 With edge tooltip - concept → concept
 
@@ -253,8 +253,8 @@ as for `::P`).
 ```ipmt
 red ::c --"is a"--> color ::c
 ```
-<!-- ipm-svg id=19 hash=1d0f05db -->
-![](../_ipm/dev/syntax-combinations/19.ipm.svg)
+<!-- ipm-svg id=1i0 hash=1d0f05db -->
+![](../_ipm/dev/syntax-combinations/1i0.ipm.svg)
 
 ## 4. Near-to (N)  - undirected
 
@@ -263,8 +263,8 @@ red ::c --"is a"--> color ::c
 ```ipmt
 ea ::e --::N-- eb ::e
 ```
-<!-- ipm-svg id=20 hash=3e6cf7fe -->
-![](../_ipm/dev/syntax-combinations/20.ipm.svg)
+<!-- ipm-svg id=1j0 hash=3e6cf7fe -->
+![](../_ipm/dev/syntax-combinations/1j0.ipm.svg)
 
 ### 4.2 thing - thing, with aliases (implicit `::t`)
 
@@ -274,16 +274,16 @@ tooltip to disambiguate.
 ```ipmt
 shortA::a long thing A --::N-- shortB::a long thing B
 ```
-<!-- ipm-svg id=21 hash=7a27f3ab -->
-![](../_ipm/dev/syntax-combinations/21.ipm.svg)
+<!-- ipm-svg id=1k0 hash=7a27f3ab -->
+![](../_ipm/dev/syntax-combinations/1k0.ipm.svg)
 
 ### 4.3 concept - concept, with node tooltips
 
 ```ipmt
 hot ::c "high temperature" ::tip --::N-- cold ::c "low temperature" ::tip
 ```
-<!-- ipm-svg id=22 hash=e50789c1 -->
-![](../_ipm/dev/syntax-combinations/22.ipm.svg)
+<!-- ipm-svg id=1l0 hash=e50789c1 -->
+![](../_ipm/dev/syntax-combinations/1l0.ipm.svg)
 
 ### 4.4 With edge tooltip, event - event
 
@@ -294,8 +294,8 @@ shape `--…--`.
 ```ipmt
 e1 ::e --"co-located"-- e2 ::e
 ```
-<!-- ipm-svg id=23 hash=c6c328b7 -->
-![](../_ipm/dev/syntax-combinations/23.ipm.svg)
+<!-- ipm-svg id=1m0 hash=c6c328b7 -->
+![](../_ipm/dev/syntax-combinations/1m0.ipm.svg)
 
 ### 4.5 Bare `---` form (no explicit `::N`) - event - event
 
@@ -305,8 +305,8 @@ should still color it as Near-to gray.
 ```ipmt
 ea ::e --- eb ::e
 ```
-<!-- ipm-svg id=24 hash=c48f317c -->
-![](../_ipm/dev/syntax-combinations/24.ipm.svg)
+<!-- ipm-svg id=1n0 hash=c48f317c -->
+![](../_ipm/dev/syntax-combinations/1n0.ipm.svg)
 
 ## 5. Markdown-only flourishes
 

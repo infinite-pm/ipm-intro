@@ -14,7 +14,7 @@ So the file stands on its own, here is the complete three-level model the README
 The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
-<!-- ipm-svg id=01 hash=89bdb067 -->
+<!-- ipm-svg id=01 hash=ae84a3ca -->
 ![](../../_ipm/docs/examples/tshirt-magic/01.ipm.svg)
 
 ## Step 1 - event chain with evidence and hypothesis
@@ -44,8 +44,8 @@ wearW --> evidence ::c
 # Hypothesis - the swap is inferred from the library pattern on the parent
 swapT --> hypothesis ::c
 ```
-<!-- ipm-svg id=02 hash=590d3974 -->
-![](../../_ipm/docs/examples/tshirt-magic/02.ipm.svg)
+<!-- ipm-svg id=100 hash=590d3974 -->
+![](../../_ipm/docs/examples/tshirt-magic/100.ipm.svg)
 
 
 This is the same three-event chain the README uses from Step 2 onward, but each event now carries the observer's epistemic stance: the `wears` are facts; the `swap` is a guess that fits a familiar process template. From here on, the rest of this file builds on the swap hypothesis the way the README's Step 2+ does - treating it as the model the observer has settled on - while remembering it could be wrong.
@@ -66,8 +66,8 @@ t-shirt W  --> probeTakeOnW
 probeTakeOnW --> taking on ::c
 probeTakeOnW --> positive evidence ::c
 ```
-<!-- ipm-svg id=03 hash=22c262b7 -->
-![](../../_ipm/docs/examples/tshirt-magic/03.ipm.svg)
+<!-- ipm-svg id=110 hash=22c262b7 -->
+![](../../_ipm/docs/examples/tshirt-magic/110.ipm.svg)
 
 
 The second confirms the **layered** scenario by catching both t-shirts on Patrick at the same instant - a configuration that only the layered observation contains:
@@ -83,8 +83,8 @@ t-shirt W  --> probeBOverW
 probeBOverW --> wearing two t-shirts ::c
 probeBOverW --> positive evidence ::c
 ```
-<!-- ipm-svg id=04 hash=f88c7d16 -->
-![](../../_ipm/docs/examples/tshirt-magic/04.ipm.svg)
+<!-- ipm-svg id=120 hash=f88c7d16 -->
+![](../../_ipm/docs/examples/tshirt-magic/120.ipm.svg)
 
 
 Without either probe succeeding, the scenario stays undecided - the honest open-world answer. Note also what we did *not* record: the absence of a take-on does not by itself confirm the layered scenario; we still need the positive `B over W seen` sighting.
@@ -107,8 +107,8 @@ wearLayered --::P--> wearBW
 takeOffB --::P--> wearBW
 wearW --::P--> wearBW
 ```
-<!-- ipm-svg id=05 hash=af62021e -->
-![](../../_ipm/docs/examples/tshirt-magic/05.ipm.svg)
+<!-- ipm-svg id=130 hash=af62021e -->
+![](../../_ipm/docs/examples/tshirt-magic/130.ipm.svg)
 
 
 Same parent `wearBW` as scenario 1; what differs is the mid-level sub-event the observer recorded - `wearLayered` instead of `wearB`, and no `swapT`/`takeOn` pair.
@@ -156,8 +156,8 @@ wearing two t-shirts ::c --> wearing t-shirt ::c
 black ::c --> color ::c
 white ::c --> color ::c
 ```
-<!-- ipm-svg id=06 hash=1f67c9a1 -->
-![](../../_ipm/docs/examples/tshirt-magic/06.ipm.svg)
+<!-- ipm-svg id=140 hash=1f67c9a1 -->
+![](../../_ipm/docs/examples/tshirt-magic/140.ipm.svg)
 
 
 Call this **scenario 2: the layered observation**. Both scenarios share the top-level `wearBW` event; they differ only in which sub-events the observer recorded, and therefore in which concepts the events express.
@@ -170,8 +170,8 @@ White and Black are kinds of Color - a concept-to-concept EXPRESSES relation:
 white ::c --> color ::c
 black ::c --> color ::c
 ```
-<!-- ipm-svg id=07 hash=78e61ea2 -->
-![](../../_ipm/docs/examples/tshirt-magic/07.ipm.svg)
+<!-- ipm-svg id=150 hash=78e61ea2 -->
+![](../../_ipm/docs/examples/tshirt-magic/150.ipm.svg)
 
 
 ## Thing taxonomies
@@ -184,6 +184,6 @@ human thing ::c --- human ::c
 stone S1 --> stone ::c --> natural thing ::c --> thing ::c
 natural thing ::c --- nature ::c
 ```
-<!-- ipm-svg id=08 hash=b0cc5788 -->
-![](../../_ipm/docs/examples/tshirt-magic/08.ipm.svg)
+<!-- ipm-svg id=160 hash=b0cc5788 -->
+![](../../_ipm/docs/examples/tshirt-magic/160.ipm.svg)
 

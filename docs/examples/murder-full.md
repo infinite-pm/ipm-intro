@@ -44,5 +44,5 @@ library-ppms --> refusal-mspp --> ppmms
 Professor Plum --> library-ppms, refusal-mspp, refusal-m, ppmms
 Miss Scarlet --> library-ppms, refusal-mspp, refusal-m, ppmms
 ```
-<!-- ipm-svg id=01 hash=caa384f5 -->
-![](../../_ipm/docs/examples/murder-full/01.ipm.svg)
+<!-- ipm-svg id=100 hash=caa384f5 -->
+![](../../_ipm/docs/examples/murder-full/100.ipm.svg)

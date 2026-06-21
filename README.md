@@ -54,8 +54,8 @@ Start with the activity. Events lead to other events.
 Patrick wears black t-shirt ::e
   --> Patrick wears white t-shirt ::e
 ```
-<!-- ipm-svg id=01 hash=0183bb61 -->
-![](_ipm/README/01.ipm.svg)
+<!-- ipm-svg id=100 hash=0183bb61 -->
+![](_ipm/README/100.ipm.svg)
 
 
 The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token:L-->`leads-to` (rendered as an <!--ipmt:as-token:L-->`orange arrow`) - temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an event. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them - a *hypothesized* middle step the observer didn't witness.
@@ -71,8 +71,8 @@ Patrick wears black t-shirt ::e wearB::a
 
 Patrick --> wearB, swapT, wearW
 ```
-<!-- ipm-svg id=02 hash=036d9600 -->
-![](_ipm/README/02.ipm.svg)
+<!-- ipm-svg id=110 hash=036d9600 -->
+![](_ipm/README/110.ipm.svg)
 
 Two new tricks:
 
@@ -93,8 +93,8 @@ Patrick --> wearB, swapT, wearW
 black t-shirt --> wearB, swapT
 white t-shirt --> swapT, wearW
 ```
-<!-- ipm-svg id=03 hash=ba3e167d -->
-![](_ipm/README/03.ipm.svg)
+<!-- ipm-svg id=120 hash=ba3e167d -->
+![](_ipm/README/120.ipm.svg)
 
 **You can also zoom *out*.** The same scene can be told at a coarser level: one single event that names only the *observable* change (Patrick wore black, then white), with every participant attached at that one level. The mechanism - *how* he changed t-shirts - is hidden inside the wrapper event and revealed only when you zoom in.
 
@@ -105,8 +105,8 @@ Patrick    --> wearBW
 black t-shirt  --> wearBW
 white t-shirt  --> wearBW
 ```
-<!-- ipm-svg id=04 hash=2e16c454 -->
-![](_ipm/README/04.ipm.svg)
+<!-- ipm-svg id=130 hash=2e16c454 -->
+![](_ipm/README/130.ipm.svg)
 
 Same story, different zoom level. The right level depends on the **purpose** of your model - and you don't have to pick just one.
 
@@ -123,8 +123,8 @@ wearB --::P--> wearBW
 swapT --::P--> wearBW
 wearW --::P--> wearBW
 ```
-<!-- ipm-svg id=05 hash=119e8e54 -->
-![](_ipm/README/05.ipm.svg)
+<!-- ipm-svg id=140 hash=119e8e54 -->
+![](_ipm/README/140.ipm.svg)
 
 
 We can keep going - <!--ipmt:as-token:e-title-->`swapT` itself decomposes into a finer chain of moments. Here are both zoom levels at once, three levels of pure event nesting:
@@ -144,8 +144,8 @@ Take on white ::e takeOn::a         --::P--> swapT
 
 takeOff --> halfNaked --> takeOn
 ```
-<!-- ipm-svg id=06 hash=01228d05 -->
-![](_ipm/README/06.ipm.svg)
+<!-- ipm-svg id=150 hash=01228d05 -->
+![](_ipm/README/150.ipm.svg)
 
 
 Step 4 will bring Patrick, the t-shirts, and the concepts back into this nested structure.
@@ -163,8 +163,8 @@ black t-shirt --> t-shirt ::c, black ::c
 white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=07 hash=559e2d8f -->
-![](_ipm/README/07.ipm.svg)
+<!-- ipm-svg id=160 hash=559e2d8f -->
+![](_ipm/README/160.ipm.svg)
 
 
 Writing <!--ipmt:as-token:c-marker-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing A --> cX ::c` (<!--ipmt:as-token:X-->`an expresses arrow`, rendered <!--ipmt:as-token:X-->`blue dashed`) reads as "the thing <!--ipmt:as-token:X-->`expresses property` <!--ipmt:as-token:c-title-->`cX`" - and <!--ipmt-->`event e1 ::e --> cY ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification - each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
@@ -200,8 +200,8 @@ black t-shirt --> t-shirt ::c, black ::c
 white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=08 hash=4c1f0991 -->
-![](_ipm/README/08.ipm.svg)
+<!-- ipm-svg id=170 hash=4c1f0991 -->
+![](_ipm/README/170.ipm.svg)
 
 That's a complete ipmt model: <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:L-->`lead to`  <!--ipmt:as-token:e-title-->`events`,  <!--ipmt:as-token:t-title-->`things`  <!--ipmt:as-token:P-->`participate in`  <!--ipmt:as-token:e-title-->`events`,  <!--ipmt:as-token:t-title-->`things` and  <!--ipmt:as-token:e-title-->`events`  <!--ipmt:as-token:X-->`express`  <!--ipmt:as-token:c-title-->`concepts` as properties, and  <!--ipmt:as-token:c-title-->`concepts` can themselves  <!--ipmt:as-token:X-->`express properties` of other  <!--ipmt:as-token:c-title-->`concepts`.
 
