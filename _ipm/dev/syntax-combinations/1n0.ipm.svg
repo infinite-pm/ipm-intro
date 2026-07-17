@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20250805100000-feb8cd534086 hash=c48f317c source-file=dev/syntax-combinations.md source-id=1n0 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260716060136-a106aa055900+dirty hash=c48f317c source-file=dev/syntax-combinations.md source-id=1n0 -->
 
   <defs>
   </defs>
@@ -18,21 +18,21 @@
     <g class="edge" data-edge-idx="0" data-edge-base="nearto" data-edge-from="1" data-edge-to="2">
     <line x1="165.00" y1="150.00" x2="275.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
     </g>
-    <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="1" data-edge-to="4">
-    <line x1="100.00" y1="185.00" x2="100.00" y2="208.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 100.00 215.00 L 95.50 206.00 L 100.00 208.25 L 104.50 206.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    </g>
-    <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="2" data-edge-to="6">
-    <line x1="340.00" y1="185.00" x2="340.00" y2="208.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 340.00 215.00 L 335.50 206.00 L 340.00 208.25 L 344.50 206.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    </g>
-    <g class="edge" data-edge-idx="3" data-edge-base="leadsto" data-edge-from="3" data-edge-to="1">
+    <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="3" data-edge-to="1">
     <line x1="100.00" y1="85.00" x2="100.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="5" data-edge-to="2">
+    <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="1" data-edge-to="4">
+    <line x1="100.00" y1="185.00" x2="100.00" y2="208.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 215.00 L 95.50 206.00 L 100.00 208.25 L 104.50 206.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="3" data-edge-base="leadsto" data-edge-from="5" data-edge-to="2">
     <line x1="340.00" y1="85.00" x2="340.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 340.00 115.00 L 335.50 106.00 L 340.00 108.25 L 344.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+    <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="2" data-edge-to="6">
+    <line x1="340.00" y1="185.00" x2="340.00" y2="208.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 340.00 215.00 L 335.50 206.00 L 340.00 208.25 L 344.50 206.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">
