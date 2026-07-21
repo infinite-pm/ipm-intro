@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="540" viewBox="0 0 380 540">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260716060136-a106aa055900+dirty hash=af62021e source-file=docs/examples/tshirt-magic.md source-id=130 -->
+  <!-- ipm-svg meta: generated-by=md-embed@dev hash=af62021e source-file=docs/examples/tshirt-magic.md source-id=130 -->
 
   <defs>
   </defs>
@@ -24,16 +24,16 @@
     <path d="M 280.00 355.00 L 275.50 346.00 L 280.00 348.25 L 284.50 346.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="partof" data-edge-from="2" data-edge-to="1">
-    <line x1="215.00" y1="158.33" x2="168.47" y2="235.88" stroke="#82b366" stroke-width="3" />
-    <path d="M 165.00 241.67 L 165.77 231.63 L 168.47 235.88 L 173.49 236.26 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="215.00" y1="159.17" x2="168.23" y2="244.91" stroke="#82b366" stroke-width="3" />
+    <path d="M 165.00 250.83 L 165.36 240.78 L 168.23 244.91 L 173.26 245.09 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="partof" data-edge-from="3" data-edge-to="1">
     <line x1="215.00" y1="270.00" x2="171.75" y2="270.00" stroke="#82b366" stroke-width="3" />
     <path d="M 165.00 270.00 L 174.00 265.50 L 171.75 270.00 L 174.00 274.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="partof" data-edge-from="4" data-edge-to="1">
-    <line x1="215.00" y1="381.67" x2="168.47" y2="304.12" stroke="#82b366" stroke-width="3" />
-    <path d="M 165.00 298.33 L 173.49 303.74 L 168.47 304.12 L 165.77 308.37 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="215.00" y1="380.83" x2="168.23" y2="295.09" stroke="#82b366" stroke-width="3" />
+    <path d="M 165.00 289.17 L 173.26 294.91 L 168.23 295.09 L 165.36 299.22 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="5" data-edge-to="1">
     <line x1="100.00" y1="85.00" x2="100.00" y2="218.25" stroke="#ff8000" stroke-width="3" />

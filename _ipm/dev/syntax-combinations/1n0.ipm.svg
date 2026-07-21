@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260716060136-a106aa055900+dirty hash=c48f317c source-file=dev/syntax-combinations.md source-id=1n0 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260721071157-f75466a66376 hash=c48f317c source-file=dev/syntax-combinations.md source-id=1n0 -->
 
   <defs>
   </defs>
@@ -16,7 +16,7 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="nearto" data-edge-from="1" data-edge-to="2">
-    <line x1="165.00" y1="150.00" x2="275.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+    <line x1="165.00" y1="150.00" x2="275.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6.111" />
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="3" data-edge-to="1">
     <line x1="100.00" y1="85.00" x2="100.00" y2="108.25" stroke="#ff8000" stroke-width="3" />

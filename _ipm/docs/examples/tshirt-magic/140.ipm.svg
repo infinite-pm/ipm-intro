@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="980" viewBox="0 0 1100 980">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260716060136-a106aa055900+dirty hash=1f67c9a1 source-file=docs/examples/tshirt-magic.md source-id=140 -->
+  <!-- ipm-svg meta: generated-by=md-embed@dev hash=1f67c9a1 source-file=docs/examples/tshirt-magic.md source-id=140 -->
 
   <defs>
   </defs>
@@ -13,7 +13,7 @@
     <rect x="760" y="290" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="760" y="490" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="760" y="360" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="940" y="370" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="940" y="425" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="260" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="260" y="900" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="220" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -35,12 +35,12 @@
     <path d="M 460.00 795.00 L 455.50 786.00 L 460.00 788.25 L 464.50 786.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="partof" data-edge-from="2" data-edge-to="1">
-    <line x1="396.53" y1="265.62" x2="344.94" y2="497.79" stroke="#82b366" stroke-width="3" />
-    <path d="M 343.47 504.38 L 341.03 494.62 L 344.94 497.79 L 349.82 496.57 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="396.65" y1="265.64" x2="344.77" y2="507.75" stroke="#82b366" stroke-width="3" />
+    <path d="M 343.35 514.36 L 340.84 504.61 L 344.77 507.75 L 349.64 506.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="partof" data-edge-from="3" data-edge-to="1">
-    <line x1="395.00" y1="695.83" x2="347.25" y2="560.53" stroke="#82b366" stroke-width="3" />
-    <path d="M 345.00 554.17 L 352.24 561.16 L 347.25 560.53 L 343.75 564.15 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="395.00" y1="695.42" x2="347.19" y2="555.97" stroke="#82b366" stroke-width="3" />
+    <path d="M 345.00 549.58 L 352.18 556.64 L 347.19 555.97 L 343.66 559.56 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="partof" data-edge-from="4" data-edge-to="1">
     <line x1="396.53" y1="814.38" x2="344.94" y2="582.21" stroke="#82b366" stroke-width="3" />
@@ -59,13 +59,13 @@
     <path d="M 525.00 250.00 L 534.00 245.50 L 531.75 250.00 L 534.00 254.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="partof" data-edge-from="7" data-edge-to="4">
-      <line class="edge-ghost" x1="616.00" y1="290.00" x2="484.00" y2="770.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="610.00" y1="300.00" x2="484.00" y2="770.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="616.00" y1="290.00" x2="484.00" y2="770.00" stroke="#82b366" stroke-width="3" />
+        <line x1="610.00" y1="300.00" x2="484.00" y2="770.00" stroke="#82b366" stroke-width="3" />
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="616.00" y1="285.00" x2="616.00" y2="290.00" stroke="#82b366" stroke-width="3" />
-        <g class="edge-badge"><title>PartOf: t-shirt W → Patrick wears white t-shirt</title><rect x="609.00" y="283.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="616.00" y="290.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">2</text></g>
+        <line x1="610.00" y1="285.00" x2="610.00" y2="300.00" stroke="#82b366" stroke-width="3" />
+        <g class="edge-badge"><title>PartOf: t-shirt W → Patrick wears white t-shirt</title><rect x="603.00" y="293.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="610.00" y="300.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="484.00" y1="770.00" x2="484.00" y2="788.25" stroke="#82b366" stroke-width="3" />
@@ -74,12 +74,12 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="partof" data-edge-from="8" data-edge-to="2">
-    <line x1="575.00" y1="342.92" x2="528.89" y2="277.60" stroke="#82b366" stroke-width="3" />
-    <path d="M 525.00 272.08 L 533.87 276.84 L 528.89 277.60 L 526.51 282.03 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="575.00" y1="342.50" x2="528.74" y2="273.12" stroke="#82b366" stroke-width="3" />
+    <path d="M 525.00 267.50 L 533.74 272.49 L 528.74 273.12 L 526.25 277.48 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="partof" data-edge-from="8" data-edge-to="3">
-    <line x1="617.67" y1="385.00" x2="485.19" y2="668.88" stroke="#82b366" stroke-width="3" />
-    <path d="M 482.33 675.00 L 482.06 664.94 L 485.19 668.88 L 490.22 668.75 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="608.00" y1="385.00" x2="494.51" y2="668.73" stroke="#82b366" stroke-width="3" />
+    <path d="M 492.00 675.00 L 491.16 664.97 L 494.51 668.73 L 499.52 668.31 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="2" data-edge-to="9">
     <line x1="525.00" y1="227.92" x2="571.11" y2="162.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -94,32 +94,32 @@
     <path d="M 885.00 265.00 L 894.00 260.50 L 891.75 265.00 L 894.00 269.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="8" data-edge-to="12">
-    <line x1="705.00" y1="348.33" x2="748.60" y2="333.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 755.00 331.67 L 747.88 338.78 L 748.60 333.80 L 745.04 330.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="705.00" y1="348.75" x2="748.45" y2="337.89" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 755.00 336.25 L 747.36 342.80 L 748.45 337.89 L 745.18 334.07 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="expresses" data-edge-from="8" data-edge-to="13">
-    <line x1="666.36" y1="385.00" x2="788.33" y2="480.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 793.64 485.00 L 783.78 482.98 L 788.33 480.83 L 789.34 475.90 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="676.82" y1="385.00" x2="807.74" y2="481.01" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 813.18 485.00 L 803.26 483.31 L 807.74 481.01 L 808.59 476.05 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="7" data-edge-to="12">
-    <line x1="705.00" y1="255.00" x2="750.23" y2="300.23" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 755.00 305.00 L 745.45 301.82 L 750.23 300.23 L 751.82 295.45 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="705.00" y1="254.58" x2="750.02" y2="295.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 755.00 300.42 L 745.32 297.65 L 750.02 295.86 L 751.41 291.02 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="7" data-edge-to="14">
-    <line x1="705.00" y1="272.67" x2="752.14" y2="373.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 755.00 379.33 L 747.11 373.09 L 752.14 373.22 L 755.25 369.27 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="705.00" y1="261.67" x2="752.34" y2="372.13" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 755.00 378.33 L 747.32 371.83 L 752.34 372.13 L 755.59 368.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="9" data-edge-to="11">
     <line x1="655.62" y1="183.47" x2="797.79" y2="215.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 804.38 216.53 L 794.62 218.97 L 797.79 215.06 L 796.57 210.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="13" data-edge-to="15">
-    <line x1="853.33" y1="485.00" x2="980.35" y2="437.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 986.67 435.00 L 979.82 442.37 L 980.35 437.37 L 976.66 433.95 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="885.00" y1="515.83" x2="929.81" y2="478.49" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 935.00 474.17 L 930.97 483.39 L 929.81 478.49 L 925.21 476.47 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="14" data-edge-to="15">
-    <line x1="885.00" y1="390.00" x2="928.25" y2="390.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 935.00 390.00 L 926.00 394.50 L 928.25 390.00 L 926.00 385.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="885.00" y1="394.17" x2="929.81" y2="431.51" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 935.00 435.83 L 925.21 433.53 L 929.81 431.51 L 930.97 426.61 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="leadsto" data-edge-from="16" data-edge-to="1">
     <line x1="280.00" y1="85.00" x2="280.00" y2="488.25" stroke="#ff8000" stroke-width="3" />
@@ -146,8 +146,8 @@
     <text x="820" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">black</text>
     <rect x="760" y="360" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="820" y="390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">white</text>
-    <rect x="940" y="370" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1000" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">color</text>
+    <rect x="940" y="425" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="1000" y="455" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">color</text>
     <rect x="260" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="280" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
     <rect x="260" y="900" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>

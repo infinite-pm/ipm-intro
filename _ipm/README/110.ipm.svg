@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="540" viewBox="0 0 380 540">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260712101050-797719cf046e hash=036d9600 source-file=README.md source-id=110 -->
+  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260721071157-f75466a66376 hash=036d9600 source-file=README.md source-id=110 -->
 
   <defs>
   </defs>
@@ -28,12 +28,12 @@
     <path d="M 215.00 150.00 L 206.00 154.50 L 208.25 150.00 L 206.00 145.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="partof" data-edge-from="4" data-edge-to="2">
-    <line x1="165.00" y1="169.17" x2="211.77" y2="254.91" stroke="#82b366" stroke-width="3" />
-    <path d="M 215.00 260.83 L 206.74 255.09 L 211.77 254.91 L 214.64 250.78 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="140.00" y1="185.00" x2="233.96" y2="231.98" stroke="#82b366" stroke-width="3" />
+    <path d="M 240.00 235.00 L 229.94 235.00 L 233.96 231.98 L 233.96 226.95 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="partof" data-edge-from="4" data-edge-to="3">
-    <line x1="104.44" y1="185.00" x2="251.07" y2="349.95" stroke="#82b366" stroke-width="3" />
-    <path d="M 255.56 355.00 L 246.21 351.26 L 251.07 349.95 L 252.94 345.28 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="75.00" y1="185.00" x2="240.23" y2="350.23" stroke="#82b366" stroke-width="3" />
+    <path d="M 245.00 355.00 L 235.45 351.82 L 240.23 350.23 L 241.82 345.45 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="5" data-edge-to="1">
     <line x1="280.00" y1="85.00" x2="280.00" y2="108.25" stroke="#ff8000" stroke-width="3" />

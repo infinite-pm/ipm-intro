@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="780" height="540" viewBox="0 0 780 540">
-  <!-- ipm-svg meta: generated-by=ipm-rpc@v0.0.0-20260716060136-a106aa055900+dirty hash=590d3974 source-file=docs/examples/tshirt-magic.md source-id=100 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="540" viewBox="0 0 740 540">
+  <!-- ipm-svg meta: generated-by=md-embed@dev hash=590d3974 source-file=docs/examples/tshirt-magic.md source-id=100 -->
 
   <defs>
   </defs>
@@ -31,24 +31,24 @@
     <path d="M 460.00 355.00 L 455.50 346.00 L 460.00 348.25 L 464.50 346.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="partof" data-edge-from="3" data-edge-to="1">
-    <line x1="395.00" y1="158.33" x2="348.47" y2="235.88" stroke="#82b366" stroke-width="3" />
-    <path d="M 345.00 241.67 L 345.77 231.63 L 348.47 235.88 L 353.49 236.26 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="395.00" y1="159.17" x2="348.23" y2="244.91" stroke="#82b366" stroke-width="3" />
+    <path d="M 345.00 250.83 L 345.36 240.78 L 348.23 244.91 L 353.26 245.09 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="partof" data-edge-from="4" data-edge-to="1">
     <line x1="395.00" y1="270.00" x2="351.75" y2="270.00" stroke="#82b366" stroke-width="3" />
     <path d="M 345.00 270.00 L 354.00 265.50 L 351.75 270.00 L 354.00 274.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="partof" data-edge-from="5" data-edge-to="1">
-    <line x1="395.00" y1="381.67" x2="348.47" y2="304.12" stroke="#82b366" stroke-width="3" />
-    <path d="M 345.00 298.33 L 353.49 303.74 L 348.47 304.12 L 345.77 308.37 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="395.00" y1="380.83" x2="348.23" y2="295.09" stroke="#82b366" stroke-width="3" />
+    <path d="M 345.00 289.17 L 353.26 294.91 L 348.23 295.09 L 345.36 299.22 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="3" data-edge-to="6">
     <line x1="525.00" y1="150.00" x2="568.25" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 150.00 L 566.00 154.50 L 568.25 150.00 L 566.00 145.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="5" data-edge-to="6">
-    <polyline points="525.00,374.09 740,335 740,205 709.77,174.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 705.00 170.00 L 714.55 173.18 L 709.77 174.77 L 708.18 179.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="524.23" y1="374.57" x2="573.99" y2="192.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 575.77 186.43 L 577.73 196.30 L 573.99 192.94 L 569.05 193.92 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="4" data-edge-to="7">
     <line x1="525.00" y1="270.00" x2="568.25" y2="270.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
