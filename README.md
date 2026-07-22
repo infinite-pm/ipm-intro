@@ -224,7 +224,7 @@ The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`
 | <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue dashed` | <!--ipmt:as-token:X-->`EXPRESSES` | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a - a node can express many independent properties |
 | <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray dotted` | <!--ipmt:as-token:N-->`NEAR-TO` | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
 
-The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are infinite.pm's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why infintie.pm renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
+The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are infinite.pm's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why infinite.pm renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).
 
 ## All allowed edges
 
@@ -269,4 +269,9 @@ External reading - Mark Burgess ([ResearchGate profile](https://www.researchgate
 
 ## Related repos
 
-All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https://github.com/orgs/infinite-pm/repositories).
+All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https://github.com/orgs/infinite-pm/repositories):
+
+- [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) - the Go `ipmt` toolchain: parser, validator, layout engine, SVG renderer, markdown embedding, and the `ipm-rpc` language server.
+- [`vscode-ipm`](https://github.com/infinite-pm/vscode-ipm) - the VS Code extension: `ipmt` highlighting and live preview.
+- [`infinite-pm-web`](https://github.com/infinite-pm/infinite-pm-web) - the [infinite.pm](https://infinite.pm) website.
+- [`infinite-pm-lab`](https://github.com/infinite-pm/infinite-pm-lab) - the [lab.infinite.pm](https://lab.infinite.pm) experiments sandbox.
