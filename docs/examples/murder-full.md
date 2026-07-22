@@ -4,7 +4,7 @@ A Clue-style narrative modeled in ipmt: a party, a murder, and the investigation
 
 > **Based on Mark Burgess's Cluedo example** from [SSTorytime](https://github.com/markburgess/SSTorytime), discussed in [*Using Knowledge Graphs for Inferential Reasoning*](https://mark-burgess-oslo-mb.medium.com/using-knowledge-graphs-for-inferential-reasoning-8a06e583b4d4) (Article 8) and [*From Cognition to Understanding*](https://mark-burgess-oslo-mb.medium.com/from-cognition-to-understanding-677e3b7485de) (Article 14). Mark's original uses *Ms Scarlett*, *Martin*, and a *gun*; this version uses *Professor Plum*, *Miss Scarlet*, and a *bread knife* - the modeling shape (event-decomposes-into-sub-events, weapon-as-chain-of-concepts, participants-attached-via-part-of) is the same.
 
-> **Syntax note.** This example uses **edge tooltips** - short annotations attached to each arrow, like `--"answers question"-->` and `<--::P involves--`. The README only teaches the bare arrow forms; edge tooltips are an additional ipmt feature covered in the (forthcoming) ipmt syntax spec.
+> **Syntax note.** This example uses **edge tooltips** - short annotations attached to each arrow, like `--"answers question"-->` and `<--::P involves--`. The README only teaches the bare arrow forms; edge tooltips are an additional ipmt feature covered in the [ipmt syntax spec](https://github.com/infinite-pm/ipm-tools/blob/main/docs/ipmt-spec.md).
 
 ```ipmt
 get the party started ::e

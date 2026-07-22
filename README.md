@@ -257,7 +257,7 @@ Two important rules baked into this table:
 - [`docs/examples/tshirt-magic.md`](docs/examples/tshirt-magic.md) - alternative t-shirts storyline 
 - [`docs/examples/meta-ipm.md`](docs/examples/meta-ipm.md) - infinite.pm modeling itself
 
-**ipmt syntax spec:** the formal grammar of the text format - type markers, aliases, arrow forms, edge tooltips, escaping, fence behaviour - lives in a separate document that will be published alongside the open-source `ipm-tools` release. Until then, the build-up section above plus the worked examples in `docs/examples/` show the vocabulary that covers nearly every model in the wild.
+**ipmt syntax spec:** the formal grammar of the text format - type markers, aliases, arrow forms, edge tooltips, escaping, fence behaviour - is published as [`ipm-tools/docs/ipmt-spec.md`](https://github.com/infinite-pm/ipm-tools/blob/main/docs/ipmt-spec.md). The build-up section above plus the worked examples in `docs/examples/` show the vocabulary that covers nearly every model in the wild.
 
 External reading - Mark Burgess ([ResearchGate profile](https://www.researchgate.net/profile/Mark-Burgess-9)) on Semantic Spacetime γ(3,4):
 

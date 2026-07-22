@@ -24,7 +24,7 @@ If the reader closes the tab wanting to look at a worked example or try modeling
 
 ## Out of scope - belongs elsewhere
 
-- **ipmt syntax**. The text format's grammar - escaping rules, alias declarations, comma/quote handling, fence behaviour - belongs in a separate document (`docs/ipmt-spec.md` or the upstream `ipm-tools/docs/ipmt-spec.md`). The main README *uses* ipmt in fenced blocks but does not teach its grammar. Where syntactic detail is unavoidable in the README, link out, do not inline.
+- **ipmt syntax**. The text format's grammar - escaping rules, alias declarations, comma/quote handling, fence behaviour - belongs in the upstream spec, `ipm-tools/docs/ipmt-spec.md`. The main README *uses* ipmt in fenced blocks but does not teach its grammar. Where syntactic detail is unavoidable in the README, link out, do not inline.
 - **Tooling internals.** How the renderer works, how to install the VS Code extension, contributor guide, CI integration - all go in their own files when they exist. The README mentions tooling exists, but does not document it.
 - **Theoretical depth.** Full Semantic Spacetime γ(3,4) treatment, Promise Theory background, comparisons to ontology / RDF / property graphs - link to Mark Burgess's writings (and the [semantic.st](https://semantic.st/) project home) rather than repeating them. Mark explains his framework better than we can.
 
