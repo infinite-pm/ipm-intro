@@ -299,8 +299,8 @@ e1 ::e --"co-located"-- e2 ::e
 
 ### 4.5 Bare `---` form (no explicit `::N`) - event - event
 
-Some renderers accept `---` as Near-to shorthand. Editor + preview
-should still color it as Near-to gray.
+`---` is the first-class undirected Near-to arrow (see the README edge
+table). Editor + preview color it as Near-to gray.
 
 ```ipmt
 ea ::e --- eb ::e
