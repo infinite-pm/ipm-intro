@@ -275,3 +275,8 @@ All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https:/
 - [`vscode-ipm`](https://github.com/infinite-pm/vscode-ipm) - the VS Code extension: `ipmt` highlighting and live preview.
 - [`infinite-pm-web`](https://github.com/infinite-pm/infinite-pm-web) - the [infinite.pm](https://infinite.pm) website.
 - [`infinite-pm-lab`](https://github.com/infinite-pm/infinite-pm-lab) - the [lab.infinite.pm](https://lab.infinite.pm) experiments sandbox.
+
+## License & credits
+
+[Apache License 2.0](LICENSE). Created by [mj41](https://mj41.cz) with help
+from AI coding agents — see [`AUTHORS.md`](AUTHORS.md).
