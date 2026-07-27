@@ -12,7 +12,7 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 **Where this is going.** The infinite.pm project is an **experiment** in **Semantic Spacetime-based modeling and cooperation** between agents. **Smart agents** - humans, AIs, and machines - assess promises, stigmergic trails, and things to explore, learn, shape, cooperate, evolve, and endure. The aim is to help us *externalize* our mental models in the form of infinite.pm stories/processes/loops, **think with them as a partner** (in the spirit of Niklas Luhmann's [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten)), and gradually integrate them into **one living graph**. The medium we are aiming at: the [infinite canvas](https://infinitecanvas.tools/).
 
-**Tooling.** The toolchain is open source: [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) holds the `ipmt` parser, validator, layout engine, and the renderer that compiles ipmt fenced blocks into the SVG diagrams you see throughout this README; [`vscode-ipm`](https://github.com/infinite-pm/vscode-ipm) is the VS Code extension for live editing and preview of `ipmt` (the infinite.pm text format for these graphs). [mj41](https://mj41.cz/) builds these **spec-driven/vibe-coded**. [Sponsors](https://github.com/sponsors/mj41) - AI-token kind or life kind - are always welcome; both speed this up a bit.
+**Tooling.** The toolchain is open source: [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) holds the `ipmt` parser, validator, layout engine, and the renderer that compiles ipmt fenced blocks into the SVG diagrams you see throughout this README; [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) is the VS Code extension for live editing and preview of `ipmt` (the infinite.pm text format for these graphs). [mj41](https://mj41.cz/) builds these **spec-driven/vibe-coded**. [Sponsors](https://github.com/sponsors/mj41) - AI-token kind or life kind - are always welcome; both speed this up a bit.
 
 ## The three node kinds
 
@@ -272,7 +272,7 @@ External reading - Mark Burgess ([ResearchGate profile](https://www.researchgate
 All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https://github.com/orgs/infinite-pm/repositories):
 
 - [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) - the Go `ipmt` toolchain: parser, validator, layout engine, SVG renderer, markdown embedding, and the `ipm-rpc` language server.
-- [`vscode-ipm`](https://github.com/infinite-pm/vscode-ipm) - the VS Code extension: `ipmt` highlighting and live preview.
+- [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) - the VS Code extension: `ipmt` highlighting and live preview.
 - [`infinite-pm-web`](https://github.com/infinite-pm/infinite-pm-web) - the [infinite.pm](https://infinite.pm) website.
 - [`infinite-pm-lab`](https://github.com/infinite-pm/infinite-pm-lab) - the [lab.infinite.pm](https://lab.infinite.pm) experiments sandbox.
 
