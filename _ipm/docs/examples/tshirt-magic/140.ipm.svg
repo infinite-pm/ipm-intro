@@ -90,8 +90,8 @@
     <path d="M 575.00 710.00 L 566.00 714.50 L 568.25 710.00 L 566.00 705.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="4" data-edge-to="11">
-    <polyline points="525.00,815.00 910,815 910,265 891.75,265.00" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 885.00 265.00 L 894.00 260.50 L 891.75 265.00 L 894.00 269.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="525.00,814.49 910,775 910,295 889.77,274.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 885.00 270.00 L 894.55 273.18 L 889.77 274.77 L 888.18 279.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="8" data-edge-to="12">
     <line x1="705.00" y1="348.75" x2="748.45" y2="337.89" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
