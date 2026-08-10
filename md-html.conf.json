@@ -4,9 +4,17 @@
     "home_url": "https://infinite.pm/",
     "brand": "infinite.pm",
     "menu": [
-      { "label": "Home", "url": "https://infinite.pm/" },
-      { "label": "Intro", "url": "https://infinite.pm/intro" }
-    ]
+      {
+        "label": "Home",
+        "url": "https://infinite.pm/"
+      },
+      {
+        "label": "Intro",
+        "url": "https://infinite.pm/intro"
+      }
+    ],
+    "logo": "../logo/wordmark.svg",
+    "logo_alt": "infinite.pm"
   },
   "footer": {
     "text": "© infinite.pm · an experiment in Semantic Spacetime modeling & cooperation between agents.",
@@ -15,9 +23,14 @@
     "source_label": "GitHub"
   },
   "file": [
-    { "src": "README.md", "out": "index.html" }
+    {
+      "src": "README.md",
+      "out": "index.html"
+    }
   ],
   "glob": [
-    { "src": "docs/**/*.md" }
+    {
+      "src": "docs/**/*.md"
+    }
   ]
 }
