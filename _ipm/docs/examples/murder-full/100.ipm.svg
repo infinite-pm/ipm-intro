@@ -284,10 +284,9 @@
     <text x="100" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">investigatio</text>
     <text x="100" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">n begins</text>
     <rect x="520" y="120" width="120" height="80" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="580" y="135" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Professor Plum</text>
-    <text x="580" y="152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&amp; Miss</text>
-    <text x="580" y="168" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Scarlet in the</text>
-    <text x="580" y="185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">library</text>
+    <text x="580" y="143" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Professor Plum</text>
+    <text x="580" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&amp; Miss Scarlet</text>
+    <text x="580" y="177" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">in the library</text>
     <rect x="700" y="130" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="760" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">In the</text>
     <text x="760" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">library</text>
