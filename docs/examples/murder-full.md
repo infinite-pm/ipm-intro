@@ -44,7 +44,7 @@ sk --"used for"--> cutting bread ::c
 library-ppms --> refusal-mspp --> ppmms
 
 ```
-> **Syntax note.** This example uses **edge tooltips** - short annotations attached to each arrow, like `--"answers question"-->` and `<--::P involves--`. The README only teaches the bare arrow forms; edge tooltips are an additional ipmt feature covered in the [ipmt syntax spec](https://github.com/infinite-pm/ipm-tools/blob/main/docs/ipmt-spec.md).
+> **Syntax note.** This example uses **edge tooltips** - short annotations attached to each arrow, like `--"answers question"-->` and `<--::P involves--`. The intro only teaches the bare arrow forms; edge tooltips are an additional ipmt feature covered in the [ipmt syntax spec](https://github.com/infinite-pm/ipm-tools/blob/main/docs/ipmt-spec.md).
 >
 > **They are not always drawn.** A tooltip lives in the source; whether it reaches the picture depends on what the preview can do - some renderers put it on the arrow as a label or show it on hover, others (the static SVG on this page included) leave the arrow bare. When an arrow's meaning matters, read it in the ipmt source above, not off the diagram.
 

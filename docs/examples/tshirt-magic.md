@@ -1,17 +1,17 @@
 # T-shirt magic
 
-This is the worked-example companion to the [main README](../../README.md). It picks up where the README's Step 4 leaves off and adds two things the intro skipped:
+This is the worked-example companion to the [main intro](https://infinite.pm/intro/). It picks up where the intro's Step 4 leaves off and adds two things the intro skipped:
 
 - a **second observer's account** of the same scene - a *layered* variant where the observer saw Patrick wearing black over white, with no take-on of the white t-shirt at all;
 - **open-world probe events** - single sightings that decide which observer's account is the one that actually happened.
 
 Note: every ipm graph is an **observer's** account - somebody else watching Patrick, not Patrick's own account. The first model below is told from one chosen viewpoint; further down, we'll see a different observer's account of the same `wearBW` event.
 
-## Recap - the full graph from the README
+## Recap - the full graph from the intro
 
-So the file stands on its own, here is the complete three-level model the README's Step 4 ends with. The top-level `wearBW` event names only the **observable** outcome - Patrick wore black, then he wore white - and stays silent on *how* the change happened. That mechanism is hidden inside the wrapper event; the sub-events reveal it. This observer saw a take-off and take-on (an exchange), so call this **scenario 1: the exchange**. Its discriminating shape is that the two t-shirts are *never simultaneously on Patrick*.
+So the file stands on its own, here is the complete three-level model the intro's Step 4 ends with. The top-level `wearBW` event names only the **observable** outcome - Patrick wore black, then he wore white - and stays silent on *how* the change happened. That mechanism is hidden inside the wrapper event; the sub-events reveal it. This observer saw a take-off and take-on (an exchange), so call this **scenario 1: the exchange**. Its discriminating shape is that the two t-shirts are *never simultaneously on Patrick*.
 
-The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
+The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](https://github.com/infinite-pm/ipm-intro/blob/main/docs/examples/tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
 <!-- ipm-svg id=tshirt-magic-recap hash=ae84a3ca -->
@@ -19,7 +19,7 @@ The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipm
 
 ## Step 1 - event chain with evidence and hypothesis
 
-The README's Step 1 keeps only the two states the observer directly *saw*: Patrick wore a black t-shirt at one moment, then later Patrick wore a white t-shirt. Those two wears are the **evidence**. There is an obvious gap between them - the observer didn't actually witness the moment of change.
+The intro's Step 1 keeps only the two states the observer directly *saw*: Patrick wore a black t-shirt at one moment, then later Patrick wore a white t-shirt. Those two wears are the **evidence**. There is an obvious gap between them - the observer didn't actually witness the moment of change.
 
 A modeler can fill that gap with a **hypothesis**: an event drawn from a shared library of common stories and processes. *"When someone goes from wearing X to wearing Y, something like a swap usually happened in between."* The hypothesized event isn't observed; it's an inference shaped by familiarity with similar past scenes. A future observation can confirm it, contradict it, or replace it with something entirely different (a layered wearing, a costume change, a sleight-of-hand). Patrick himself might tell us what happened, providing direct testimony rather than the observer's inference.
 
@@ -48,7 +48,7 @@ swapT --> hypothesis ::c
 ![](../../_ipm/docs/examples/tshirt-magic/100.ipm.svg)
 
 
-This is the same three-event chain the README uses from Step 2 onward, but each event now carries the observer's epistemic stance: the `wears` are facts; the `swap` is a guess that fits a familiar process template. From here on, the rest of this file builds on the swap hypothesis the way the README's Step 2+ does - treating it as the model the observer has settled on - while remembering it could be wrong.
+This is the same three-event chain the intro uses from Step 2 onward, but each event now carries the observer's epistemic stance: the `wears` are facts; the `swap` is a guess that fits a familiar process template. From here on, the rest of this file builds on the swap hypothesis the way the intro's Step 2+ does - treating it as the model the observer has settled on - while remembering it could be wrong.
 
 ## Observation is open-world - positive evidence
 

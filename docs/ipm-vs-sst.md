@@ -1,6 +1,6 @@
 # IPM vs default SST - what we rename
 
-This doc explains the two label changes IPM makes on top of Mark Burgess's original Semantic Spacetime γ(3,4) - and why. For the main IPM modeling introduction, see the [README](../README.md).
+This doc explains the two label changes IPM makes on top of Mark Burgess's original Semantic Spacetime γ(3,4) - and why. For the main IPM modeling introduction, see the [intro](https://infinite.pm/intro/).
 
 IPM is built directly on Mark Burgess's **[Semantic Spacetime γ(3,4)](https://semantic.st/)** ("gamma 3, 4" - three kinds of nodes, four kinds of relations). IPM tweaks two of the original SST labels for readability:
 
@@ -15,4 +15,4 @@ IPM is built directly on Mark Burgess's **[Semantic Spacetime γ(3,4)](https://s
 
 - Mark Burgess, [Designing Nodes and Arrows in Knowledge Graphs with Semantic Spacetime](https://mark-burgess-oslo-mb.medium.com/designing-nodes-and-arrows-in-knowledge-graphs-with-semantic-spacetime-0992b9cae595) - the source article for the LCEN triangle.
 - The [`semantic.st`](https://semantic.st/) project home for the broader SST framework.
-- The [README's "Where to look next" section](../README.md#where-to-look-next) for the full external-reading list.
+- The [intro's "Where to look next" section](https://infinite.pm/intro/#where-to-look-next) for the full external-reading list.

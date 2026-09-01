@@ -12,14 +12,14 @@ Mark Burgess's insight, and the foundation of γ(3,4): with just **three kinds o
 
 **Where this is going.** The infinite.pm project is an **experiment** in **Semantic Spacetime-based modeling and cooperation** between agents. **Smart agents** - humans, AIs, and machines - assess promises, stigmergic trails, and things to explore, learn, shape, cooperate, evolve, and endure. The aim is to help us *externalize* our mental models in the form of infinite.pm stories/processes/loops, **think with them as a partner** (in the spirit of Niklas Luhmann's [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten)), and gradually integrate them into **one living graph**. The medium we are aiming at: the [infinite canvas](https://infinitecanvas.tools/).
 
-**Tooling.** The toolchain is open source: [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) holds the `ipmt` parser, validator, layout engine, and the renderer that compiles ipmt fenced blocks into the SVG diagrams you see throughout this README; [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) is the VS Code extension for live editing and preview of `ipmt` (the infinite.pm text format for these graphs). [mj41](https://mj41.cz/) builds these **spec-driven/vibe-coded**. [Sponsors](https://github.com/sponsors/mj41) - AI-token kind or life kind - are always welcome; both speed this up a bit.
+**Tooling.** The toolchain is open source: [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) holds the `ipmt` parser, validator, layout engine, and the renderer that compiles ipmt fenced blocks into the SVG diagrams you see throughout this page; [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) is the VS Code extension for live editing and preview of `ipmt` (the infinite.pm text format for these graphs). [mj41](https://mj41.cz/) builds these **spec-driven/vibe-coded**. [Sponsors](https://github.com/sponsors/mj41) - AI-token kind or life kind - are always welcome; both speed this up a bit.
 
 ## The three node kinds
 
 | Kind | Symbol | What it is | Examples |
 | --- | :---: | --- | --- |
 | <!--ipmt:as-token:e-title-->`Event` | <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`orange`) | A transient happening - a region of space and time, fast at the model's timescale | <!--ipmt:as-token:e-title-->`"User clicks button"`, <!--ipmt:as-token:e-title-->`"Build runs"`, <!--ipmt:as-token:e-title-->`"K8s service deploying"`, <!--ipmt:as-token:e-title-->`"Plum murders Scarlet"` |
-| <!--ipmt:as-token:t-title-->`Thing` | <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`green`) | A persistent participant - slow at the model's timescale | <!--ipmt:as-token:t-title-->`"Alice"`, <!--ipmt:as-token:t-title-->`"my laptop"`, <!--ipmt:as-token:t-title-->`"service A container"`, <!--ipmt:as-token:t-title-->`"knife K1"`, <!--ipmt:as-token:t-title-->`"Miss Scarlet"`, <!--ipmt:as-token:t-title-->`"Prof. Plum"` |
+| <!--ipmt:as-token:t-title-->`Thing` | <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`green`) | A persistent participant - slow at the model's timescale | <!--ipmt:as-token:t-title-->`"Alice"`, <!--ipmt:as-token:t-title-->`"my laptop"`, <!--ipmt:as-token:t-title-->`"service A container"`, <!--ipmt:as-token:t-title-->`"knife K1"`, <!--ipmt:as-token:t-title-->`"Prof. Plum"` |
 | <!--ipmt:as-token:c-title-->`Concept` | <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`blue`) | A quasi-invariant pattern; a property that events or things can express | <!--ipmt:as-token:c-title-->`"human"`, <!--ipmt:as-token:c-title-->`"microservice"`, <!--ipmt:as-token:c-title-->`"production environment"`, <!--ipmt:as-token:c-title-->`"murder"` |
 
 Rule of thumb, in order:
@@ -278,5 +278,5 @@ All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https:/
 
 ## License & credits
 
-[Apache License 2.0](LICENSE). Created by [mj41](https://mj41.cz) with help
-from AI coding agents — see [`AUTHORS.md`](AUTHORS.md).
+[Apache License 2.0](https://github.com/infinite-pm/ipm-intro/blob/main/LICENSE). Created by [mj41](https://mj41.cz) with help
+from AI coding agents — see [`AUTHORS.md`](https://github.com/infinite-pm/ipm-intro/blob/main/AUTHORS.md).
