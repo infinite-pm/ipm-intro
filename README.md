@@ -40,7 +40,7 @@ Before you start creating an infinite.pm graph, decide what **question** or **pu
 
 ### Every model is an observer's account
 
-There is no view-from-nowhere. An infinite.pm graph is always **someone's** account of a slice of the world - what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that <!--ipmt-->`swap t-shirt ::e` expresses <!--ipmt-->`swap of clothing ::c` rather than <!--ipmt-->`magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
+There is no view-from-nowhere. An infinite.pm graph is always **someone's** account of a slice of the world - what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that <!--ipmt-->`swapT::a Patrick swaps t-shirt ::e` expresses <!--ipmt-->`swap of clothing ::c` rather than <!--ipmt-->`magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
 
 ## Build it up - by example
 
@@ -58,7 +58,7 @@ Patrick wears black t-shirt ::e
 ![](_ipm/README/100.ipm.svg)
 
 
-The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token:L-->`leads-to` (rendered as an <!--ipmt:as-token:L-->`orange arrow`) - temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an <!--ipmt:as-token:e-title-->`event`. The chain shows only what the observer *directly saw*: two wear states. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them - a *hypothesized* middle step the observer didn't witness.
+The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token:L-->`leads-to` (rendered as an <!--ipmt:as-token:L-->`orange arrow`) - temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an <!--ipmt:as-token:e-title-->`event`. The chain shows only what the observer *directly saw*: two observed stretches of wearing. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them - a *hypothesized* middle step the observer didn't witness.
 
 ### Step 2 - add a participant (thing → event)
 
@@ -126,6 +126,7 @@ wearW --::P--> wearBW
 <!-- ipm-svg id=140 hash=441bac12 -->
 ![](_ipm/README/140.ipm.svg)
 
+Between two events a bare <!--ipmt:as-token:L-->`-->` means <!--ipmt:as-token:L-->`leads-to`, so part-of has to be spelled out: <!--ipmt:as-token:P-->`--::P-->`. Every edge has such an explicit form - see [all eleven combinations](https://infinite.pm/ipm11/maxed.html), each with its implicit and explicit syntax.
 
 We can keep going - <!--ipmt:as-token:e-title-->`swapT` itself decomposes into a finer chain of moments. Here are both zoom levels at once, three levels of pure event nesting:
 
@@ -147,7 +148,6 @@ takeOff --> halfNaked --> takeOn
 <!-- ipm-svg id=150 hash=5c531ebd -->
 ![](_ipm/README/150.ipm.svg)
 
-
 Step 4 will bring Patrick, the t-shirts, and the concepts back into this nested structure.
 
 ### Step 3 - give a property with a concept
@@ -157,13 +157,13 @@ What *properties* does Patrick express? What *property* does the swap event expr
 ```ipmt
 Patrick --> human ::c
 
-swaps t-shirt ::e --> swap of clothing ::c
+swapT::a Patrick swaps t-shirt ::e --> swap of clothing ::c
 
 black t-shirt --> t-shirt ::c, black ::c
 white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=160 hash=559e2d8f -->
+<!-- ipm-svg id=160 hash=d7a55b1b -->
 ![](_ipm/README/160.ipm.svg)
 
 
