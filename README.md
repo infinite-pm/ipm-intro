@@ -213,7 +213,7 @@ That's almost the complete ipmt vocabulary in one model - only <!--ipmt:as-token
 
 ## The four edge kinds
 
-<img src="docs/etc-LPXN.svg" alt="ipm etc-LPXN triangle - the four edge kinds (L, P, X, N) on e/t/c, each same-kind relation drawn to a second node (e2, t2, c2)" width="500"/>
+<a href="https://infinite.pm/ipm11/maxed.html"><img src="docs/etc-LPXN-reads.svg" alt="ipm etc-LPXN triangle - the four edge kinds (L, P, X, N) on e/t/c, each same-kind relation drawn to a second node (e2, t2, c2) - beside the eleven legal edges as they read; opens the interactive version" width="100%"/></a>
 
 The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`event`), <!--ipmt:as-token:t-marker-->`t` (<!--ipmt:as-token:t-title-->`thing`), and <!--ipmt:as-token:c-marker-->`c` (<!--ipmt:as-token:c-title-->`concept`). The directed edges are <!--ipmt:as-token:L-->`L` ( <!--ipmt:as-token:L-->`leads-to`),  <!--ipmt:as-token:P-->`P` (<!--ipmt:as-token:P-->`part-of`) and  <!--ipmt:as-token:X-->`X` ( <!--ipmt:as-token:X-->`expresses property`) and  undirected edge <!--ipmt:as-token:N-->`N` ( <!--ipmt:as-token:N-->`near-to`) . The arrows show every legal edge. A relation between two nodes of the *same* kind is drawn to a second node of that kind beside the corner - <!--ipmt:as-token:e-marker-->`e` with <!--ipmt:as-token:e-marker-->`e2`, <!--ipmt:as-token:t-marker-->`t` with <!--ipmt:as-token:t-marker-->`t2`, <!--ipmt:as-token:c-marker-->`c` with <!--ipmt:as-token:c-marker-->`c2` - because an event that leads to an event leads to a *different* one; nothing in ipm points at itself. The outermost, dotted ring of each corner (<!--ipmt:as-token:N-->`N_e`, <!--ipmt:as-token:N-->`N_t`, <!--ipmt:as-token:N-->`N_c`) is <!--ipmt:as-token:N-->`NEAR` - similarity between two nodes of the same kind, undirected.
 
@@ -228,7 +228,7 @@ The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipm
 
 ## All allowed edges
 
-Every legal source → target combination, matching the diagram above. The "ipmt syntax" column shows the most common form for each edge. To step through them one at a time - implicit and explicit syntax, what each reads as, and the triangle with that edge highlighted - see [the eleven combinations](https://infinite.pm/ipm11/).
+Every legal source → target combination, matching the diagram above. The "ipmt syntax" column shows the most common form for each edge. To step through them one at a time - implicit and explicit syntax, what each reads as, and the triangle with that edge highlighted - see [the eleven combinations](https://infinite.pm/ipm11/maxed.html).
 
 | # | Source → Target | Edge | ipmt syntax | Reads as |
 |:-:|:--|:-:|:--|:--|
