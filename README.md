@@ -55,7 +55,7 @@ Patrick wears black t-shirt ::e
   --> Patrick wears white t-shirt ::e
 ```
 <!-- ipm-svg id=100 hash=0183bb61 -->
-![](_ipm/README/100.ipm.svg)
+![Step 1: two events in a leads-to chain - Patrick wears black t-shirt, then Patrick wears white t-shirt](_ipm/README/100.ipm.svg)
 
 
 The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token:L-->`leads-to` (rendered as an <!--ipmt:as-token:L-->`orange arrow`) - temporal/causal flow. <!--ipmt:as-token:e-marker-->`::e` marks each node as an <!--ipmt:as-token:e-title-->`event`. The chain shows only what the observer *directly saw*: two observed stretches of wearing. Step 2 onward adds a <!--ipmt:as-token:e-title-->`swap` event between them - a *hypothesized* middle step the observer didn't witness.
@@ -72,7 +72,7 @@ wearB::a Patrick wears black t-shirt ::e
 Patrick --> wearB, swapT, wearW
 ```
 <!-- ipm-svg id=110 hash=e13e41db -->
-![](_ipm/README/110.ipm.svg)
+![Step 2: the events wearB, swapT and wearW in a leads-to chain, with the thing Patrick part of each](_ipm/README/110.ipm.svg)
 
 Two new tricks:
 
@@ -94,7 +94,7 @@ black t-shirt --> wearB, swapT
 white t-shirt --> swapT, wearW
 ```
 <!-- ipm-svg id=120 hash=e4401e34 -->
-![](_ipm/README/120.ipm.svg)
+![Step 2: the same chain with Patrick in all three events, the black t-shirt in wearB and swapT, and the white t-shirt in swapT and wearW](_ipm/README/120.ipm.svg)
 
 **You can also zoom *out*.** The same scene can be told at a coarser level: one single event that names only the *observable* change (Patrick wore black, then white), with every participant attached at that one level. The mechanism - *how* he changed t-shirts - is hidden inside the wrapper event and revealed only when you zoom in.
 
@@ -106,7 +106,7 @@ black t-shirt  --> wearBW
 white t-shirt  --> wearBW
 ```
 <!-- ipm-svg id=130 hash=a609635a -->
-![](_ipm/README/130.ipm.svg)
+![Zoomed out: one event wearBW with Patrick, the black t-shirt and the white t-shirt as its participants](_ipm/README/130.ipm.svg)
 
 Same story, different zoom level. The right level depends on the **purpose** of your model - and you don't have to pick just one.
 
@@ -124,7 +124,7 @@ swapT --::P--> wearBW
 wearW --::P--> wearBW
 ```
 <!-- ipm-svg id=140 hash=441bac12 -->
-![](_ipm/README/140.ipm.svg)
+![Zoomed in: wearBW with its three sub-events wearB, swapT and wearW, which lead to one another](_ipm/README/140.ipm.svg)
 
 Between two events a bare <!--ipmt:as-token:L-->`-->` means <!--ipmt:as-token:L-->`leads-to`, so part-of has to be spelled out: <!--ipmt:as-token:P-->`--::P-->`. Every edge has such an explicit form - see [all eleven combinations](https://infinite.pm/ipm11/maxed.html), each with its implicit and explicit syntax.
 
@@ -146,7 +146,7 @@ takeOn::a Take on white ::e         --::P--> swapT
 takeOff --> halfNaked --> takeOn
 ```
 <!-- ipm-svg id=150 hash=5c531ebd -->
-![](_ipm/README/150.ipm.svg)
+![Three levels: wearBW holds wearB, swapT and wearW, and swapT holds the take-off, half-naked and take-on moments](_ipm/README/150.ipm.svg)
 
 Step 4 will bring Patrick, the t-shirts, and the concepts back into this nested structure.
 
@@ -164,7 +164,7 @@ white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
 <!-- ipm-svg id=160 hash=d7a55b1b -->
-![](_ipm/README/160.ipm.svg)
+![Step 3: concepts - Patrick expresses human, the swap expresses swap of clothing, each t-shirt expresses t-shirt and its color, and black and white express color](_ipm/README/160.ipm.svg)
 
 
 Writing <!--ipmt:as-token:c-marker-->`::c` marks the node as a concept. The arrow <!--ipmt-->`thing A --> cX ::c` (<!--ipmt:as-token:X-->`an expresses arrow`, rendered <!--ipmt:as-token:X-->`blue dashed`) reads as "the thing <!--ipmt:as-token:X-->`expresses property` <!--ipmt:as-token:c-title-->`cX`" - and <!--ipmt-->`event e1 ::e --> cY ::c` reads the same way for an event. A node can have several such arrows, one per property; this is **not** isa / classification - each concept is one promise the node makes, not a slot in a taxonomy. Patrick can express <!--ipmt-->`human ::c`, <!--ipmt-->`tall ::c`, and <!--ipmt-->`colleague ::c` simultaneously without any of those being his "type".
@@ -201,7 +201,7 @@ white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
 <!-- ipm-svg id=170 hash=2b23857c -->
-![](_ipm/README/170.ipm.svg)
+![Step 4: the whole model - the three-level event tree, Patrick on wearBW, each t-shirt on the sub-events it was in, and the concepts](_ipm/README/170.ipm.svg)
 
 That's the most important part of the ipmt vocabulary in one model: <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:L-->`lead to` <!--ipmt:as-token:e-title-->`events`, <!--ipmt:as-token:t-title-->`things` <!--ipmt:as-token:P-->`participate in` <!--ipmt:as-token:e-title-->`events`, <!--ipmt:as-token:t-title-->`things` and <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:X-->`express` <!--ipmt:as-token:c-title-->`concepts` as properties, and <!--ipmt:as-token:c-title-->`concepts` can themselves <!--ipmt:as-token:X-->`express properties` of other <!--ipmt:as-token:c-title-->`concepts`. Only the <!--ipmt:as-token:N-->`near-to` (similarity) edge type is missing. Check [all eleven combinations](https://infinite.pm/ipm11/maxed.html) in one diagram, with their `ipmt` syntax.
 
@@ -255,7 +255,6 @@ Two important rules baked into this table:
 
 - [`docs/examples/murder-full.md`](docs/examples/murder-full.md) - a Clue-style murder narrative
 - [`docs/examples/tshirt-magic.md`](docs/examples/tshirt-magic.md) - alternative t-shirts storyline 
-- [`docs/examples/meta-ipm.md`](docs/examples/meta-ipm.md) - infinite.pm modeling itself
 
 **ipmt syntax spec:** the formal grammar of the text format - type markers, aliases, arrow forms, edge tooltips, escaping, fence behaviour - is published as [`ipm-tools/docs/ipmt-spec.md`](https://github.com/infinite-pm/ipm-tools/blob/main/docs/ipmt-spec.md). The build-up section above plus the worked examples in `docs/examples/` show the vocabulary that covers nearly every model in the wild.
 
@@ -272,7 +271,7 @@ External reading - Mark Burgess ([ResearchGate profile](https://www.researchgate
 All `infinite.pm` repositories live under the [`infinite-pm` GitHub org](https://github.com/orgs/infinite-pm/repositories):
 
 - [`ipm-tools`](https://github.com/infinite-pm/ipm-tools) - the Go `ipmt` toolchain: parser, validator, layout engine, SVG renderer, markdown embedding, and the `ipm-rpc` language server.
-- [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) - the VS Code extension: `ipmt` highlighting and live preview.
+- [`vscode-infinite-pm`](https://github.com/infinite-pm/vscode-infinite-pm) - the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=infinite-pm.vscode-infinite-pm): `ipmt` highlighting and live preview.
 - [`infinite-pm-web`](https://github.com/infinite-pm/infinite-pm-web) - the [infinite.pm](https://infinite.pm) website.
 - [`infinite-pm-lab`](https://github.com/infinite-pm/infinite-pm-lab) - the [lab.infinite.pm](https://lab.infinite.pm) experiments sandbox.
 

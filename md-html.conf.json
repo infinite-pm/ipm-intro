@@ -1,5 +1,29 @@
 {
   "out_dir": "../infinite-pm-web/docs/intro",
+  "title_template": "{{title}} — infinite.pm intro",
+  "head": {
+    "site_url": "https://infinite.pm/intro/",
+    "site_name": "infinite.pm",
+    "image": "https://infinite.pm/og.png",
+    "image_width": 1200,
+    "image_height": 628,
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "../favicon.ico",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "../favicon.svg",
+        "type": "image/svg+xml"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "../apple-touch-icon.png"
+      }
+    ]
+  },
   "header": {
     "home_url": "https://infinite.pm/",
     "brand": "infinite.pm",
@@ -25,7 +49,9 @@
   "file": [
     {
       "src": "README.md",
-      "out": "index.html"
+      "out": "index.html",
+      "title": "infinite.pm intro — Infinite Process Modeling for newcomers",
+      "description": "A newcomer's introduction to infinite.pm: model processes, stories and systems as readable graphs with three node kinds and four edge kinds."
     }
   ],
   "glob": [

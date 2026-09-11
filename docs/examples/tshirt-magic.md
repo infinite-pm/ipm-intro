@@ -7,14 +7,14 @@ This is the worked-example companion to the [main intro](https://infinite.pm/int
 
 Note: every ipm graph is an **observer's** account - somebody else watching Patrick, not Patrick's own account. The first model below is told from one chosen viewpoint; further down, we'll see a different observer's account of the same `wearBW` event.
 
-## Recap - the full graph from the intro
+## Recap - the intro's Step 4 graph
 
-So the file stands on its own, here is the complete three-level model the intro's Step 4 ends with. The top-level `wearBW` event names only the **observable** outcome - Patrick wore black, then he wore white - and stays silent on *how* the change happened. That mechanism is hidden inside the wrapper event; the sub-events reveal it. This observer saw a take-off and take-on (an exchange), so call this **scenario 1: the exchange**. Its discriminating shape is that the two t-shirts are *never simultaneously on Patrick*.
+So the file stands on its own, here is the three-level model the intro's Step 4 ends with - its events, participants and two concepts; the color concepts come back in scenario 2 below. The top-level `wearBW` event names only the **observable** outcome - Patrick wore black, then he wore white - and stays silent on *how* the change happened. That mechanism is hidden inside the wrapper event; the sub-events reveal it. This observer saw a take-off and take-on (an exchange), so call this **scenario 1: the exchange**. Its discriminating shape is that the two t-shirts are *never simultaneously on Patrick*.
 
 The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](https://github.com/infinite-pm/ipm-intro/blob/main/docs/examples/tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
-<!-- ipm-svg id=tshirt-magic-recap hash=90946ea6 -->
+<!-- ipm-svg id=tshirt-magic-recap hash=c7fb41c5 -->
 ![](../../_ipm/docs/examples/tshirt-magic/tshirt-magic-recap.ipm.svg)
 
 ## Step 1 - event chain with evidence and hypothesis
@@ -57,16 +57,16 @@ Before we draw the alternative scenario, a methodological note. An ipmt observat
 Here are two such probe events. The first confirms the **exchange** scenario (the recap above) by catching the white t-shirt being put on - a positive transition that only the exchange contains:
 
 ```ipmt
-# Confirms scenario 1 (exchange): t-shirt W observed being taken on
-probeTakeOnW::a W taken on seen ::e
-Patrick    --> probeTakeOnW
-t-shirt W  --> probeTakeOnW
+# Confirms scenario 1 (exchange): the white t-shirt observed being taken on
+probeTakeOnW::a white t-shirt seen being taken on ::e
+Patrick       --> probeTakeOnW
+white t-shirt --> probeTakeOnW
 
 # What this observation expresses
 probeTakeOnW --> taking on ::c
 probeTakeOnW --> positive evidence ::c
 ```
-<!-- ipm-svg id=110 hash=bca9edc4 -->
+<!-- ipm-svg id=110 hash=abe1094a -->
 ![](../../_ipm/docs/examples/tshirt-magic/110.ipm.svg)
 
 
@@ -74,20 +74,20 @@ The second confirms the **layered** scenario by catching both t-shirts on Patric
 
 ```ipmt
 # Confirms scenario 2 (layered): black observed on top of white
-probeBOverW::a B over W seen on Patrick ::e
-Patrick    --> probeBOverW
-t-shirt B  --> probeBOverW
-t-shirt W  --> probeBOverW
+probeBOverW::a black over white seen on Patrick ::e
+Patrick       --> probeBOverW
+black t-shirt --> probeBOverW
+white t-shirt --> probeBOverW
 
 # What this observation expresses
 probeBOverW --> wearing two t-shirts ::c
 probeBOverW --> positive evidence ::c
 ```
-<!-- ipm-svg id=120 hash=52a57c38 -->
+<!-- ipm-svg id=120 hash=1a41a3e2 -->
 ![](../../_ipm/docs/examples/tshirt-magic/120.ipm.svg)
 
 
-Without either probe succeeding, the scenario stays undecided - the honest open-world answer. Note also what we did *not* record: the absence of a take-on does not by itself confirm the layered scenario; we still need the positive `B over W seen` sighting.
+Without either probe succeeding, the scenario stays undecided - the honest open-world answer. Note also what we did *not* record: the absence of a take-on does not by itself confirm the layered scenario; we still need the positive `black over white seen on Patrick` sighting.
 
 ## Alternative scenario - layered, in detail
 
@@ -135,10 +135,10 @@ Patrick --> wearBW
 Patrick --> human ::c
 
 # White t-shirt is worn throughout - even underneath the black one in wearLayered
-t-shirt W --> wearLayered, wearW
+white t-shirt --> wearLayered, wearW
 
 # Black t-shirt is on during the layered wearing and removed in takeOffB
-t-shirt B --> wearLayered, takeOffB
+black t-shirt --> wearLayered, takeOffB
 
 # Concepts each event expresses
 wearLayered --> wearing two t-shirts ::c
@@ -146,8 +146,8 @@ takeOffB    --> taking off ::c
 wearW       --> wearing t-shirt ::c
 
 # T-shirt color (thing --> concept)
-t-shirt B --> t-shirt ::c, black ::c
-t-shirt W --> t-shirt ::c, white ::c
+black t-shirt --> t-shirt ::c, black ::c
+white t-shirt --> t-shirt ::c, white ::c
 
 # "Wearing two t-shirts" is a kind of "wearing t-shirt" (concept --> concept)
 wearing two t-shirts ::c --> wearing t-shirt ::c
@@ -156,7 +156,7 @@ wearing two t-shirts ::c --> wearing t-shirt ::c
 black ::c --> color ::c
 white ::c --> color ::c
 ```
-<!-- ipm-svg id=140 hash=36befe91 -->
+<!-- ipm-svg id=140 hash=bd9f69c1 -->
 ![](../../_ipm/docs/examples/tshirt-magic/140.ipm.svg)
 
 

@@ -26,8 +26,8 @@ takeOff --> halfNaked --> takeOn
 Patrick --> wearBW
 
 # T-shirts only in the sub-events where each one actually is
-t-shirt B --> wearB, takeOff
-t-shirt W --> wearW, takeOn
+black t-shirt --> wearB, takeOff
+white t-shirt --> wearW, takeOn
 
 # --- concepts (from Step 3) ---
 
