@@ -40,7 +40,7 @@ Before you start creating an infinite.pm graph, decide what **question** or **pu
 
 ### Every model is an observer's account
 
-There is no view-from-nowhere. An infinite.pm graph is always **someone's** account of a slice of the world - what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that <!--ipmt-->`swapT::a Patrick swaps t-shirt ::e` expresses <!--ipmt-->`swap of clothing ::c` rather than <!--ipmt-->`magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
+There is no view-from-nowhere. An infinite.pm graph is always **someone's** account of a slice of the world - what *they* saw, at *their* chosen timescale, with *their* chosen boundary. This matters most for concepts: deciding that <!--ipmt-->`Patrick swaps t-shirt ::e` expresses <!--ipmt-->`swap of clothing ::c` rather than <!--ipmt-->`magic trick ::c` is in the eye of the beholder. Two honest observers can produce two different but non-contradictory models of the same scene. Combined with a shared collection of models, infinite.pm tools can surface views and beliefs you missed.
 
 ## Build it up - by example
 
