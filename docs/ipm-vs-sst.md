@@ -11,6 +11,10 @@ IPM is built directly on Mark Burgess's **[Semantic Spacetime γ(3,4)](https://s
 
 `L` (leads-to) and `N` (near-to) keep their SST names. So the IPM mnemonic for the four edges becomes **LPXN**, in place of SST's **LCEN**.
 
+Both panels draw a same-kind relation between a corner and a second node of that kind (`e` and `e2`, and so on)
+rather than as a loop back to the corner itself: an event that leads to an event leads to a *different* event.
+Only the labels and the `C`/`P` arrow direction differ between the two panels; the geometry is identical.
+
 ## Further reading
 
 - Mark Burgess, [Designing Nodes and Arrows in Knowledge Graphs with Semantic Spacetime](https://mark-burgess-oslo-mb.medium.com/designing-nodes-and-arrows-in-knowledge-graphs-with-semantic-spacetime-0992b9cae595) - the source article for the LCEN triangle.
