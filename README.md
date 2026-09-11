@@ -228,7 +228,7 @@ The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipm
 
 ## All allowed edges
 
-Every legal source → target combination, matching the diagram above. The "ipmt syntax" column shows the most common form for each edge.
+Every legal source → target combination, matching the diagram above. The "ipmt syntax" column shows the most common form for each edge. To step through them one at a time - implicit and explicit syntax, what each reads as, and the triangle with that edge highlighted - see [the eleven combinations](https://infinite.pm/ipm11/).
 
 | # | Source → Target | Edge | ipmt syntax | Reads as |
 |:-:|:--|:-:|:--|:--|
