@@ -173,7 +173,7 @@ A concept is what stays the same across all events and things that express it - 
 
 ### Step 4 - bring it together, with a parent event
 
-The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top <!--ipmt:as-token:e-title-->`wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts) attached at the same levels they appeared, and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Part-of transitivity carries Patrick into every sub-event automatically, so we attach him only at the top.
+The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top <!--ipmt:as-token:e-title-->`wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts), and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Zooming into an event, each participant either stays on it - present in every sub-event, like Patrick, attached only at the top - or moves down to just the sub-events it was in, like the t-shirts, which were on him for only part of the swap. Zoomed out again, both are still in the parent event.
 
 ```ipmt
 Patrick wears black then wears white ::e wearBW::a

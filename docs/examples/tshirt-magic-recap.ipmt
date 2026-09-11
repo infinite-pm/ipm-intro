@@ -21,11 +21,11 @@ takeOff --> halfNaked --> takeOn
 
 # --- things (from Step 2) ---
 
-# Patrick is present throughout - attach at the top; part-of
-# transitivity carries him into every sub-event.
+# Patrick is present throughout - attach at the top, and he is in
+# every sub-event.
 Patrick --> wearBW
 
-# T-shirts at the mid-level events where each appears
+# T-shirts only in the sub-events where each one actually is
 t-shirt B --> wearB, takeOff
 t-shirt W --> wearW, takeOn
 
