@@ -14,7 +14,7 @@ So the file stands on its own, here is the complete three-level model the intro'
 The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](https://github.com/infinite-pm/ipm-intro/blob/main/docs/examples/tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
-<!-- ipm-svg id=tshirt-magic-recap hash=63a3b9c1 -->
+<!-- ipm-svg id=tshirt-magic-recap hash=90946ea6 -->
 ![](../../_ipm/docs/examples/tshirt-magic/tshirt-magic-recap.ipm.svg)
 
 ## Step 1 - event chain with evidence and hypothesis
@@ -25,13 +25,13 @@ A modeler can fill that gap with a **hypothesis**: an event drawn from a shared 
 
 ```ipmt
 # Parent event - the whole observable story matches a library pattern
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 wearBW --> common t-shirt swap pattern ::c
 
 # Sub-events: two observed wears + one hypothesized swap, each part-of the parent
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearB --::P--> wearBW
 swapT --::P--> wearBW
@@ -44,7 +44,7 @@ wearW --> evidence ::c
 # Hypothesis - the swap is inferred from the library pattern on the parent
 swapT --> hypothesis ::c
 ```
-<!-- ipm-svg id=100 hash=590d3974 -->
+<!-- ipm-svg id=100 hash=6667215f -->
 ![](../../_ipm/docs/examples/tshirt-magic/100.ipm.svg)
 
 
@@ -58,7 +58,7 @@ Here are two such probe events. The first confirms the **exchange** scenario (th
 
 ```ipmt
 # Confirms scenario 1 (exchange): t-shirt W observed being taken on
-W taken on seen ::e probeTakeOnW::a
+probeTakeOnW::a W taken on seen ::e
 Patrick    --> probeTakeOnW
 t-shirt W  --> probeTakeOnW
 
@@ -66,7 +66,7 @@ t-shirt W  --> probeTakeOnW
 probeTakeOnW --> taking on ::c
 probeTakeOnW --> positive evidence ::c
 ```
-<!-- ipm-svg id=110 hash=22c262b7 -->
+<!-- ipm-svg id=110 hash=bca9edc4 -->
 ![](../../_ipm/docs/examples/tshirt-magic/110.ipm.svg)
 
 
@@ -74,7 +74,7 @@ The second confirms the **layered** scenario by catching both t-shirts on Patric
 
 ```ipmt
 # Confirms scenario 2 (layered): black observed on top of white
-B over W seen on Patrick ::e probeBOverW::a
+probeBOverW::a B over W seen on Patrick ::e
 Patrick    --> probeBOverW
 t-shirt B  --> probeBOverW
 t-shirt W  --> probeBOverW
@@ -83,7 +83,7 @@ t-shirt W  --> probeBOverW
 probeBOverW --> wearing two t-shirts ::c
 probeBOverW --> positive evidence ::c
 ```
-<!-- ipm-svg id=120 hash=f88c7d16 -->
+<!-- ipm-svg id=120 hash=52a57c38 -->
 ![](../../_ipm/docs/examples/tshirt-magic/120.ipm.svg)
 
 
@@ -96,18 +96,18 @@ This second observer captured a different sub-event structure under the same top
 First, the event structure alone - no participants attached yet, so the difference from scenario 1 is plain:
 
 ```ipmt
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
 # Mid-level sub-events - wear-layered -> take off black -> wear white
-Patrick wears black over white ::e wearLayered::a
-  --> Take off black ::e takeOffB::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearLayered::a Patrick wears black over white ::e
+  --> takeOffB::a Take off black ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearLayered --::P--> wearBW
 takeOffB --::P--> wearBW
 wearW --::P--> wearBW
 ```
-<!-- ipm-svg id=130 hash=af62021e -->
+<!-- ipm-svg id=130 hash=49140ee3 -->
 ![](../../_ipm/docs/examples/tshirt-magic/130.ipm.svg)
 
 
@@ -119,12 +119,12 @@ Now layer everything in: participants and concepts.
 
 ```ipmt
 # Top event (same name and alias as scenario 1)
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
 # Mid-level sub-events
-Patrick wears black over white ::e wearLayered::a
-  --> Take off black ::e takeOffB::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearLayered::a Patrick wears black over white ::e
+  --> takeOffB::a Take off black ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearLayered --::P--> wearBW
 takeOffB --::P--> wearBW
@@ -156,7 +156,7 @@ wearing two t-shirts ::c --> wearing t-shirt ::c
 black ::c --> color ::c
 white ::c --> color ::c
 ```
-<!-- ipm-svg id=140 hash=1f67c9a1 -->
+<!-- ipm-svg id=140 hash=36befe91 -->
 ![](../../_ipm/docs/examples/tshirt-magic/140.ipm.svg)
 
 

@@ -65,13 +65,13 @@ The arrow <!--ipmt:as-token:L-->`-->` between two events means <!--ipmt:as-token
 Thing <!--ipmt:as-token:t-title-->`Patrick` is *in* every event. A thing participates in an event by being <!--ipmt:as-token:P-->`part of` it - a **spatial** containment relation (the thing sits inside the event's region of space and time), rendered as a <!--ipmt:as-token:P-->`green arrow`.
 
 ```ipmt
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 Patrick --> wearB, swapT, wearW
 ```
-<!-- ipm-svg id=110 hash=036d9600 -->
+<!-- ipm-svg id=110 hash=e13e41db -->
 ![](_ipm/README/110.ipm.svg)
 
 Two new tricks:
@@ -84,28 +84,28 @@ Unmarked nodes default to **things**. <!--ipmt:as-token:P-->`The arrow` goes fro
 **Add the t-shirts as participants too.** <!--ipmt:as-token:t-title-->`The black t-shirt` is worn in <!--ipmt:as-token:e-title-->`wearB` and is still on Patrick (briefly) during <!--ipmt:as-token:e-title-->`swapT`; <!--ipmt:as-token:t-title-->`the white t-shirt` enters at <!--ipmt:as-token:e-title-->`swapT` and stays on through <!--ipmt:as-token:e-title-->`wearW`. Each thing attaches to the events where it actually appears.
 
 ```ipmt
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 Patrick --> wearB, swapT, wearW
 
 black t-shirt --> wearB, swapT
 white t-shirt --> swapT, wearW
 ```
-<!-- ipm-svg id=120 hash=ba3e167d -->
+<!-- ipm-svg id=120 hash=e4401e34 -->
 ![](_ipm/README/120.ipm.svg)
 
 **You can also zoom *out*.** The same scene can be told at a coarser level: one single event that names only the *observable* change (Patrick wore black, then white), with every participant attached at that one level. The mechanism - *how* he changed t-shirts - is hidden inside the wrapper event and revealed only when you zoom in.
 
 ```ipmt
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
 Patrick    --> wearBW
 black t-shirt  --> wearBW
 white t-shirt  --> wearBW
 ```
-<!-- ipm-svg id=130 hash=2e16c454 -->
+<!-- ipm-svg id=130 hash=a609635a -->
 ![](_ipm/README/130.ipm.svg)
 
 Same story, different zoom level. The right level depends on the **purpose** of your model - and you don't have to pick just one.
@@ -113,38 +113,38 @@ Same story, different zoom level. The right level depends on the **purpose** of 
 Going the other direction, **zoom in**: replace a coarse event with its sub-events. The next two diagrams show pure *event structure* - no participants, no concepts - so the zoom move stands on its own. First, drill into <!--ipmt:as-token:e-title-->`wearBW` and show its three mid-level sub-events as a leads-to chain, each part-of the parent:
 
 ```ipmt
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearB --::P--> wearBW
 swapT --::P--> wearBW
 wearW --::P--> wearBW
 ```
-<!-- ipm-svg id=140 hash=119e8e54 -->
+<!-- ipm-svg id=140 hash=441bac12 -->
 ![](_ipm/README/140.ipm.svg)
 
 
 We can keep going - <!--ipmt:as-token:e-title-->`swapT` itself decomposes into a finer chain of moments. Here are both zoom levels at once, three levels of pure event nesting:
 
 ```ipmt
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearB, swapT, wearW --::P--> wearBW
 
-Take off black ::e takeOff::a       --::P--> swapT
-Patrick half-naked ::e halfNaked::a --::P--> swapT
-Take on white ::e takeOn::a         --::P--> swapT
+takeOff::a Take off black ::e       --::P--> swapT
+halfNaked::a Patrick half-naked ::e --::P--> swapT
+takeOn::a Take on white ::e         --::P--> swapT
 
 takeOff --> halfNaked --> takeOn
 ```
-<!-- ipm-svg id=150 hash=01228d05 -->
+<!-- ipm-svg id=150 hash=5c531ebd -->
 ![](_ipm/README/150.ipm.svg)
 
 
@@ -176,19 +176,19 @@ A concept is what stays the same across all events and things that express it - 
 The full story is now the **strict composition of the earlier steps**: the three-level event tree from Step 2's last diagram (top <!--ipmt:as-token:e-title-->`wearBW`, mid-level wear → swap → wear, inner take-off → half-naked → take-on), the **things from Step 2** (Patrick, both t-shirts), and the **concepts from Step 3** (<!--ipmt-->`human ::c`, <!--ipmt-->`swap of clothing ::c`). Zooming into an event, each participant either stays on it - present in every sub-event, like Patrick, attached only at the top - or moves down to just the sub-events it was in, like the t-shirts, which were on him for only part of the swap. Zoomed out again, both are still in the parent event.
 
 ```ipmt
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearB, swapT, wearW --::P--> wearBW
 black t-shirt --> wearB
 white t-shirt --> wearW
 
-Take off black ::e takeOff::a       --::P--> swapT
-Patrick half-naked ::e halfNaked::a --::P--> swapT
-Take on white ::e takeOn::a         --::P--> swapT
+takeOff::a Take off black ::e       --::P--> swapT
+halfNaked::a Patrick half-naked ::e --::P--> swapT
+takeOn::a Take on white ::e         --::P--> swapT
 takeOff --> halfNaked --> takeOn
 swapT --> swap of clothing ::c
 
@@ -200,7 +200,7 @@ black t-shirt --> t-shirt ::c, black ::c
 white t-shirt --> t-shirt ::c, white ::c
 black ::c, white ::c --> color ::c
 ```
-<!-- ipm-svg id=170 hash=4c1f0991 -->
+<!-- ipm-svg id=170 hash=2b23857c -->
 ![](_ipm/README/170.ipm.svg)
 
 That's the most important part of the ipmt vocabulary in one model: <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:L-->`lead to` <!--ipmt:as-token:e-title-->`events`, <!--ipmt:as-token:t-title-->`things` <!--ipmt:as-token:P-->`participate in` <!--ipmt:as-token:e-title-->`events`, <!--ipmt:as-token:t-title-->`things` and <!--ipmt:as-token:e-title-->`events` <!--ipmt:as-token:X-->`express` <!--ipmt:as-token:c-title-->`concepts` as properties, and <!--ipmt:as-token:c-title-->`concepts` can themselves <!--ipmt:as-token:X-->`express properties` of other <!--ipmt:as-token:c-title-->`concepts`. Only the <!--ipmt:as-token:N-->`near-to` (similarity) edge type is missing. Check [all eleven combinations](https://infinite.pm/ipm11/maxed.html) in one diagram, with their `ipmt` syntax.
@@ -221,7 +221,7 @@ The triangle is  <!--ipmt:as-token:e-marker-->`e` (<!--ipmt:as-token:e-title-->`
 | :---: | --- | --- | --- | --- |
 | <!--ipmt:as-token:L-->`L` | <!--ipmt:as-token:L-->`orange` | <!--ipmt:as-token:L-->`LEADS-TO` | Temporal / causal flow | One event causes or precedes another |
 | <!--ipmt:as-token:P-->`P` | <!--ipmt:as-token:P-->`green` | <!--ipmt:as-token:P-->`PART-OF` | Containment / participation | A thing is inside an event, a sub-event is inside a parent event, or a sub-part is inside a bigger thing |
-| <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue dashed` | <!--ipmt:as-token:X-->`EXPRESSES` | Property (a single promise) | An event or thing expresses a concept as a property; a concept itself can express another concept the same way. Not is-a - a node can express many independent properties |
+| <!--ipmt:as-token:X-->`X` | <!--ipmt:as-token:X-->`blue dashed` | <!--ipmt:as-token:X-->`EXPRESSES` | Property (a single promise) | An event or thing expresses a concept as a property; an event can also express another event; a concept itself can express another concept the same way. Not is-a - a node can express many independent properties |
 | <!--ipmt:as-token:N-->`N` | <!--ipmt:as-token:N-->`gray dotted` | <!--ipmt:as-token:N-->`NEAR-TO` | Similarity / proximity (undirected) | Two same-kind nodes are alike but you do not want to merge them |
 
 The edge symbols <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`P` / <!--ipmt:as-token:X-->`X` / <!--ipmt:as-token:N-->`N` are infinite.pm's mnemonic; Burgess's original SST uses <!--ipmt:as-token:L-->`L` / <!--ipmt:as-token:P-->`C` / <!--ipmt:as-token:X-->`E` / <!--ipmt:as-token:N-->`N`. For why infinite.pm renames <!--ipmt:as-token:P-->`C` → <!--ipmt:as-token:P-->`P` (and reverses its direction) and <!--ipmt:as-token:X-->`E` → <!--ipmt:as-token:X-->`X`, see [`docs/ipm-vs-sst.md`](docs/ipm-vs-sst.md).

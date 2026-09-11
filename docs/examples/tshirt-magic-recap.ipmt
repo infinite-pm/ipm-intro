@@ -1,21 +1,21 @@
 # --- event tree (from Step 2's last diagram) ---
 
 # Top-level event
-Patrick wears black then wears white ::e wearBW::a
+wearBW::a Patrick wears black then wears white ::e
 
 # Mid-level sub-events - leads-to chain, each part-of the top
-Patrick wears black t-shirt ::e wearB::a
-  --> Patrick swaps t-shirt ::e swapT::a
-  --> Patrick wears white t-shirt ::e wearW::a
+wearB::a Patrick wears black t-shirt ::e
+  --> swapT::a Patrick swaps t-shirt ::e
+  --> wearW::a Patrick wears white t-shirt ::e
 
 wearB --::P--> wearBW
 swapT --::P--> wearBW
 wearW --::P--> wearBW
 
 # Inner sub-events - the swap itself decomposes into a finer chain
-Take off black ::e takeOff::a       --::P--> swapT
-Patrick half-naked ::e halfNaked::a --::P--> swapT
-Take on white ::e takeOn::a         --::P--> swapT
+takeOff::a Take off black ::e       --::P--> swapT
+halfNaked::a Patrick half-naked ::e --::P--> swapT
+takeOn::a Take on white ::e         --::P--> swapT
 
 takeOff --> halfNaked --> takeOn
 

@@ -2,14 +2,14 @@
 
 A Clue-style narrative modeled in ipmt: a party, a murder, and the investigation that follows. Shows how a top-level event (`murder-e`) decomposes into sub-events via part-of, how the same scene is re-located (`In the library`), and how a weapon's properties are expressed as a chain of concepts.
 
-<!-- ipm-svg id=100 hash=e7860ef2 pos=before -->
+<!-- ipm-svg id=100 hash=90d9abad pos=before -->
 ![](../../_ipm/docs/examples/murder-full/100.ipm.svg)
 ```ipmt
 get the party started ::e
-  --then--> murder-e::a ::e Professor Plum murders Miss Scarlet in the library with the bread knife because she refused to marry him
+  --then--> murder-e::a Professor Plum murders Miss Scarlet in the library with the bread knife because she refused to marry him ::e
   --then--> investigation begins ::e
 
-murder-e <--::P involves-- library-ppms::a ::e Professor Plum & Miss Scarlet in the library
+murder-e <--::P involves-- library-ppms::a Professor Plum & Miss Scarlet in the library ::e
 
 # Lifted "In the libray"
 murder-e
@@ -22,16 +22,16 @@ Professor Plum, Miss Scarlet --> murder-e
 # "In the library" is the concept (::c); "library" is the abstract concept it expresses
 In the library --"involves"--> library ::c
 
-murder-e <--::P contains-- refusal-mspp::a ::e Miss Scarlet refuses to marry Professor Plum
-  <--::P-- refusal-m::a ::e refusal marriage
+murder-e <--::P contains-- refusal-mspp::a Miss Scarlet refuses to marry Professor Plum ::e
+  <--::P-- refusal-m::a refusal marriage ::e
   --> marriage ::c
 refusal-m --> refusal ::c
 
-murder-e <--::P contains-- ppmms::a ::e Professor Plum murders Miss Scarlet
+murder-e <--::P contains-- ppmms::a Professor Plum murders Miss Scarlet ::e
 
-ppmms --"example of"--> murder-sk::a ::c murder by subtle knife
-  --"example of"--> use-sk::a ::c use of subtle knife
-  --"involves"--> sk::a ::c subtle knife
+ppmms --"example of"--> murder-sk::a murder by subtle knife ::c
+  --"example of"--> use-sk::a use of subtle knife ::c
+  --"involves"--> sk::a subtle knife ::c
   --"kind of"--> knife ::c
 
 murder-sk --"answers question"--> what action ::c
