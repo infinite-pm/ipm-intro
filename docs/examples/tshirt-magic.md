@@ -14,7 +14,7 @@ So the file stands on its own, here is the complete three-level model the intro'
 The ipmt source for this graph lives in a sibling file ([`tshirt-magic-recap.ipmt`](https://github.com/infinite-pm/ipm-intro/blob/main/docs/examples/tshirt-magic-recap.ipmt)) and is included here via `ipm-include`:
 
 <!-- ipm-include src=tshirt-magic-recap.ipmt -->
-<!-- ipm-svg id=tshirt-magic-recap hash=ae84a3ca -->
+<!-- ipm-svg id=tshirt-magic-recap hash=63a3b9c1 -->
 ![](../../_ipm/docs/examples/tshirt-magic/tshirt-magic-recap.ipm.svg)
 
 ## Step 1 - event chain with evidence and hypothesis
