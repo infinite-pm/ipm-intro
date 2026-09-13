@@ -27,11 +27,7 @@ Mark states the allowed transitions as a matrix: *Agent Semantics, Semantic Spac
 
 The signs are directions, not different relations: `+C` is *contains*, `-C` is the same relation read from the other end, and `N` is undirected. Count each relation once and the matrix gives exactly the eleven edges IPM allows:
 
-- the `e` row: `±L` between events, `±C` for a sub-event inside an event, `±E` for an event expressing an event, `N_e`, then `+C` into a thing and `+E` into a concept;
-- the `t` row: `-C` back to the event - the same edge as the event's `+C`, seen from the thing - then `±C` between things, `N_t`, and `+E` into a concept;
-- the `c` row: `-E` twice, which are the reverse *readings* of `e → c` and `t → c` rather than edges of their own, plus `±E` and `N_c` among concepts.
-
-So IPM changes the *labels*, never which edges exist: the [eleven combinations](https://infinite.pm/ipm11/maxed.html) are Mark's, one for one.
+Count each relation once - the `c → e` and `c → t` cells are the reverse *readings* of `e → c` and `t → c`, not edges of their own - and the matrix gives exactly the eleven edges IPM allows. So IPM changes the *labels*, never which edges exist: the [eleven combinations](https://infinite.pm/ipm11/maxed.html) are Mark's, one for one. Each transition with its ipmt syntax, in both directions, is tabulated in [`ipm-tools/docs/sst-gamma34.md`](https://github.com/infinite-pm/ipm-tools/blob/main/docs/sst-gamma34.md).
 
 **This is also what `(-C)` and `(+E)` mean on the triangles above.** IPM's `part-of` is SST's `C` taken in the `-C` direction - from the part towards the whole - and IPM's `expresses` is SST's `E` in its `+E` direction.
 
