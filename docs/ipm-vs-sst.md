@@ -15,6 +15,26 @@ Both panels draw a same-kind relation between a corner and a second node of that
 rather than as a loop back to the corner itself: an event that leads to an event leads to a *different* event.
 Only the labels and the `C`/`P` arrow direction differ between the two panels; the geometry is identical.
 
+## The skeleton matrix - where the eleven edges come from
+
+Mark states the allowed transitions as a matrix: *Agent Semantics, Semantic Spacetime, and Graphical Reasoning* ([arXiv:2506.07756](https://arxiv.org/abs/2506.07756), June 2025), §4.1 *"Matrices for γ(3,4) skeleton"*, equation 21. Rows are the source node kind, columns the target:
+
+| source → target | → `e` | → `t` | → `c` |
+| :-- | :-- | :-- | :-- |
+| **`e`** | ±L, ±C, ±E, N_e | +C | +E |
+| **`t`** | -C | ±C, N_t | +E |
+| **`c`** | -E | -E | ±E, N_c |
+
+The signs are directions, not different relations: `+C` is *contains*, `-C` is the same relation read from the other end, and `N` is undirected. Count each relation once and the matrix gives exactly the eleven edges IPM allows:
+
+- the `e` row: `±L` between events, `±C` for a sub-event inside an event, `±E` for an event expressing an event, `N_e`, then `+C` into a thing and `+E` into a concept;
+- the `t` row: `-C` back to the event - the same edge as the event's `+C`, seen from the thing - then `±C` between things, `N_t`, and `+E` into a concept;
+- the `c` row: `-E` twice, which are the reverse *readings* of `e → c` and `t → c` rather than edges of their own, plus `±E` and `N_c` among concepts.
+
+So IPM changes the *labels*, never which edges exist: the [eleven combinations](https://infinite.pm/ipm11/maxed.html) are Mark's, one for one.
+
+**This is also what `(-C)` and `(+E)` mean on the triangles above.** IPM's `part-of` is SST's `C` taken in the `-C` direction - from the part towards the whole - and IPM's `expresses` is SST's `E` in its `+E` direction.
+
 ## Further reading
 
 - Mark Burgess, [Designing Nodes and Arrows in Knowledge Graphs with Semantic Spacetime](https://mark-burgess-oslo-mb.medium.com/designing-nodes-and-arrows-in-knowledge-graphs-with-semantic-spacetime-0992b9cae595) - the source article for the LCEN triangle.
